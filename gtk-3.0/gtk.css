@@ -1,3 +1,11 @@
+
+/* define theme colors
+useful documentation:
+* https://docs.gtk.org/gtk3/css-overview.html#specifying-colors-in-various-ways
+*/
+
+@define-color accent01 #476479;
+
 * {
   -GtkScrollbar-has-backward-stepper: true;
   -GtkScrollbar-has-forward-stepper: true;
@@ -171,7 +179,7 @@ button {
   border-left-color: #e7e8ed;
   background-color: #AEB2C3;
   -gtk-outline-radius: 0px;
-  outline-color: #B24D7A;
+  outline-color: @accent01;
   outline-offset: 2px;
   outline-style: solid; }
   button:active, button:checked {
@@ -1436,7 +1444,7 @@ headerbar {
   padding: 4px 8px;
   min-height: 34px;
   color: #FFFFFF;
-  background-color: #4C666B; 
+  background-color: @accent01; 
   box-shadow: inset 2px 2px #dd88ae, inset -2px -2px #5f3a4b; }
   headerbar:backdrop {
     color: #000000;
@@ -1478,7 +1486,7 @@ headerbar {
     border-left-color: #e7e8ed;
     background-color: #AEB2C3;
     -gtk-outline-radius: 0px;
-    outline-color: #B24D7A;
+    outline-color: @accent01;
     outline-offset: 2px;
     outline-style: solid; }
     headerbar button:active, headerbar button:checked {
@@ -1596,7 +1604,7 @@ toolbar {
     border-left-color: #e7e8ed;
     background-color: #AEB2C3;
     -gtk-outline-radius: 0px;
-    outline-color: #B24D7A;
+    outline-color: @accent01;
     outline-offset: 2px;
     outline-style: solid; }
     .primary-toolbar button:active, .primary-toolbar button:checked, .primary-toolbar .raised button:active, .primary-toolbar .raised button:checked {
@@ -1638,7 +1646,7 @@ toolbar {
     border-left-color: #e7e8ed;
     background-color: #AEB2C3;
     -gtk-outline-radius: 0px;
-    outline-color: #B24D7A;
+    outline-color: @accent01;
     outline-offset: 2px;
     outline-style: solid; }
     .inline-toolbar toolbutton > button:active, .inline-toolbar toolbutton > button:checked {
@@ -2184,7 +2192,7 @@ panel-toplevel.background button {
   border-left-color: #e7e8ed;
   background-color: #AEB2C3;
   -gtk-outline-radius: 0px;
-  outline-color: #B24D7A;
+  outline-color: @accent01;
   outline-offset: 2px;
   outline-style: solid; }
   #tasklist-button:active, #tasklist-button:checked {
@@ -2280,7 +2288,7 @@ panel-toplevel.background na-tray-applet {
     border-left-color: #e7e8ed;
     background-color: #AEB2C3;
     -gtk-outline-radius: 0px;
-    outline-color: #B24D7A;
+    outline-color: @accent01;
     outline-offset: 2px;
     outline-style: solid; }
     .mate-panel-menu-bar #tasklist-button:active, .mate-panel-menu-bar #tasklist-button:checked {
@@ -2373,7 +2381,7 @@ panel-toplevel.background na-tray-applet {
     border-left-color: #e7e8ed;
     background-color: #AEB2C3;
     -gtk-outline-radius: 0px;
-    outline-color: #B24D7A;
+    outline-color: @accent01;
     outline-offset: 2px;
     outline-style: solid; }
     .xfce4-panel.panel .tasklist button:active, .xfce4-panel.panel .tasklist button:checked {
@@ -2410,7 +2418,7 @@ panel-toplevel.background na-tray-applet {
     border-left-color: #e7e8ed;
     background-color: #AEB2C3;
     -gtk-outline-radius: 0px;
-    outline-color: #B24D7A;
+    outline-color: @accent01;
     outline-offset: 2px;
     outline-style: solid; }
     #XfceNotifyWindow.osd button:active, #XfceNotifyWindow.osd button:checked {
@@ -2464,16 +2472,16 @@ UnityDecoration {
     border: none;
     border-radius: 0px 0px 0 0;
     padding: 1px 8px 0 8px;
-    background-color: #B24D7A;
+    background-color: @accent01;
     color: #f7edf2;
     text-shadow: none; }
     UnityDecoration .top:backdrop {
       background-color: #AEB2C3;
       color: #e0b8ca; }
   UnityDecoration .left, UnityDecoration .right, UnityDecoration.bottom {
-    background-color: #B24D7A; }
+    background-color: @accent01; }
     UnityDecoration .left:backdrop, UnityDecoration .right:backdrop, UnityDecoration.bottom:backdrop {
-      background-color: #B24D7A; }
+      background-color: @accent01; }
   UnityDecoration.menuitem, UnityDecoration .menuitem {
     border-radius: 0; }
     UnityDecoration.menuitem:hover, UnityDecoration.menuitem *:hover, UnityDecoration .menuitem:hover, UnityDecoration .menuitem *:hover {
