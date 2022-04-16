@@ -15,10 +15,10 @@ useful documentation:
 @define-color workspacebg 6f717d;
 
 
-@define-color COLORNAME #0055FF;
-@define-color COLORNAME #0653ec;
-@define-color COLORNAME #104ec8;
-@define-color COLORNAME #144bb8;
+@define-color blue-bright01 #0055FF;
+@define-color blue-bright02 #0653ec;
+@define-color blue-bright03 #104ec8;
+@define-color blue-bright04 #144bb8;
 @define-color COLORNAME #1463ff;
 @define-color COLORNAME #1a1a1a;
 @define-color COLORNAME #1a66ff;
