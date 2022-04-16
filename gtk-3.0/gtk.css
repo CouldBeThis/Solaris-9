@@ -1436,7 +1436,7 @@ headerbar {
   padding: 4px 8px;
   min-height: 34px;
   color: #FFFFFF;
-  background-color: #B24D7A;
+  background-color: #4C666B; 
   box-shadow: inset 2px 2px #dd88ae, inset -2px -2px #5f3a4b; }
   headerbar:backdrop {
     color: #000000;
