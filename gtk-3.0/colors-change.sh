@@ -43,8 +43,9 @@
 
 
 
-###################3## condensed:
+##################### condensed:
 sed -i "s/#232323/@black/g" gtk.css
+sed -i "s/#000000/@black/g" gtk.css
 sed -i "s/#252525/@black/g" gtk.css
 sed -i "s/#2C2C2C/@black/g" gtk.css
 sed -i "s/#2a2a2a/@black/g" gtk.css
