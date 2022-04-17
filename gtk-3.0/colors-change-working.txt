@@ -42,8 +42,6 @@ a5a9b9
 00BEFF
 #################
 #combine
-bfbfbf
-c2c6d3
 
 ##### oranges (to sort)
 
