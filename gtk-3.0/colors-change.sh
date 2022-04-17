@@ -27,10 +27,6 @@
 
 ##### purples (to sort)
 
-
-
-
-
 ##### whites (to sort)
 
 ##### oranges (to sort)
@@ -40,14 +36,7 @@
 ##### browns (to sort)
 
 
-#sed -r s/#ca9292/@rosybrown-ca9292/g gtk.css > gtk.css
-
-
 ##### reds (to sort)
-
-
-ca9292
-
 
 ##### blue (to sort)
 
@@ -71,10 +60,10 @@ sed -r s/#7c7f8d/@slategray/g gtk.css > gtk.css
 sed -r s/#334175/@darkslateblue/g gtk.css > gtk.css
 sed -r s/#3a4a86/@darkslateblue/g gtk.css > gtk.css
 sed -r s/#144bb8/@darkslateblue/g gtk.css > gtk.css
+sed -r s/#ec7c06/@darkorange/g gtk.css > gtk.css
 sed -r s/#ff8d14/@darkorange/g gtk.css > gtk.css
 sed -r s/#ff8f1a/@darkorange/g gtk.css > gtk.css
 sed -r s/#FF8300/@darkorange/g gtk.css > gtk.css
-sed -r s/#ec7c06/@darkorange/g gtk.css > gtk.css
 sed -r s/#4992A7/@cadetblue/g gtk.css > gtk.css
 sed -r s/#468192/@cadetblue/g gtk.css > gtk.css
 sed -r s/#495DA7/@royalblue/g gtk.css > gtk.css
@@ -95,6 +84,7 @@ sed -r s/#884444/@brown/g gtk.css > gtk.css
 sed -r s/#964242/@brown/g gtk.css > gtk.css
 sed -r s/#9c4848/@brown/g gtk.css > gtk.css
 sed -r s/#A74949/@brown/g gtk.css > gtk.css
+sed -r s/#ca9292/@rosybrown-ca9292/g gtk.css > gtk.css
 sed -r s/#e0b8ca/@thistle-e0b8ca/g gtk.css > gtk.css
 sed -r s/#f6eded/@snow/g gtk.css > gtk.css
 sed -r s/#d7dae3/@gainsboro/g gtk.css > gtk.css

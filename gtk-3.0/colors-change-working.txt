@@ -46,10 +46,8 @@ bfbfbf
 c2c6d3
 
 ##### oranges (to sort)
-#ff8d14
-#ff8f1a
-#FF8300
-#ec7c06
+
+
 
 
 
