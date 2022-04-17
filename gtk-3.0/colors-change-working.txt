@@ -1,0 +1,83 @@
+##### grays (to sort)
+575962
+62646d
+656979
+686a75
+6f717d
+737373
+838795
+878ca0
+898d9a
+8b8e9c
+9196a9
+9397a8
+979aa7
+999999
+9a9daa
+9a9fb2
+abacb1
+b3b3b3
+a4a8bb
+a5a9b9
+9da0b0
+bfbfbf
+c2c6d3
+
+
+fff
+fff
+##### purples (to sort)
+f7edf2
+5f3a4b
+724157
+642c2c
+593737
+
+000
+000
+##### whites (to sort)
+e0b8ca
+f6eded
+d7dae3
+fbe4bc
+FFFFBF
+000
+000
+
+##### oranges (to sort)
+#ff8d14
+#ff8f1a
+#FF8300
+#ec7c06
+
+
+fff
+fff
+##### blacks (to sort)
+1a1a1a
+
+
+fff
+fff
+##### browns (to sort)
+7a4e1f
+7e4242
+884444
+964242
+9c4848
+A74949
+926a46
+b86814
+c86f10
+A77549
+ca9292
+
+fff
+fff
+##### reds (to sort)
+a9696e
+b74d4d
+b94f4f
+b96d6d
+dd88ae
+
