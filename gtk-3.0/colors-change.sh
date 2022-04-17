@@ -25,25 +25,6 @@ sed -i "s/#9da0b0/@darkgray-9da0b0/g" gtk.css
 sed -i "s/#bfbfbf/@silver-bfbfbf/g" gtk.css
 sed -i "s/#c2c6d3/@silver-c2c6d3/g" gtk.css
 
-##### purples (to sort)
-
-##### whites (to sort)
-
-##### oranges (to sort)
-
-##### blacks (to sort)
-
-##### browns (to sort)
-
-
-##### reds (to sort)
-
-##### blue (to sort)
-
-
-
-
-##################### condensed:
 sed -i "s/#232323/@black/g" gtk.css
 sed -i "s/#000000/@black/g" gtk.css
 sed -i "s/#252525/@black/g" gtk.css
@@ -52,54 +33,77 @@ sed -i "s/#2a2a2a/@black/g" gtk.css
 sed -i "s/#2c2d31/@black/g" gtk.css
 sed -i "s/#303030/@black/g" gtk.css
 sed -i "s/#333333/@black/g" gtk.css
+
+sed -i "s/#1a1a1a/@black01/g" gtk.css
+
 sed -i "s/#757886/@slategray/g" gtk.css
 sed -i "s/#767985/@slategray/g" gtk.css
 sed -i "s/#787b87/@slategray/g" gtk.css
 sed -i "s/#7c7f8d/@slategray/g" gtk.css
+
 sed -i "s/#1f3d7a/@darkslateblue-1f3d7a/g" gtk.css
 sed -i "s/#334175/@darkslateblue/g" gtk.css
 sed -i "s/#3a4a86/@darkslateblue/g" gtk.css
 sed -i "s/#144bb8/@darkslateblue/g" gtk.css
+
 sed -i "s/#ec7c06/@darkorange/g" gtk.css
 sed -i "s/#ff8d14/@darkorange/g" gtk.css
 sed -i "s/#ff8f1a/@darkorange/g" gtk.css
 sed -i "s/#FF8300/@darkorange/g" gtk.css
+
 sed -i "s/#4992A7/@cadetblue/g" gtk.css
 sed -i "s/#468192/@cadetblue/g" gtk.css
+
 sed -i "s/#495DA7/@royalblue/g" gtk.css
 sed -i "s/#4f66b9/@royalblue/g" gtk.css
+
 sed -i "s/#0055FF/@royalblue02/g" gtk.css
 sed -i "s/#0653ec/@royalblue02/g" gtk.css
 sed -i "s/#1463ff/@royalblue02/g" gtk.css
 sed -i "s/#1a66ff/@royalblue02/g" gtk.css
 sed -i "s/#104ec8/@royalblue03/g" gtk.css
+
 sed -i "s/#c86f10/@chocolate/g" gtk.css
 sed -i "s/#b86814/@chocolate/g" gtk.css
+
 sed -i "s/#b96d6d/@indianred/g" gtk.css
 sed -i "s/#a9696e/@indianred/g" gtk.css
 sed -i "s/#7e4242/@indianred/g" gtk.css
 sed -i "s/#b74d4d/@indianred02/g" gtk.css
 sed -i "s/#b94f4f/@indianred02/g" gtk.css
+
 sed -i "s/#884444/@brown/g" gtk.css
 sed -i "s/#964242/@brown/g" gtk.css
 sed -i "s/#9c4848/@brown/g" gtk.css
 sed -i "s/#A74949/@brown/g" gtk.css
-sed -i "s/#ca9292/@rosybrown-ca9292/g" gtk.css
-sed -i "s/#e0b8ca/@thistle-e0b8ca/g" gtk.css
-sed -i "s/#f6eded/@snow/g" gtk.css
-sed -i "s/#d7dae3/@gainsboro/g" gtk.css
-sed -i "s/#fbe4bc/@wheat/g" gtk.css
-sed -i "s/#FFFFBF/@lemonchiffon/g" gtk.css
-sed -i "s/#f7edf2/@lavenderblush/g" gtk.css
-sed -i "s/#5f3a4b/@purple/g" gtk.css
-sed -i "s/#724157/@purple02/g" gtk.css
-sed -i "s/#642c2c/@maroon/g" gtk.css
-sed -i "s/#593737/@maroon02/g" gtk.css
-sed -i "s/#1a1a1a/@black01/g" gtk.css
-sed -i "s/#dd88ae/@palevioletred/g" gtk.css
+
 sed -i "s/#A77549/@peru/g" gtk.css
 sed -i "s/#7a4e1f/@peru/g" gtk.css
 sed -i "s/#926a46/@peru/g" gtk.css
+
+sed -i "s/#ca9292/@rosybrown-ca9292/g" gtk.css
+
+sed -i "s/#e0b8ca/@thistle-e0b8ca/g" gtk.css
+
+sed -i "s/#f6eded/@snow/g" gtk.css
+
+sed -i "s/#d7dae3/@gainsboro/g" gtk.css
+
+sed -i "s/#fbe4bc/@wheat/g" gtk.css
+
+sed -i "s/#FFFFBF/@lemonchiffon/g" gtk.css
+
+sed -i "s/#f7edf2/@lavenderblush/g" gtk.css
+
+sed -i "s/#5f3a4b/@purple/g" gtk.css
+
+sed -i "s/#724157/@purple02/g" gtk.css
+
+sed -i "s/#642c2c/@maroon/g" gtk.css
+
+sed -i "s/#593737/@maroon02/g" gtk.css
+
+sed -i "s/#dd88ae/@palevioletred/g" gtk.css
 
 
 ##color variants removed:
