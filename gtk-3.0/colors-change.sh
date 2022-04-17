@@ -38,10 +38,10 @@
 ##### blacks (to sort)
 
 ##### browns (to sort)
-#sed -r s/#7a4e1f/@saddlebrown-7a4e1f/g gtk.css > gtk.css
-#sed -r s/#926a46/@sienna-926a46/g gtk.css > gtk.css
-#sed -r s/#A77549/@peru-A77549/g gtk.css > gtk.css
+
+
 #sed -r s/#ca9292/@rosybrown-ca9292/g gtk.css > gtk.css
+
 
 ##### reds (to sort)
 
@@ -107,6 +107,9 @@ sed -r s/#642c2c/@maroon/g gtk.css > gtk.css
 sed -r s/#593737/@maroon02/g gtk.css > gtk.css
 sed -r s/#1a1a1a/@black01/g gtk.css > gtk.css
 sed -r s/#dd88ae/@palevioletred/g gtk.css > gtk.css
+sed -r s/#A77549/@peru/g gtk.css > gtk.css
+sed -r s/#7a4e1f/@peru/g gtk.css > gtk.css
+sed -r s/#926a46/@peru/g gtk.css > gtk.css
 
 
 ##color variants removed:
@@ -143,6 +146,9 @@ sed -r s/#dd88ae/@palevioletred/g gtk.css > gtk.css
 #sed -r s/#9c4848/@brown-9c4848/g gtk.css > gtk.css
 #sed -r s/#A74949/@brown-A74949/g gtk.css > gtk.css
 #sed -r s/#724157/@purple-724157/g gtk.css > gtk.css
+#sed -r s/#A77549/@peru-A77549/g gtk.css > gtk.css
+#sed -r s/#7a4e1f/@saddlebrown-7a4e1f/g gtk.css > gtk.css
+#sed -r s/#926a46/@sienna-926a46/g gtk.css > gtk.css
 
 
 
