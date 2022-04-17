@@ -15,10 +15,7 @@ useful documentation:
 @define-color workspacebg 6f717d;
 
 
-@define-color blue-bright01 @royalblue02;
-@define-color blue-bright02 @royalblue02;
-@define-color blue-bright03 @royalblue03;
-@define-color blue-bright04 @darkslateblue;
+
 @define-color COLORNAME @royalblue02;
 @define-color COLORNAME @black01;
 @define-color COLORNAME @royalblue02;
