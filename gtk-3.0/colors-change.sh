@@ -44,7 +44,7 @@
 
 
 ###################3## condensed:
-
+sed -i "s/#232323/@black/g" gtk.css
 sed -r s/#232323/@black/g gtk.css > gtk.css
 sed -r s/#252525/@black/g gtk.css > gtk.css
 sed -r s/#2C2C2C/@black/g gtk.css > gtk.css
@@ -56,7 +56,7 @@ sed -r s/#757886/@slategray/g gtk.css > gtk.css
 sed -r s/#767985/@slategray/g gtk.css > gtk.css
 sed -r s/#787b87/@slategray/g gtk.css > gtk.css
 sed -r s/#7c7f8d/@slategray/g gtk.css > gtk.css
-#sed -r s/#1f3d7a/@darkslateblue-1f3d7a/g gtk.css > gtk.css
+sed -r s/#1f3d7a/@darkslateblue-1f3d7a/g gtk.css > gtk.css
 sed -r s/#334175/@darkslateblue/g gtk.css > gtk.css
 sed -r s/#3a4a86/@darkslateblue/g gtk.css > gtk.css
 sed -r s/#144bb8/@darkslateblue/g gtk.css > gtk.css
