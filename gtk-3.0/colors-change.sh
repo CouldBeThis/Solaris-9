@@ -1,29 +1,29 @@
 #!/bin/bash
 
-##### grays (to sort)
-#sed -i "s/#575962/@dimgray-575962/g" gtk.css
-#sed -i "s/#62646d/@dimgray-62646d/g" gtk.css
-#sed -i "s/#656979/@dimgray-656979/g" gtk.css
-#sed -i "s/#686a75/@dimgray-686a75/g" gtk.css
-#sed -i "s/#6f717d/@dimgray-6f717d/g" gtk.css
-#sed -i "s/#737373/@dimgray-737373/g" gtk.css
-#sed -i "s/#838795/@lightslategray-838795/g" gtk.css
-#sed -i "s/#878ca0/@lightslategray-878ca0/g" gtk.css
-#sed -i "s/#898d9a/@lightslategray-898d9a/g" gtk.css
-#sed -i "s/#8b8e9c/@lightslategray-8b8e9c/g" gtk.css
-#sed -i "s/#9196a9/@lightslategray-9196a9/g" gtk.css
-#sed -i "s/#9397a8/@lightslategray-9397a8/g" gtk.css
-#sed -i "s/#979aa7/@darkgray-979aa7/g" gtk.css
-#sed -i "s/#999999/@darkgray-999999/g" gtk.css
-#sed -i "s/#9a9daa/@darkgray-9a9daa/g" gtk.css
-#sed -i "s/#9a9fb2/@darkgray-9a9fb2/g" gtk.css
-#sed -i "s/#abacb1/@darkgray-abacb1/g" gtk.css
-#sed -i "s/#b3b3b3/@darkgray-b3b3b3/g" gtk.css
-#sed -i "s/#a4a8bb/@darkgray-a4a8bb/g" gtk.css
-#sed -i "s/#a5a9b9/@darkgray-a5a9b9/g" gtk.css
-#sed -i "s/#9da0b0/@darkgray-9da0b0/g" gtk.css
-#sed -i "s/#bfbfbf/@silver-bfbfbf/g" gtk.css
-#sed -i "s/#c2c6d3/@silver-c2c6d3/g" gtk.css
+##### grays - have not sorted these
+sed -i "s/#575962/@dimgray-575962/g" gtk.css
+sed -i "s/#62646d/@dimgray-62646d/g" gtk.css
+sed -i "s/#656979/@dimgray-656979/g" gtk.css
+sed -i "s/#686a75/@dimgray-686a75/g" gtk.css
+sed -i "s/#6f717d/@dimgray-6f717d/g" gtk.css
+sed -i "s/#737373/@dimgray-737373/g" gtk.css
+sed -i "s/#838795/@lightslategray-838795/g" gtk.css
+sed -i "s/#878ca0/@lightslategray-878ca0/g" gtk.css
+sed -i "s/#898d9a/@lightslategray-898d9a/g" gtk.css
+sed -i "s/#8b8e9c/@lightslategray-8b8e9c/g" gtk.css
+sed -i "s/#9196a9/@lightslategray-9196a9/g" gtk.css
+sed -i "s/#9397a8/@lightslategray-9397a8/g" gtk.css
+sed -i "s/#979aa7/@darkgray-979aa7/g" gtk.css
+sed -i "s/#999999/@darkgray-999999/g" gtk.css
+sed -i "s/#9a9daa/@darkgray-9a9daa/g" gtk.css
+sed -i "s/#9a9fb2/@darkgray-9a9fb2/g" gtk.css
+sed -i "s/#abacb1/@darkgray-abacb1/g" gtk.css
+sed -i "s/#b3b3b3/@darkgray-b3b3b3/g" gtk.css
+sed -i "s/#a4a8bb/@darkgray-a4a8bb/g" gtk.css
+sed -i "s/#a5a9b9/@darkgray-a5a9b9/g" gtk.css
+sed -i "s/#9da0b0/@darkgray-9da0b0/g" gtk.css
+sed -i "s/#bfbfbf/@silver-bfbfbf/g" gtk.css
+sed -i "s/#c2c6d3/@silver-c2c6d3/g" gtk.css
 
 ##### purples (to sort)
 
