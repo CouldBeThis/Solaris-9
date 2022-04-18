@@ -90,6 +90,104 @@ useful documentation:
 @define-color COLORNAME @darkorange;
 @define-color COLORNAME @darkorange;
 
+@define-color accent01 #476479;
+@define-color main01 #AEB2C3;
+@define-color black #232323;
+@define-color white #ffffff;
+@define-color main02 #74798E;
+@define-color accent02 #e7e8ed;
+@define-color white-off #FFF7E9;
+@define-color black-off #09090a;
+@define-color workspacebg #6f717d;
+
+/*
+##### misc colors
+*/
+
+@define-color black01 #1a1a1a
+
+/*
+blues
+*/
+@define-color cadetblue #4992A7
+@define-color royalblue #495DA7
+@define-color royalblue02 #0055FF
+
+/*
+browns
+*/
+@define-color chocolate #c86f10
+@define-color brown #884444
+@define-color peru #A77549
+@define-color rosybrown-ca9292 #ca9292
+
+/*
+orange
+*/
+@define-color darkorange #ec7c06
+
+/*
+whites & offwhites
+*/
+@define-color thistle-e0b8ca #e0b8ca
+@define-color snow #f6eded
+@define-color gainsboro #d7dae3
+@define-color wheat #fbe4bc
+
+/*
+purples
+*/
+@define-color purple #5f3a4b
+@define-color purple02 #724157
+
+/*
+reds and pinks
+*/
+@define-color maroon #642c2c
+@define-color maroon02 #593737
+@define-color palevioletred #dd88ae
+@define-color indianred #b96d6d
+@define-color indianred02 #b74d4d
+
+/*
+pale colors
+*/
+@define-color lemonchiffon #FFFFBF
+@define-color lavenderblush #FC8F0B
+
+/*
+greys - consolidated
+*/
+@define-color slategray #757886
+@define-color darkslateblue-1f3d7a #1f3d7a
+@define-color darkslateblue #334175
+/*
+##### grays - have not sorted these
+*/
+@define-color dimgray-575962 #575962
+@define-color dimgray-62646d #62646d
+@define-color dimgray-656979 #656979
+@define-color dimgray-686a75 #686a75
+@define-color dimgray-6f717d #6f717d
+@define-color dimgray-737373 #737373
+@define-color lightslategray-838795 #838795
+@define-color lightslategray-878ca0 #878ca0
+@define-color lightslategray-898d9a #898d9a
+@define-color lightslategray-8b8e9c #8b8e9c
+@define-color lightslategray-9196a9 #9196a9
+@define-color lightslategray-9397a8 #9397a8
+@define-color darkgray-979aa7 #979aa7
+@define-color darkgray-999999 #999999
+@define-color darkgray-9a9daa #9a9daa
+@define-color darkgray-9a9fb2 #9a9fb2
+@define-color darkgray-abacb1 #abacb1
+@define-color darkgray-b3b3b3 #b3b3b3
+@define-color darkgray-a4a8bb #a4a8bb
+@define-color darkgray-a5a9b9 #a5a9b9
+@define-color darkgray-9da0b0 #9da0b0
+@define-color silver-bfbfbf #bfbfbf
+@define-color silver-c2c6d3 #c2c6d3
+
 
 
 * {
