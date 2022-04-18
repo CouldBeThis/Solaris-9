@@ -42,6 +42,7 @@ sed -i "s/#787b87/@slategray/g" gtk.css
 sed -i "s/#7c7f8d/@slategray/g" gtk.css
 
 sed -i "s/#1f3d7a/@darkslateblue-1f3d7a/g" gtk.css
+
 sed -i "s/#334175/@darkslateblue/g" gtk.css
 sed -i "s/#3a4a86/@darkslateblue/g" gtk.css
 sed -i "s/#144bb8/@darkslateblue/g" gtk.css
@@ -69,6 +70,7 @@ sed -i "s/#b86814/@chocolate/g" gtk.css
 sed -i "s/#b96d6d/@indianred/g" gtk.css
 sed -i "s/#a9696e/@indianred/g" gtk.css
 sed -i "s/#7e4242/@indianred/g" gtk.css
+
 sed -i "s/#b74d4d/@indianred02/g" gtk.css
 sed -i "s/#b94f4f/@indianred02/g" gtk.css
 
