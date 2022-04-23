@@ -7,42 +7,42 @@ useful documentation:
 /*
 in below, # is replaced with % just to keep it safe from sed. fix it back to # when done.
 */
-@define-color blue-bright01 #0055FF %0055FF;
-@define-color blue-bright02 #0653ec %0653ec;
-@define-color blue-bright03 #104ec8 %104ec8;
-@define-color blue-bright04 #144bb8 %144bb8;
-@define-color #1463ff %1463ff;
-@define-color #1a1a1a %1a1a1a;
-@define-color #1a66ff %1a66ff;
-@define-color #1f3d7a %1f3d7a;
-@define-color black #232323 %232323;
+@define-color blue-bright01 @royalblue02 %0055FF;
+@define-color blue-bright02 @royalblue02 %0653ec;
+@define-color blue-bright03 @royalblue03 %104ec8;
+@define-color blue-bright04 @darkslateblue %144bb8;
+@define-color @royalblue02 %1463ff;
+@define-color @black01 %1a1a1a;
+@define-color @royalblue02 %1a66ff;
+@define-color @darkslateblue-1f3d7a %1f3d7a;
+@define-color black @black %232323;
 @define-color @black %252525;
 @define-color @black %2C2C2C;
 @define-color @black %2a2a2a;
 @define-color @black %2c2d31;
 @define-color @black %303030;
 @define-color @black %333333;
-@define-color #334175 %334175;
-@define-color #3a4a86 %3a4a86;
-@define-color #468192 %468192;
-@define-color #495DA7 %495DA7;
-@define-color #4992A7 %4992A7;
-@define-color #4f66b9 %4f66b9;
+@define-color @darkslateblue %334175;
+@define-color @darkslateblue %3a4a86;
+@define-color @cadetblue %468192;
+@define-color @royalblue %495DA7;
+@define-color @cadetblue %4992A7;
+@define-color @royalblue %4f66b9;
 @define-color #575962 %575962;
-@define-color #593737 %593737;
-@define-color #5f3a4b %5f3a4b;
+@define-color @maroon02 %593737;
+@define-color @purple %5f3a4b;
 @define-color #62646d %62646d;
-@define-color #642c2c %642c2c;
+@define-color @maroon %642c2c;
 @define-color #656979 %656979;
 @define-color #686a75 %686a75;
-@define-color #724157 %724157;
+@define-color @purple02 %724157;
 @define-color #737373 %737373;
-@define-color #757886 %757886;
-@define-color #767985 %767985;
-@define-color #787b87 %787b87;
+@define-color @slategray %757886;
+@define-color @slategray %767985;
+@define-color @slategray %787b87;
 @define-color @peru %7a4e1f;
-@define-color #7c7f8d %7c7f8d;
-@define-color #7e4242 %7e4242;
+@define-color @slategray %7c7f8d;
+@define-color @indianred %7e4242;
 @define-color #838795 %838795;
 @define-color #878ca0 %878ca0;
 @define-color @brown %884444;
@@ -60,30 +60,30 @@ in below, # is replaced with % just to keep it safe from sed. fix it back to # w
 @define-color #9da0b0 %9da0b0;
 @define-color @brown %A74949;
 @define-color @peru %A77549;
-@define-color #FF8300 %FF8300;
-@define-color #FFFFBF %FFFFBF;
+@define-color @darkorange %FF8300;
+@define-color @lemonchiffon %FFFFBF;
 @define-color #a4a8bb %a4a8bb;
 @define-color #a5a9b9 %a5a9b9;
-@define-color #a9696e %a9696e;
+@define-color @indianred %a9696e;
 @define-color #abacb1 %abacb1;
 @define-color #b3b3b3 %b3b3b3;
-@define-color #b74d4d %b74d4d;
+@define-color @indianred02 %b74d4d;
 @define-color @chocolate %b86814;
-@define-color #b94f4f %b94f4f;
-@define-color #b96d6d %b96d6d;
+@define-color @indianred02 %b94f4f;
+@define-color @indianred %b96d6d;
 @define-color #bfbfbf %bfbfbf;
 @define-color #c2c6d3 %c2c6d3;
 @define-color @chocolate %c86f10;
-@define-color #ca9292 %ca9292;
-@define-color #d7dae3 %d7dae3;
-@define-color #dd88ae %dd88ae;
-@define-color #e0b8ca %e0b8ca;
-@define-color #ec7c06 %ec7c06;
-@define-color #f6eded %f6eded;
-@define-color #f7edf2 %f7edf2;
-@define-color #fbe4bc %fbe4bc;
-@define-color #ff8d14 %ff8d14;
-@define-color #ff8f1a %ff8f1a;
+@define-color @rosybrown-ca9292 %ca9292;
+@define-color @gainsboro %d7dae3;
+@define-color @palevioletred %dd88ae;
+@define-color @thistle-e0b8ca %e0b8ca;
+@define-color @darkorange %ec7c06;
+@define-color @snow %f6eded;
+@define-color @lavenderblush %f7edf2;
+@define-color @wheat %fbe4bc;
+@define-color @darkorange %ff8d14;
+@define-color @darkorange %ff8f1a;
 @define-color accent01 #476479;
 @define-color main01 #AEB2C3;
 @define-color black #000000;
@@ -210,23 +210,23 @@ assistant .sidebar {
   background-color: @main01; }
 
 button:link > label, button:visited > label, *:link, button:link, button:visited {
-  color: #495DA7; }
+  color: @royalblue; }
   button:link > label:visited, button:visited > label:visited, *:link:visited, button:visited {
-    color: #3a4a86; }
+    color: @darkslateblue; }
     *:selected button:link > label:visited, *:selected button:visited > label:visited,
     *:selected *:link:visited,
     *:selected button:visited:link,
     *:selected button:visited {
       color: #999999; }
   button:link > label:hover, button:visited > label:hover, *:link:hover, button:hover:link, button:hover:visited {
-    color: #4f66b9; }
+    color: @royalblue; }
     *:selected button:link > label:hover, *:selected button:visited > label:hover,
     *:selected *:link:hover,
     *:selected button:hover:link,
     *:selected button:hover:visited {
-      color: #1a1a1a; }
+      color: @black01; }
   button:link > label:active, button:visited > label:active, *:link:active, button:active:link, button:active:visited {
-    color: #495DA7; }
+    color: @royalblue; }
     *:selected button:link > label:active, *:selected button:visited > label:active,
     *:selected *:link:active,
     *:selected button:active:link,
@@ -242,7 +242,7 @@ button:link > label, button:visited > label, *:link, button:link, button:visited
   *:link:backdrop,
   button:backdrop:link,
   button:backdrop:visited {
-    color: #334175; }
+    color: @darkslateblue; }
   button:link > label:selected, button:visited > label:selected, *:selected button:link > label, *:selected button:visited > label,
   *:link:selected,
   button:selected:link,
@@ -359,7 +359,7 @@ radio, .radio {
   .content-view.view:selected, .content-view.view:active {
     background-color: #000000; }
   .content-view.view:disabled {
-    background-color: #fbe4bc; }
+    background-color: @wheat; }
 
 calendar {
   padding: 2px;
@@ -498,23 +498,23 @@ infobar {
 .info {
   border-width: 1px;
   border-style: solid;
-  border-color: #144bb8;
+  border-color: @darkslateblue;
   color: @white;
   background-image: none;
-  background-color: #0055FF; }
+  background-color: @royalblue02; }
   .info button {
-    border-color: #144bb8;
+    border-color: @darkslateblue;
     color: @white;
     background-image: none;
-    background-color: #1463ff; }
+    background-color: @royalblue02; }
     .info button:hover {
-      border-color: #104ec8;
-      background-color: #1a66ff; }
+      border-color: @royalblue03;
+      background-color: @royalblue02; }
     .info button:active {
-      border-color: #1f3d7a;
-      background-color: #0653ec; }
+      border-color: @darkslateblue-1f3d7a;
+      background-color: @royalblue02; }
       .info button:active:hover {
-        border-color: #104ec8; }
+        border-color: @royalblue03; }
     .info button.close {
       color: @white; }
       .info button.close:hover {
@@ -529,18 +529,18 @@ infobar {
   border-color: @chocolate;
   color: @white;
   background-image: none;
-  background-color: #FF8300; }
+  background-color: @darkorange; }
   .warning button {
     border-color: @chocolate;
     color: @white;
     background-image: none;
-    background-color: #ff8d14; }
+    background-color: @darkorange; }
     .warning button:hover {
       border-color: @chocolate;
-      background-color: #ff8f1a; }
+      background-color: @darkorange; }
     .warning button:active {
       border-color: @peru;
-      background-color: #ec7c06; }
+      background-color: @darkorange; }
       .warning button:active:hover {
         border-color: @chocolate; }
     .warning button.close {
@@ -567,7 +567,7 @@ infobar {
       border-color: @black;
       background-color: @black; }
     .question button:active {
-      border-color: #1a1a1a;
+      border-color: @black01;
       background-color: @black; }
       .question button:active:hover {
         border-color: @black; }
@@ -582,20 +582,20 @@ infobar {
 .error {
   border-width: 1px;
   border-style: solid;
-  border-color: #7e4242;
+  border-color: @indianred;
   background-color: @brown;
   background-image: none;
   color: @white; }
   .error button {
-    border-color: #7e4242;
+    border-color: @indianred;
     color: @white;
     background-image: none;
-    background-color: #b74d4d; }
+    background-color: @indianred02; }
     .error button:hover {
       border-color: @brown;
-      background-color: #b94f4f; }
+      background-color: @indianred02; }
     .error button:active {
-      border-color: #593737;
+      border-color: @maroon02;
       background-color: @brown; }
       .error button:active:hover {
         border-color: @brown; }
@@ -1119,7 +1119,7 @@ levelbar block {
   border-radius: 0px;
   background-color: #000000; }
   levelbar block.high {
-    background-color: #468192; }
+    background-color: @cadetblue; }
   levelbar block.low {
     background-color: @peru; }
   levelbar block.empty {
@@ -1325,14 +1325,14 @@ separator {
       background-color: @main02; }
   .titlebar separator, .titlebar:not(headerbar) > separator, .titlebar separator.titlebutton, .titlebar:not(headerbar) > separator.titlebutton {
     -GtkWidget-window-dragging: true;
-    background-color: #724157;
+    background-color: @purple02;
     box-shadow: 1px 1px rgba(255, 255, 255, 0.4); }
     .titlebar separator:backdrop, .titlebar:not(headerbar) > separator:backdrop, .titlebar separator.titlebutton:backdrop, .titlebar:not(headerbar) > separator.titlebutton:backdrop {
       background-color: @main02; }
   headerbar separator.titlebutton, .titlebar:not(headerbar) separator.titlebutton {
     min-width: 1px;
     min-height: 1px;
-    background-color: #724157;
+    background-color: @purple02;
     box-shadow: 1px 1px rgba(255, 255, 255, 0.4); }
     headerbar separator.titlebutton:backdrop, .titlebar:not(headerbar) separator.titlebutton:backdrop {
       background-color: @main02; }
@@ -1346,7 +1346,7 @@ separator {
     headerbar button separator:backdrop {
       border-color: @main02; }
   .titlebutton button separator, .titlebutton separator.titlebutton {
-    border-color: #724157;
+    border-color: @purple02;
     box-shadow: 1px 1px rgba(255, 255, 255, 0.4); }
     .titlebutton button separator:backdrop, .titlebutton separator.titlebutton:backdrop {
       border-color: @main02; }
@@ -1540,12 +1540,12 @@ headerbar {
   min-height: 34px;
   color: @white;
   background-color: @accent01; 
-  box-shadow: inset 2px 2px #dd88ae, inset -2px -2px #5f3a4b; }
+  box-shadow: inset 2px 2px @palevioletred, inset -2px -2px @purple; }
   headerbar:backdrop {
     color: #000000;
     background-image: none;
     background-color: @main01;
-    box-shadow: inset 2px 2px #d7dae3, inset -2px -2px #878ca0; }
+    box-shadow: inset 2px 2px @gainsboro, inset -2px -2px #878ca0; }
   .tiled headerbar, .tiled headerbar:backdrop, .maximized headerbar, .maximized headerbar:backdrop {
     border-radius: 0; }
   separator:first-child + headerbar, separator:first-child + headerbar:backdrop, headerbar:first-child, headerbar:first-child:backdrop {
@@ -1767,7 +1767,7 @@ tooltip {
     border-width: 1px;
     border-style: solid;
     border-color: @main02;
-    background-color: #FFFFBF; }
+    background-color: @lemonchiffon; }
     tooltip.background label {
       padding: 1px; }
   tooltip * {
@@ -1995,8 +1995,8 @@ searchbar {
     background-image: none;
     color: #000000; }
   .osd button:disabled, button.osd:disabled {
-    border-color: #757886;
-    background-color: #7c7f8d;
+    border-color: @slategray;
+    background-color: @slategray;
     color: rgba(0, 0, 0, 0.8); }
   .osd button:checked:disabled, button.osd:checked:disabled {
     background-color: @workspacebg; }
@@ -2029,25 +2029,25 @@ searchbar {
       background-color: #838795;
       color: #000000; }
     .osd toolbar button:disabled, .osd toolbar button.flat:disabled, toolbar.osd button:disabled, toolbar.osd button.flat:disabled {
-      border-color: #757886;
-      background-color: #7c7f8d;
+      border-color: @slategray;
+      background-color: @slategray;
       color: rgba(0, 0, 0, 0.8); }
     .osd toolbar button:checked:disabled, .osd toolbar button.flat:checked:disabled, toolbar.osd button:checked:disabled, toolbar.osd button.flat:checked:disabled {
       border-color: #686a75;
       background-color: @workspacebg; }
   .osd toolbar separator, toolbar.osd separator {
-    color: #7c7f8d; }
+    color: @slategray; }
 
 .osd scale slider, scale.osd slider {
   background-color: #000000; }
   .osd scale slider:hover, scale.osd slider:hover {
     background-color: #000000; }
   .osd scale slider:disabled, scale.osd slider:disabled {
-    background-color: #767985; }
+    background-color: @slategray; }
 .osd scale trough, scale.osd trough {
-  border-color: #767985; }
+  border-color: @slategray; }
   .osd scale trough:disabled, scale.osd trough:disabled {
-    border-color: #757886;
+    border-color: @slategray;
     background-color: transparent; }
 .osd scale highlight, scale.osd highlight {
   border-color: #000000;
@@ -2075,10 +2075,10 @@ searchbar {
   border-radius: 6px;
   background-color: #898d9a; }
   .osd scrollbar slider:hover, scrollbar.osd slider:hover {
-    border-color: #787b87;
-    background-color: #787b87; }
+    border-color: @slategray;
+    background-color: @slategray; }
   .osd scrollbar slider:active, scrollbar.osd slider:active {
-    border-color: #787b87;
+    border-color: @slategray;
     background-color: #9da0b0; }
 
 .osd view, view.osd, .osd.view {
@@ -2094,22 +2094,22 @@ searchbar {
 button.destructive-action {
   border-width: 1px;
   border-style: solid;
-  border-color: #ca9292;
-  border-right-color: #642c2c;
-  border-bottom-color: #642c2c;
+  border-color: @rosybrown-ca9292;
+  border-right-color: @maroon;
+  border-bottom-color: @maroon;
   border-radius: 0px;
-  color: #f6eded;
+  color: @snow;
   background-color: @brown; }
   button.destructive-action:hover {
-    background-color: #b96d6d; }
+    background-color: @indianred; }
   button.destructive-action:active {
-    border-color: #ca9292;
-    border-top-color: #642c2c;
-    border-right-color: #642c2c;
+    border-color: @rosybrown-ca9292;
+    border-top-color: @maroon;
+    border-right-color: @maroon;
     background-color: @brown; }
   button.destructive-action:backdrop {
-    color: #f6eded;
-    background-color: #a9696e; }
+    color: @snow;
+    background-color: @indianred; }
 
 toolbar.selection-mode {
   padding: 4px; }
@@ -2568,11 +2568,11 @@ UnityDecoration {
     border-radius: 0px 0px 0 0;
     padding: 1px 8px 0 8px;
     background-color: @accent01;
-    color: #f7edf2;
+    color: @lavenderblush;
     text-shadow: none; }
     UnityDecoration .top:backdrop {
       background-color: @main01;
-      color: #e0b8ca; }
+      color: @thistle-e0b8ca; }
   UnityDecoration .left, UnityDecoration .right, UnityDecoration.bottom {
     background-color: @accent01; }
     UnityDecoration .left:backdrop, UnityDecoration .right:backdrop, UnityDecoration.bottom:backdrop {
@@ -2641,7 +2641,7 @@ UnityPanelWidget, .unity-panel {
 /* these are pretty self explicative */
 @define-color warning_color @peru;
 @define-color error_color @brown;
-@define-color success_color #4992A7;
+@define-color success_color @cadetblue;
 /* these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */
 @define-color wm_title shade(#000000, 1.8);
