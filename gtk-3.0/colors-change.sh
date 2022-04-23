@@ -72,17 +72,17 @@ sed -i "s/#333333/@black/g" gtk.css
 #sed -i "s/#1463ff/@royalblue02/g" gtk.css
 #sed -i "s/#1a66ff/@royalblue02/g" gtk.css
 #sed -i "s/#104ec8/@royalblue03/g" gtk.css
-#sed -i "s/#c86f10/@chocolate/g" gtk.css
-#sed -i "s/#b86814/@chocolate/g" gtk.css
+sed -i "s/#c86f10/@chocolate/g" gtk.css
+sed -i "s/#b86814/@chocolate/g" gtk.css
 #sed -i "s/#b96d6d/@indianred/g" gtk.css
 #sed -i "s/#a9696e/@indianred/g" gtk.css
 #sed -i "s/#7e4242/@indianred/g" gtk.css
 #sed -i "s/#b74d4d/@indianred02/g" gtk.css
 #sed -i "s/#b94f4f/@indianred02/g" gtk.css
-#sed -i "s/#884444/@brown/g" gtk.css
-#sed -i "s/#964242/@brown/g" gtk.css
-#sed -i "s/#9c4848/@brown/g" gtk.css
-#sed -i "s/#A74949/@brown/g" gtk.css
+sed -i "s/#884444/@brown/g" gtk.css
+sed -i "s/#964242/@brown/g" gtk.css
+sed -i "s/#9c4848/@brown/g" gtk.css
+sed -i "s/#A74949/@brown/g" gtk.css
 #sed -i "s/#ca9292/@rosybrown-ca9292/g" gtk.css
 #sed -i "s/#e0b8ca/@thistle-e0b8ca/g" gtk.css
 #sed -i "s/#f6eded/@snow/g" gtk.css
@@ -96,9 +96,9 @@ sed -i "s/#333333/@black/g" gtk.css
 #sed -i "s/#593737/@maroon02/g" gtk.css
 #sed -i "s/#1a1a1a/@black01/g" gtk.css
 #sed -i "s/#dd88ae/@palevioletred/g" gtk.css
-#sed -i "s/#A77549/@peru/g" gtk.css
-#sed -i "s/#7a4e1f/@peru/g" gtk.css
-#sed -i "s/#926a46/@peru/g" gtk.css
+sed -i "s/#A77549/@peru/g" gtk.css
+sed -i "s/#7a4e1f/@peru/g" gtk.css
+sed -i "s/#926a46/@peru/g" gtk.css
 
 
 

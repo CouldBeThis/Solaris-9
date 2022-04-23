@@ -40,26 +40,26 @@ in below, # is replaced with % just to keep it safe from sed. fix it back to # w
 @define-color #757886 %757886;
 @define-color #767985 %767985;
 @define-color #787b87 %787b87;
-@define-color #7a4e1f %7a4e1f;
+@define-color @peru %7a4e1f;
 @define-color #7c7f8d %7c7f8d;
 @define-color #7e4242 %7e4242;
 @define-color #838795 %838795;
 @define-color #878ca0 %878ca0;
-@define-color #884444 %884444;
+@define-color @brown %884444;
 @define-color #898d9a %898d9a;
 @define-color #8b8e9c %8b8e9c;
 @define-color #9196a9 %9196a9;
-@define-color #926a46 %926a46;
+@define-color @peru %926a46;
 @define-color #9397a8 %9397a8;
-@define-color #964242 %964242;
+@define-color @brown %964242;
 @define-color #979aa7 %979aa7;
 @define-color #999999 %999999;
 @define-color #9a9daa %9a9daa;
 @define-color #9a9fb2 %9a9fb2;
-@define-color #9c4848 %9c4848;
+@define-color @brown %9c4848;
 @define-color #9da0b0 %9da0b0;
-@define-color #A74949 %A74949;
-@define-color #A77549 %A77549;
+@define-color @brown %A74949;
+@define-color @peru %A77549;
 @define-color #FF8300 %FF8300;
 @define-color #FFFFBF %FFFFBF;
 @define-color #a4a8bb %a4a8bb;
@@ -68,12 +68,12 @@ in below, # is replaced with % just to keep it safe from sed. fix it back to # w
 @define-color #abacb1 %abacb1;
 @define-color #b3b3b3 %b3b3b3;
 @define-color #b74d4d %b74d4d;
-@define-color #b86814 %b86814;
+@define-color @chocolate %b86814;
 @define-color #b94f4f %b94f4f;
 @define-color #b96d6d %b96d6d;
 @define-color #bfbfbf %bfbfbf;
 @define-color #c2c6d3 %c2c6d3;
-@define-color #c86f10 %c86f10;
+@define-color @chocolate %c86f10;
 @define-color #ca9292 %ca9292;
 @define-color #d7dae3 %d7dae3;
 @define-color #dd88ae %dd88ae;
@@ -108,7 +108,7 @@ c
   -GtkScrollbar-has-secondary-forward-stepper: false;
   -GtkScrolledwindow-scrollbar-spacing: 0;
   -GtkScrolledwindow-scrollbars-within-bevel: 1;
-  -GtkTextView-error-underline-color: #A74949;
+  -GtkTextView-error-underline-color: @brown;
   -GtkToolbutton-icon-spacing: 6;
   -GtkToolItemGroup-expander-size: 11;
   -GtkWidget-text-handle-width: 20;
@@ -526,23 +526,23 @@ infobar {
 .warning {
   border-width: 1px;
   border-style: solid;
-  border-color: #b86814;
+  border-color: @chocolate;
   color: @white;
   background-image: none;
   background-color: #FF8300; }
   .warning button {
-    border-color: #b86814;
+    border-color: @chocolate;
     color: @white;
     background-image: none;
     background-color: #ff8d14; }
     .warning button:hover {
-      border-color: #c86f10;
+      border-color: @chocolate;
       background-color: #ff8f1a; }
     .warning button:active {
-      border-color: #7a4e1f;
+      border-color: @peru;
       background-color: #ec7c06; }
       .warning button:active:hover {
-        border-color: #c86f10; }
+        border-color: @chocolate; }
     .warning button.close {
       color: @white; }
       .warning button.close:hover {
@@ -583,7 +583,7 @@ infobar {
   border-width: 1px;
   border-style: solid;
   border-color: #7e4242;
-  background-color: #A74949;
+  background-color: @brown;
   background-image: none;
   color: @white; }
   .error button {
@@ -592,13 +592,13 @@ infobar {
     background-image: none;
     background-color: #b74d4d; }
     .error button:hover {
-      border-color: #884444;
+      border-color: @brown;
       background-color: #b94f4f; }
     .error button:active {
       border-color: #593737;
-      background-color: #9c4848; }
+      background-color: @brown; }
       .error button:active:hover {
-        border-color: #884444; }
+        border-color: @brown; }
     .error button.close {
       color: @white; }
       .error button.close:hover {
@@ -1121,7 +1121,7 @@ levelbar block {
   levelbar block.high {
     background-color: #468192; }
   levelbar block.low {
-    background-color: #926a46; }
+    background-color: @peru; }
   levelbar block.empty {
     background-color: rgba(0, 0, 0, 0.1); }
 
@@ -2099,14 +2099,14 @@ button.destructive-action {
   border-bottom-color: #642c2c;
   border-radius: 0px;
   color: #f6eded;
-  background-color: #A74949; }
+  background-color: @brown; }
   button.destructive-action:hover {
     background-color: #b96d6d; }
   button.destructive-action:active {
     border-color: #ca9292;
     border-top-color: #642c2c;
     border-right-color: #642c2c;
-    background-color: #964242; }
+    background-color: @brown; }
   button.destructive-action:backdrop {
     color: #f6eded;
     background-color: #a9696e; }
@@ -2639,8 +2639,8 @@ UnityPanelWidget, .unity-panel {
 /* widgets main borders color on backdrop windows */
 @define-color unfocused_borders @main02;
 /* these are pretty self explicative */
-@define-color warning_color #A77549;
-@define-color error_color #A74949;
+@define-color warning_color @peru;
+@define-color error_color @brown;
 @define-color success_color #4992A7;
 /* these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */
