@@ -11,8 +11,9 @@ useful documentation:
 /* used to identify where and what while working */
 @define-color FINDME #2AC22C;
 
-/* main window bgcolor */ 
-@define-color neutral01 #a3b1bf;
+/* main window */ 
+@define-color neutral01 #a3b1bf;			/* background */
+@define-color neutral01-contrast #09090a;	/* textcolor */ 
 
 /* use for borders */
 
@@ -315,28 +316,30 @@ button:link, button:visited {
   button:link > label, button:visited > label {
     text-decoration-line: underline; }
 
+/* CBT: TODO: Working here */
 button {
-  padding: 4px 8px;
-  border-style: solid;
-  border-width: 1px;
   border-radius: 0px;
-  color: @black;
-  border-color: @neutral02;
-  border-top-color: @border01;
-  border-left-color: @border01;
+  padding: 0.1em;
+  border-style: solid;
+  border-width: 3px;
+  color: @neutral01-contrast;
+  border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
   background-color: @neutral01;
   -gtk-outline-radius: 0px;
-  outline-color: @accent01;
-  outline-offset: 2px;
-  outline-style: solid; }
+  zoutline-color: @accent01;
+  zoutline-offset: 2px;
+  zoutline-style: solid; }
   button:active, button:checked {
     color: @black;
     border-top-color: @neutral02;
     border-left-color: @neutral02;
     border-bottom-color: @border01;
     border-right-color: @border01;
-    background-color: @accent03;
-    background-image: none; }
+    zbackground-color: @accent01;
+    background-image: none; 
+    border-color: @border01-lightless @border01-light @border01-darkless @border01-dark;
+    border-style: solid;
+    }
     button:active:disabled, button:checked:disabled {
       color: @black-off;
       text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
