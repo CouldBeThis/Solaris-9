@@ -80,19 +80,22 @@ in below, # is replaced with % just to keep it safe from sed. fix it back to # w
 @define-color snow #f6eded;
 @define-color thistle-e0b8ca #e0b8ca;
 @define-color wheat #fbe4bc;
+
+
 @define-color accent01 #476479;
 @define-color accent02 #e7e8ed;
 @define-color black #000000;
 @define-color black-off #09090a;
-@define-color blue-bright01 @royalblue02 #0055FF;
-@define-color blue-bright02 @royalblue02 #0653ec;
-@define-color blue-bright03 @royalblue03 #104ec8;
-@define-color blue-bright04 @darkslateblue #144bb8;
-@define-color main01 #AEB2C3;
-@define-color main02 #74798E;
+@define-color blue-bright01 #0055FF;
+@define-color blue-bright02 #0653ec;
+@define-color blue-bright03 #104ec8;
+@define-color blue-bright04 #144bb8;
+@define-color main01 #BFBFBF;
+@define-color zmain02 #74798E;
+@define-color main02 #AC645C;
 @define-color white #ffffff;
 @define-color white-off #FFF7E9;
-@define-color workspacebg @dimgray-6f717d;
+@define-color workspacebg #6f717d;
 
 
 /* here are the RGBa values from the document:
@@ -151,8 +154,10 @@ rgba(255, 255, 255, 0.95)
 *:hover {
   -gtk-icon-effect: highlight; }
 
+
+/*titlebar*/
 .gtkstyle-fallback {
-  color: @black;
+  color: @black-off;
   background-color: @main01; }
   .gtkstyle-fallback:hover {
     color: @black;
@@ -163,9 +168,10 @@ rgba(255, 255, 255, 0.95)
   .gtkstyle-fallback:disabled {
     color: @dimgray-575962;
     background-color: @darkgray-a5a9b9; }
+	/* active_color_1 titlebar/headerbar active*/
   .gtkstyle-fallback:selected {
     color: @white;
-    background-color: @black; }
+    background-color: @accent01; } 
 
 image, image:disabled, label, label:disabled, box, box:disabled {
   background-color: transparent; }
