@@ -4,9 +4,13 @@ useful documentation:
 * https://docs.gtk.org/gtk3/css-overview.html#specifying-colors-in-various-ways
 */
 
-/* main theme colors */
+/* ######################### */
+/* ### main theme colors ### */
+/* ######################### */
+/* main window bgcolor */ 
 @define-color main01 #BFBFBF;
 @define-color zmain02 #74798E;
+
 @define-color main02 #ACA9A9;
 /* titlebar active */
 @define-color accent01 #A3635B;
