@@ -8,17 +8,17 @@ useful documentation:
 /* ### main theme colors ### */
 /* ######################### */
 /* main window bgcolor */ 
-@define-color main01 #BFBFBF;
+@define-color main01 #a3b1bf;
 @define-color zmain02 #74798E;
 /* some of the 1px outlines inside windows 
  * TODO: rename, it is not a "main"*/
 @define-color main02 #ACA9A9;
 /* titlebar active bg */
-@define-color accent01 #A3635B;
+@define-color accent01 #78c2b3;
 /* titlebar active fg (text) */
-@define-color accent02 #e7e8ed;
+@define-color accent02 #a3b1bf;
 /* inactive tabs */
-@define-color accent03 #304055;
+@define-color accent03 #c1c8d6;
 
 @define-color black #000000;
 @define-color black-off #09090a;
