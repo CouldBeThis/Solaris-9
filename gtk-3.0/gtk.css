@@ -934,20 +934,23 @@ notebook {
     .nautilus-window notebook > stack {
       box-shadow: inset 0 0 0 6px @main01;
       background-color: @lightslategray-878ca0; }
-  /* CBT Inactive tab BG */
+  /* CBT: Tabs incl Inactive tab BG */
   notebook tab {
-    padding: 6px 20px;
-    border-width: 1px;
+    padding: 0.1em;
+    margin: 0.1em;
+    border-width: 2px;
     border-style: solid;
     border-radius: 0px;
     border-color: @main02;
     color: @black;
     background-color: @accent03; }
+    /* CBT: Current tab (in/active windows) */
     notebook tab:checked {
       border-color: @main02;
-      background-color: @main01; }
+      background-color: @accent01; }
   notebook > header {
     padding-top: 2px;
+    /* CBT: BackG: Behind tabs */
     background-color: @main01; }
     notebook > header.top {
       box-shadow: 0 1px @border01; }
