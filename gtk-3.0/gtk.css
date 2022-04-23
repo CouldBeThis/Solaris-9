@@ -12,26 +12,23 @@ useful documentation:
 @define-color zmain02 #74798E;
 
 @define-color main02 #ACA9A9;
-/* titlebar active */
+/* titlebar active bg */
 @define-color accent01 #A3635B;
+/* titlebar active fg (text) */
 @define-color accent02 #e7e8ed;
 /* inactive tabs */
 @define-color accent03 #304055;
 @define-color black #000000;
 @define-color black-off #09090a;
-@define-color blue-bright01 #0055FF;
-@define-color blue-bright02 #0653ec;
-@define-color blue-bright03 #104ec8;
-@define-color blue-bright04 #144bb8;
 
 @define-color white #ffffff;
 @define-color white-off #FFF7E9;
 @define-color workspacebg #6f717d;
 
 
-/*
-in below, # is replaced with % just to keep it safe from sed. fix it back to # when done.
-*/
+/* ######################### */
+/* ### other theme colors ### */
+/* ######################### */
 @define-color dimgray-575962 #575962;
 @define-color dimgray-62646d #62646d;
 @define-color dimgray-656979 #656979;
@@ -104,6 +101,10 @@ in below, # is replaced with % just to keep it safe from sed. fix it back to # w
 @define-color snow #f6eded;
 @define-color thistle-e0b8ca #e0b8ca;
 @define-color wheat #fbe4bc;
+@define-color blue-bright01 #0055FF;
+@define-color blue-bright02 #0653ec;
+@define-color blue-bright03 #104ec8;
+@define-color blue-bright04 #144bb8;
 
 
 /* here are the RGBa values from the document (not replaced with variables):
