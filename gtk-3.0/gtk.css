@@ -16,12 +16,12 @@ in below, # is replaced with % just to keep it safe from sed. fix it back to # w
 @define-color #1a66ff %1a66ff;
 @define-color #1f3d7a %1f3d7a;
 @define-color black #232323 %232323;
-@define-color #252525 %252525;
-@define-color #2C2C2C %2C2C2C;
-@define-color #2a2a2a %2a2a2a;
-@define-color #2c2d31 %2c2d31;
-@define-color #303030 %303030;
-@define-color #333333 %333333;
+@define-color @black %252525;
+@define-color @black %2C2C2C;
+@define-color @black %2a2a2a;
+@define-color @black %2c2d31;
+@define-color @black %303030;
+@define-color @black %333333;
 @define-color #334175 %334175;
 @define-color #3a4a86 %3a4a86;
 @define-color #468192 %468192;
@@ -231,7 +231,7 @@ button:link > label, button:visited > label, *:link, button:link, button:visited
     *:selected *:link:active,
     *:selected button:active:link,
     *:selected button:active:visited {
-      color: #333333; }
+      color: @black; }
   button:link > label:backdrop:backdrop:hover, button:visited > label:backdrop:backdrop:hover, button:link > label:backdrop:backdrop:hover:selected, button:visited > label:backdrop:backdrop:hover:selected, button:link > label:backdrop, button:visited > label:backdrop,
   *:link:backdrop:backdrop:hover,
   button:backdrop:backdrop:hover:link,
@@ -250,7 +250,7 @@ button:link > label, button:visited > label, *:link, button:link, button:visited
   *:selected *:link,
   *:selected button:link,
   *:selected button:visited {
-    color: #333333; }
+    color: @black; }
 
 button:link, button:visited {
   border-color: transparent;
@@ -290,7 +290,7 @@ button {
       text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
       background-color: #9397a8; }
   button:disabled {
-    color: #2c2d31;
+    color: @black;
     text-shadow: 1px 1px rgba(255, 255, 255, 0.85); }
   button.flat {
     border-color: transparent;
@@ -557,20 +557,20 @@ infobar {
   border-color: @black;
   color: @white;
   background-image: none;
-  background-color: #2C2C2C; }
+  background-color: @black; }
   .question button {
     border-color: @black;
     color: @white;
     background-image: none;
-    background-color: #303030; }
+    background-color: @black; }
     .question button:hover {
-      border-color: #252525;
-      background-color: #303030; }
+      border-color: @black;
+      background-color: @black; }
     .question button:active {
       border-color: #1a1a1a;
-      background-color: #2a2a2a; }
+      background-color: @black; }
       .question button:active:hover {
-        border-color: #252525; }
+        border-color: @black; }
     .question button.close {
       color: @white; }
       .question button.close:hover {
@@ -1597,7 +1597,7 @@ headerbar {
         text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
         background-color: #9397a8; }
     headerbar button:disabled {
-      color: #2c2d31;
+      color: @black;
       text-shadow: 1px 1px rgba(255, 255, 255, 0.85); }
   headerbar entry {
     padding: 4px 8px; }
@@ -1715,7 +1715,7 @@ toolbar {
         text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
         background-color: #9397a8; }
     .primary-toolbar button:disabled, .primary-toolbar .raised button:disabled {
-      color: #2c2d31;
+      color: @black;
       text-shadow: 1px 1px rgba(255, 255, 255, 0.85); }
 
 .inline-toolbar {
@@ -1757,7 +1757,7 @@ toolbar {
         text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
         background-color: #9397a8; }
     .inline-toolbar toolbutton > button:disabled {
-      color: #2c2d31;
+      color: @black;
       text-shadow: 1px 1px rgba(255, 255, 255, 0.85); }
 
 tooltip {
@@ -2303,7 +2303,7 @@ panel-toplevel.background button {
       text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
       background-color: #9397a8; }
   #tasklist-button:disabled {
-    color: #2c2d31;
+    color: @black;
     text-shadow: 1px 1px rgba(255, 255, 255, 0.85); }
   #tasklist-button label {
     color: rgba(0, 0, 0, 0.7); }
@@ -2399,7 +2399,7 @@ panel-toplevel.background na-tray-applet {
         text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
         background-color: #9397a8; }
     .mate-panel-menu-bar #tasklist-button:disabled {
-      color: #2c2d31;
+      color: @black;
       text-shadow: 1px 1px rgba(255, 255, 255, 0.85); }
   .mate-panel-menu-bar PanelSeparator {
     color: @main02;
@@ -2492,7 +2492,7 @@ panel-toplevel.background na-tray-applet {
         text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
         background-color: #9397a8; }
     .xfce4-panel.panel .tasklist button:disabled {
-      color: #2c2d31;
+      color: @black;
       text-shadow: 1px 1px rgba(255, 255, 255, 0.85); }
 
 #XfceNotifyWindow.osd {
@@ -2529,7 +2529,7 @@ panel-toplevel.background na-tray-applet {
         text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
         background-color: #9397a8; }
     #XfceNotifyWindow.osd button:disabled {
-      color: #2c2d31;
+      color: @black;
       text-shadow: 1px 1px rgba(255, 255, 255, 0.85); }
 
 wnck-pager {
