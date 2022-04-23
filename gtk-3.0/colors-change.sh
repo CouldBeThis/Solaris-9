@@ -46,11 +46,11 @@
 ###################3## condensed:
 #sed -i "s/#232323/@black/g" gtk.css
 sed -i "s/#252525/@black/g" gtk.css
-#sed -i "s/#2C2C2C/@black/g" gtk.css
-#sed -i "s/#2a2a2a/@black/g" gtk.css
-#sed -i "s/#2c2d31/@black/g" gtk.css
-#sed -i "s/#303030/@black/g" gtk.css
-#sed -i "s/#333333/@black/g" gtk.css
+sed -i "s/#2C2C2C/@black/g" gtk.css
+sed -i "s/#2a2a2a/@black/g" gtk.css
+sed -i "s/#2c2d31/@black/g" gtk.css
+sed -i "s/#303030/@black/g" gtk.css
+sed -i "s/#333333/@black/g" gtk.css
 #sed -i "s/#757886/@slategray/g" gtk.css
 #sed -i "s/#767985/@slategray/g" gtk.css
 #sed -i "s/#787b87/@slategray/g" gtk.css
