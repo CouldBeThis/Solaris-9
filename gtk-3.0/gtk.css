@@ -8,20 +8,18 @@ useful documentation:
 /* ### main theme colors ### */
 /* ######################### */
 
+/* used to identify where and what while working */
 @define-color FINDME #2AC22C;
+
 /* main window bgcolor */ 
 @define-color zneutral01 #a3b1bf;
 @define-color neutral01 #a3b1bf;
-@define-color neutral01 #a3b1bf;
-/* some of the 1px outlines inside windows 
- * TODO: rename, it is not a "main"*/
+/* some of the 1px outlines inside windows*/
 @define-color neutral02 #b2c8d6;
-/* BackG:	titlebar active */
-@define-color accent01 #e95678;
-/* TextC:	titlebar active */
-@define-color accent01-contrast #dfdfe0;
-/* BackG:	inactive tabs, scro
-llbar */
+/* CBT:	titlebar */
+@define-color accent01 #e95678;  /* backg */
+@define-color accent01-contrast #dfdfe0;   /* text */
+/* BackG:	inactive tabs, scrollbar */
 @define-color accent03 #c1c8d6;
 
 @define-color black #000000;
