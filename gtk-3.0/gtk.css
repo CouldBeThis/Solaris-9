@@ -4,6 +4,27 @@ useful documentation:
 * https://docs.gtk.org/gtk3/css-overview.html#specifying-colors-in-various-ways
 */
 
+/* main theme colors */
+@define-color main01 #BFBFBF;
+@define-color zmain02 #74798E;
+@define-color main02 #ACA9A9;
+/* titlebar active */
+@define-color accent01 #A3635B;
+@define-color accent02 #e7e8ed;
+/* inactive tabs */
+@define-color accent03 #304055;
+@define-color black #000000;
+@define-color black-off #09090a;
+@define-color blue-bright01 #0055FF;
+@define-color blue-bright02 #0653ec;
+@define-color blue-bright03 #104ec8;
+@define-color blue-bright04 #144bb8;
+
+@define-color white #ffffff;
+@define-color white-off #FFF7E9;
+@define-color workspacebg #6f717d;
+
+
 /*
 in below, # is replaced with % just to keep it safe from sed. fix it back to # when done.
 */
@@ -80,29 +101,8 @@ in below, # is replaced with % just to keep it safe from sed. fix it back to # w
 @define-color thistle-e0b8ca #e0b8ca;
 @define-color wheat #fbe4bc;
 
-/* main theme colors */
-@define-color main01 #BFBFBF;
-@define-color zmain02 #74798E;
-@define-color main02 #ACA9A9;
-/* titlebar active */
-@define-color accent01 #A3635B;
-@define-color accent02 #e7e8ed;
-/* inactive tabs */
-@define-color accent03 #304055;
-@define-color black #000000;
-@define-color black-off #09090a;
-@define-color blue-bright01 #0055FF;
-@define-color blue-bright02 #0653ec;
-@define-color blue-bright03 #104ec8;
-@define-color blue-bright04 #144bb8;
 
-@define-color white #ffffff;
-@define-color white-off #FFF7E9;
-@define-color workspacebg #6f717d;
-
-
-
-/* here are the RGBa values from the document:
+/* here are the RGBa values from the document (not replaced with variables):
 rgba(0, 0, 0, 0.04)
 rgba(0, 0, 0, 0.1)
 rgba(0, 0, 0, 0.15)
