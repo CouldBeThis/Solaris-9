@@ -21,7 +21,6 @@ in below, # is replaced with % just to keep it safe from sed. fix it back to # w
 @define-color darkgray-979aa7 #979aa7;
 @define-color darkgray-999999 #999999;
 @define-color darkgray-9a9daa #9a9daa;
-@define-color darkgray-9a9fb2 #9a9fb2;
 @define-color darkgray-9da0b0 #9da0b0;
 @define-color darkgray-a4a8bb #a4a8bb;
 @define-color darkgray-a5a9b9 #a5a9b9;
@@ -81,21 +80,26 @@ in below, # is replaced with % just to keep it safe from sed. fix it back to # w
 @define-color thistle-e0b8ca #e0b8ca;
 @define-color wheat #fbe4bc;
 
-
-@define-color accent01 #476479;
+/* main theme colors */
+@define-color main01 #BFBFBF;
+@define-color zmain02 #74798E;
+@define-color main02 #ACA9A9;
+/* titlebar active */
+@define-color accent01 #A3635B;
 @define-color accent02 #e7e8ed;
+/* inactive tabs */
+@define-color accent03 #304055;
 @define-color black #000000;
 @define-color black-off #09090a;
 @define-color blue-bright01 #0055FF;
 @define-color blue-bright02 #0653ec;
 @define-color blue-bright03 #104ec8;
 @define-color blue-bright04 #144bb8;
-@define-color main01 #BFBFBF;
-@define-color zmain02 #74798E;
-@define-color main02 #AC645C;
+
 @define-color white #ffffff;
 @define-color white-off #FFF7E9;
 @define-color workspacebg #6f717d;
+
 
 
 /* here are the RGBa values from the document:
@@ -164,7 +168,7 @@ rgba(255, 255, 255, 0.95)
     background-color: @silver-c2c6d3; }
   .gtkstyle-fallback:active {
     color: @black;
-    background-color: @darkgray-9a9fb2; }
+    background-color: @accent03; }
   .gtkstyle-fallback:disabled {
     color: @dimgray-575962;
     background-color: @darkgray-a5a9b9; }
@@ -305,7 +309,7 @@ button {
     border-left-color: @main02;
     border-bottom-color: @border01;
     border-right-color: @border01;
-    background-color: @darkgray-9a9fb2;
+    background-color: @accent03;
     background-image: none; }
     button:active:disabled, button:checked:disabled {
       color: @black-off;
@@ -333,7 +337,7 @@ button {
       border-left-color: @main02;
       border-bottom-color: @border01;
       border-right-color: @border01;
-      background-color: @darkgray-9a9fb2;
+      background-color: @accent03;
       background-image: none; }
       button.flat:active:disabled, button.flat:checked:disabled {
         color: @black-off;
@@ -768,11 +772,11 @@ menu, .menu {
     min-height: 16px; }
     menu > arrow.top, .menu > arrow.top {
       margin-top: -6px;
-      border-bottom: 1px solid @darkgray-9a9fb2;
+      border-bottom: 1px solid @accent03;
       -gtk-icon-source: -gtk-icontheme("pan-up-symbolic"); }
     menu > arrow.bottom, .menu > arrow.bottom {
       margin-bottom: -6px;
-      border-top: 1px solid @darkgray-9a9fb2;
+      border-top: 1px solid @accent03;
       -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
 
 menubar, .menubar {
@@ -919,7 +923,7 @@ notebook {
     border-radius: 0px;
     border-color: @main02;
     color: @black;
-    background-color: @darkgray-9a9fb2; }
+    background-color: @accent03; }
     notebook tab:checked {
       border-color: @main02;
       background-color: @main01; }
@@ -1264,7 +1268,7 @@ scrollbar {
   border: 1px solid @main02;
   border-bottom-color: @border01;
   border-right-color: @border01;
-  background-color: @darkgray-9a9fb2; }
+  background-color: @accent03; }
   scrollbar trough {
     border: none;
     border-radius: 0; }
@@ -1537,7 +1541,7 @@ colorchooser #add-color-button {
   color: @black; }
   colorchooser #add-color-button:hover {
     border-color: rgba(0, 0, 0, 0.3);
-    background-color: @darkgray-9a9fb2;
+    background-color: @accent03;
     color: @black; }
 
 .path-bar button.text-button, .path-bar button.image-button, .path-bar button button {
@@ -1612,7 +1616,7 @@ headerbar {
       border-left-color: @main02;
       border-bottom-color: @border01;
       border-right-color: @border01;
-      background-color: @darkgray-9a9fb2;
+      background-color: @accent03;
       background-image: none; }
       headerbar button:active:disabled, headerbar button:checked:disabled {
         color: @black-off;
@@ -1682,7 +1686,7 @@ toolbar {
       border-left-color: @main02;
       border-bottom-color: @border01;
       border-right-color: @border01;
-      background-color: @darkgray-9a9fb2;
+      background-color: @accent03;
       background-image: none; }
       toolbar button.flat:active:disabled, toolbar button.flat:checked:disabled {
         color: @black-off;
@@ -1730,7 +1734,7 @@ toolbar {
       border-left-color: @main02;
       border-bottom-color: @border01;
       border-right-color: @border01;
-      background-color: @darkgray-9a9fb2;
+      background-color: @accent03;
       background-image: none; }
       .primary-toolbar button:active:disabled, .primary-toolbar button:checked:disabled, .primary-toolbar .raised button:active:disabled, .primary-toolbar .raised button:checked:disabled {
         color: @black-off;
@@ -1772,7 +1776,7 @@ toolbar {
       border-left-color: @main02;
       border-bottom-color: @border01;
       border-right-color: @border01;
-      background-color: @darkgray-9a9fb2;
+      background-color: @accent03;
       background-image: none; }
       .inline-toolbar toolbutton > button:active:disabled, .inline-toolbar toolbutton > button:checked:disabled {
         color: @black-off;
@@ -2286,7 +2290,7 @@ panel-toplevel.background button {
     border-left-color: @main02;
     border-bottom-color: @border01;
     border-right-color: @border01;
-    background-color: @darkgray-9a9fb2;
+    background-color: @accent03;
     background-image: none; }
     panel-toplevel.background button:active:disabled, panel-toplevel.background button:checked:disabled {
       color: @black-off;
@@ -2318,7 +2322,7 @@ panel-toplevel.background button {
     border-left-color: @main02;
     border-bottom-color: @border01;
     border-right-color: @border01;
-    background-color: @darkgray-9a9fb2;
+    background-color: @accent03;
     background-image: none; }
     #tasklist-button:active:disabled, #tasklist-button:checked:disabled {
       color: @black-off;
@@ -2383,7 +2387,7 @@ panel-toplevel.background na-tray-applet {
       border-left-color: @main02;
       border-bottom-color: @border01;
       border-right-color: @border01;
-      background-color: @darkgray-9a9fb2;
+      background-color: @accent03;
       background-image: none; }
       .mate-panel-menu-bar > .button:not(#tasklist-button):active:disabled, .mate-panel-menu-bar > .button:not(#tasklist-button):checked:disabled {
         color: @black-off;
@@ -2414,7 +2418,7 @@ panel-toplevel.background na-tray-applet {
       border-left-color: @main02;
       border-bottom-color: @border01;
       border-right-color: @border01;
-      background-color: @darkgray-9a9fb2;
+      background-color: @accent03;
       background-image: none; }
       .mate-panel-menu-bar #tasklist-button:active:disabled, .mate-panel-menu-bar #tasklist-button:checked:disabled {
         color: @black-off;
@@ -2476,7 +2480,7 @@ panel-toplevel.background na-tray-applet {
       border-left-color: @main02;
       border-bottom-color: @border01;
       border-right-color: @border01;
-      background-color: @darkgray-9a9fb2;
+      background-color: @accent03;
       background-image: none; }
       .xfce4-panel.panel button.flat:active:disabled, .xfce4-panel.panel button.flat:checked:disabled, .xfce4-panel.panel button.sidebar-button:active:disabled, .xfce4-panel.panel button.sidebar-button:checked:disabled {
         color: @black-off;
@@ -2507,7 +2511,7 @@ panel-toplevel.background na-tray-applet {
       border-left-color: @main02;
       border-bottom-color: @border01;
       border-right-color: @border01;
-      background-color: @darkgray-9a9fb2;
+      background-color: @accent03;
       background-image: none; }
       .xfce4-panel.panel .tasklist button:active:disabled, .xfce4-panel.panel .tasklist button:checked:disabled {
         color: @black-off;
@@ -2544,7 +2548,7 @@ panel-toplevel.background na-tray-applet {
       border-left-color: @main02;
       border-bottom-color: @border01;
       border-right-color: @border01;
-      background-color: @darkgray-9a9fb2;
+      background-color: @accent03;
       background-image: none; }
       #XfceNotifyWindow.osd button:active:disabled, #XfceNotifyWindow.osd button:checked:disabled {
         color: @black-off;
