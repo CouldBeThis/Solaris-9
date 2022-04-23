@@ -10,7 +10,8 @@ useful documentation:
 /* main window bgcolor */ 
 @define-color main01 #BFBFBF;
 @define-color zmain02 #74798E;
-
+/* some of the 1px outlines inside windows 
+ * TODO: rename, it is not a "main"*/
 @define-color main02 #ACA9A9;
 /* titlebar active bg */
 @define-color accent01 #A3635B;
@@ -18,9 +19,9 @@ useful documentation:
 @define-color accent02 #e7e8ed;
 /* inactive tabs */
 @define-color accent03 #304055;
+
 @define-color black #000000;
 @define-color black-off #09090a;
-
 @define-color white #ffffff;
 @define-color white-off #FFF7E9;
 @define-color workspacebg #6f717d;
