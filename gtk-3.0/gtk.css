@@ -7,22 +7,25 @@ useful documentation:
 /* ######################### */
 /* ### main theme colors ### */
 /* ######################### */
+
+@define-color FINDME #2AC22C;
 /* main window bgcolor */ 
+@define-color zmain01 #a3b1bf;
 @define-color main01 #a3b1bf;
-@define-color zmain02 #74798E;
 /* some of the 1px outlines inside windows 
  * TODO: rename, it is not a "main"*/
-@define-color main02 #ACA9A9;
-/* titlebar active bg */
-@define-color accent01 #78c2b3;
-/* titlebar active fg (text) */
-@define-color accent02 #a3b1bf;
-/* inactive tabs */
+@define-color main02 #b2c8d6;
+/* BackG:	titlebar active */
+@define-color accent01 #e95678;
+/* TextC:	titlebar active */
+@define-color white #dfdfe0;
+/* BackG:	inactive tabs, scro
+llbar */
 @define-color accent03 #c1c8d6;
 
 @define-color black #000000;
 @define-color black-off #09090a;
-@define-color white #ffffff;
+/* select list, filebrowser &other background */
 @define-color white-off #FFF7E9;
 @define-color workspacebg #6f717d;
 
@@ -107,6 +110,11 @@ useful documentation:
 @define-color blue-bright03 #104ec8;
 @define-color blue-bright04 #144bb8;
 
+/* doesn't seem to do anything. delete later. '*/
+
+/*
+@define-color accent02 #a3b1bf;
+*/
 
 /* here are the RGBa values from the document (not replaced with variables):
 rgba(0, 0, 0, 0.04)
@@ -889,8 +897,10 @@ modelbutton.flat, menuitem.button.flat, .menuitem.button.flat {
   modelbutton.flat arrow.right, menuitem.button.flat arrow.right, .menuitem.button.flat arrow.right {
     -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
 
+/* CBT: Tabbed windows */
 notebook {
   padding: 0; }
+  /* CBT: frame around tabs and content */
   notebook.frame {
     margin: -1px;
     border: none; }
@@ -912,16 +922,19 @@ notebook {
         padding-bottom: 0; }
   .nautilus-window notebook, .nautilus-window notebook > stack:not(:only-child) searchbar {
     background-color: @lightslategray-878ca0; }
+  /* CBT: contents of current tab */
   notebook > stack {
     padding: 6px;
     border: 1px solid @main02;
     border-top-color: @border01;
     border-left-color: @border01; }
+    /* CBT: BackG: Behind elements if not otherwise defined */
     notebook > stack:not(:only-child) {
       background-color: @main01; }
     .nautilus-window notebook > stack {
       box-shadow: inset 0 0 0 6px @main01;
       background-color: @lightslategray-878ca0; }
+  /* CBT Inactive tab BG */
   notebook tab {
     padding: 6px 20px;
     border-width: 1px;
