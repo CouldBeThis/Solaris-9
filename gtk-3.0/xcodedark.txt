@@ -1,0 +1,162 @@
+#0: 292a30
+292a30
+
+#1: ff8170
+ff8170
+
+#2: 78c2b3
+78c2b3
+
+#3: ffa14f
+ffa14f
+
+#4: 4eb0cc
+4eb0cc
+
+#5: b281eb
+b281eb
+
+#6: 84b360
+84b360
+
+#7: a3b1bf
+a3b1bf
+
+#8: 53606e
+53606e
+
+#9: ff7ab2
+ff7ab2
+
+#10: acf2e4
+acf2e4
+
+#11: d9c97c
+d9c97c
+
+#12: 6bdfff
+6bdfff
+
+#13: dabaff
+dabaff
+
+#14: b0e687
+b0e687
+
+#15: 53606e
+53606e
+
+#foreground: dfdfe0
+dfdfe0
+
+#background: 292a30
+292a30
+
+#cursor: 53606e
+53606e
+
+
+191919
+b2c8d6
+f34a00
+b2c8d6
+191919
+191919
+ff355b
+ff355b
+b6e875
+b6e875
+ffc150
+ffc150
+75d3ff
+75d4ff
+b975e6
+b975e6
+6cbeb5
+6cbeb5
+c1c8d6
+c1c8d6
+191919
+
+## cat xcodedark.txt  | xargs -I {} sh -c "pastel format rgb {}; printf '#{} '; pastel format name {}"
+##
+#rgb(41, 42, 48)
+##292a30 black
+#rgb(255, 129, 112)
+##ff8170 salmon
+#rgb(120, 194, 179)
+##78c2b3 mediumaquamarine
+#rgb(255, 161, 79)
+##ffa14f sandybrown
+#rgb(78, 176, 204)
+##4eb0cc deepskyblue
+#rgb(178, 129, 235)
+##b281eb mediumpurple
+#rgb(132, 179, 96)
+##84b360 darkseagreen
+#rgb(163, 177, 191)
+##a3b1bf lightsteelblue
+#rgb(83, 96, 110)
+##53606e dimgray
+#rgb(255, 122, 178)
+##ff7ab2 hotpink
+#rgb(172, 242, 228)
+##acf2e4 paleturquoise
+#rgb(217, 201, 124)
+##d9c97c darkkhaki
+#rgb(107, 223, 255)
+##6bdfff skyblue
+#rgb(218, 186, 255)
+##dabaff plum
+#rgb(176, 230, 135)
+##b0e687 lightgreen
+#rgb(83, 96, 110)
+##53606e dimgray
+#rgb(223, 223, 224)
+##dfdfe0 gainsboro
+#rgb(41, 42, 48)
+##292a30 black
+#rgb(83, 96, 110)
+##53606e dimgray
+#rgb(25, 25, 25)
+##191919 black
+#rgb(178, 200, 214)
+##b2c8d6 lightsteelblue
+#rgb(243, 74, 0)
+##f34a00 orangered
+#rgb(178, 200, 214)
+##b2c8d6 lightsteelblue
+#rgb(25, 25, 25)
+##191919 black
+#rgb(25, 25, 25)
+##191919 black
+#rgb(255, 53, 91)
+##ff355b indianred
+#rgb(255, 53, 91)
+##ff355b indianred
+#rgb(182, 232, 117)
+##b6e875 lightgreen
+#rgb(182, 232, 117)
+##b6e875 lightgreen
+#rgb(255, 193, 80)
+##ffc150 orange
+#rgb(255, 193, 80)
+##ffc150 orange
+#rgb(117, 211, 255)
+##75d3ff lightskyblue
+#rgb(117, 212, 255)
+##75d4ff lightskyblue
+#rgb(185, 117, 230)
+##b975e6 mediumpurple
+#rgb(185, 117, 230)
+##b975e6 mediumpurple
+#rgb(108, 190, 181)
+##6cbeb5 mediumturquoise
+#rgb(108, 190, 181)
+##6cbeb5 mediumturquoise
+#rgb(193, 200, 214)
+##c1c8d6 lightsteelblue
+#rgb(193, 200, 214)
+##c1c8d6 lightsteelblue
+#rgb(25, 25, 25)
+##191919 black
