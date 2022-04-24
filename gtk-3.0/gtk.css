@@ -316,10 +316,11 @@ button:link, button:visited {
   button:link > label, button:visited > label {
     text-decoration-line: underline; }
 
-/* CBT: TODO: Working here */
+/* CBT: buttuns */
 button {
   border-radius: 0px;
   padding: 0.1em;
+  zmargin: 0em;
   border-style: solid;
   border-width: 3px;
   color: @neutral01-contrast;
@@ -330,14 +331,10 @@ button {
   zoutline-offset: 2px;
   zoutline-style: solid; }
   button:active, button:checked {
-    color: @black;
-    border-top-color: @neutral02;
-    border-left-color: @neutral02;
-    border-bottom-color: @border01;
-    border-right-color: @border01;
-    zbackground-color: @accent01;
+    color: @neutral01-contrast;
     background-image: none; 
     border-color: @border01-lightless @border01-light @border01-darkless @border01-dark;
+    border-color: @border01-dark @border01-lightless @border01-light @border01-darkless;
     border-style: solid;
     }
     button:active:disabled, button:checked:disabled {
@@ -1603,16 +1600,17 @@ colorchooser #add-color-button {
   padding-left: 0;
   padding-right: 0; }
 
+/* CBT: the combo titlebar/button bar CSD */
 headerbar {
-  padding: 4px 8px;
-  min-height: 34px;
+  padding: 0px;
+  zmin-height: 34px;
   color: @accent01-contrast;
   background-color: @accent01; 
   box-shadow: inset 2px 2px @palevioletred, inset -2px -2px @purple; }
   headerbar:backdrop {
     color: @black;
     background-image: none;
-    background-color: @neutral01;
+    background-color: @FINDME;	/* inactive window */
     box-shadow: inset 2px 2px @gainsboro, inset -2px -2px @lightslategray-878ca0; }
   .tiled headerbar, .tiled headerbar:backdrop, .maximized headerbar, .maximized headerbar:backdrop {
     border-radius: 0; }
