@@ -32,6 +32,13 @@ zzzexample {
 /* CBT:	titlebar */
 @define-color accent01 #e95678; /* backg */
 @define-color accent01-contrast #dfdfe0; /* text */
+	/* note: Below color is created and enforced on inactive titlebars 
+	 * of xfwm somewhere that I can't figure out. So I am just going 
+	 * with it and using sake color for gtk themes.  
+	 * TODO: Find out where the darkening is happening and consider 
+	 * another color. Especially for the text. */
+@define-color accent01-dim rgba(171,51,79,1); /* inactive title backg */
+@define-color accent01-dim-contrast rgba(83, 96, 110,1); /* inactive title text */
 /* BackG:	inactive tabs, scrollbar */
 @define-color accent03 #c1c8d6;
 @define-color zaccent03 #ffc150;
@@ -316,7 +323,7 @@ button:link, button:visited {
   button:link > label, button:visited > label {
     text-decoration-line: underline; }
 
-/* CBT: buttuns */
+/* CBT: buttons */
 button {
   border-radius: 0px;
   padding: 0.1em;
@@ -1602,15 +1609,16 @@ colorchooser #add-color-button {
 
 /* CBT: the combo titlebar/button bar CSD */
 headerbar {
-  padding: 0px;
+  padding: 5px;
   zmin-height: 34px;
   color: @accent01-contrast;
   background-color: @accent01; 
   box-shadow: inset 2px 2px @palevioletred, inset -2px -2px @purple; }
+  /* inactive window */
   headerbar:backdrop {
-    color: @black;
+    color: @accent01-dim-contrast;
     background-image: none;
-    background-color: @FINDME;	/* inactive window */
+    background-color: @accent01-dim;
     box-shadow: inset 2px 2px @gainsboro, inset -2px -2px @lightslategray-878ca0; }
   .tiled headerbar, .tiled headerbar:backdrop, .maximized headerbar, .maximized headerbar:backdrop {
     border-radius: 0; }
