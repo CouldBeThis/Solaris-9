@@ -1609,10 +1609,13 @@ colorchooser #add-color-button {
 
 /* CBT: the combo titlebar/button bar CSD */
 headerbar {
-  padding: 5px;
+  padding: 0px 7px 0px 7px;
   zmin-height: 34px;
   color: @accent01-contrast;
   background-color: @accent01; 
+  border-style: ridge;
+  border-width: 5px;
+  border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
   box-shadow: inset 2px 2px @palevioletred, inset -2px -2px @purple; }
   /* inactive window */
   headerbar:backdrop {
