@@ -785,21 +785,21 @@ filechooserbutton:drop(active) {
   caret-color: @black; }
 
 menu, .menu {
-  margin: 4px;
+  margin: 0px;
   padding: 0;
   border-radius: 0px;
-  border-style: none;
-  color: @black;
-  background-color: @neutral01; }
+  border-style: solid;
+  border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
+  color: @black; }
   .csd menu, .csd .menu {
-    padding: 4px 1px;
+    padding: 0px;
+    margin: 0px;
     border-radius: 0px;
-    border: 1px solid @neutral02;
-    border-top-color: @border01;
-    border-left-color: @border01; }
+    border-width: 1px;
+	border-style: solid;
+	border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;}
   menu > arrow, .menu > arrow {
     padding: 4px;
-    border-color: transparent;
     background-color: @neutral01;
     min-width: 16px;
     min-height: 16px; }
@@ -814,24 +814,29 @@ menu, .menu {
 
 menubar, .menubar {
   -GtkWidget-window-dragging: true;
-  padding: 0;
+  padding: 0px;
+  margin: 0px
   border: 1px solid @neutral02;
   color: @black;
   background-color: @neutral01;
-  border-top-color: @border01;
-  border-left-color: @border01; }
+  border-top-color: @border01-light;
+  border-left-color: @border01-darkless;}
   menubar:backdrop, .menubar:backdrop {
     color: @black;
     background-color: @neutral01; }
 
 menubar > menuitem, .menubar > menuitem {
-  padding: 3px 5px;
+  padding: 0px 0.2em 0px 0.2em;
+  margin: 0px
   border: none;
   color: @black;
-  background-color: transparent; }
+  background-color: transparent;
+    border-right-width: 2px;
+	border-right-style: solid;
+	border-right-color: @border01-light @border01-darkless @border01-dark @border01-lightless; }
   menubar > menuitem:hover, .menubar > menuitem:hover {
     color: @accent01-contrast;
-    background-color: @black; }
+    background: @dimgray-575962; }
   menubar > menuitem:disabled, .menubar > menuitem:disabled {
     color: @dimgray-575962;
     background-color: transparent; }
@@ -850,8 +855,8 @@ menu menuitem, .menu menuitem {
   menu menuitem:hover, .menu menuitem:hover {
     background-color: @lightslategray-878ca0;
     border-color: @neutral02;
-    border-right-color: @border01;
-    border-bottom-color: @border01; }
+    border-right-color: @border01-darkless;
+    border-bottom-color: @border01-dark; }
   menu menuitem:disabled, .menu menuitem:disabled {
     color: @dimgray-575962; }
   menu menuitem arrow, .menu menuitem arrow {
@@ -865,7 +870,7 @@ menu menuitem, .menu menuitem {
       -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl"); }
 
 menuitem accelerator {
-  color: alpha(currentColor, 0.55); }
+  color: alpha(currentColor, 0.55);}
   menuitem accelerator:hover {
     color: rgba(255, 255, 255, 0.8); }
   menuitem accelerator:disabled {
@@ -1316,7 +1321,7 @@ scrollbar {
   border: 1px solid @neutral02;
   border-bottom-color: @border01;
   border-right-color: @border01;
-  background-color: @accent03; }
+  background-color: @accent03;}
   scrollbar trough {
     border: none;
     border-radius: 0; }
