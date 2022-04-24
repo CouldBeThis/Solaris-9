@@ -966,7 +966,9 @@ notebook {
     color: @black;
 	background-color: @accent03; 
 	font-size: small;
-	zfont-family: "Fira Sans Compressed";	font-family: "Roboto Condensed";	zfont-family: "ProFont";}
+	zfont-family: "Fira Sans Compressed";
+	font-family: "Roboto Condensed";
+	zfont-family: "ProFont";}
     /* CBT: Current tab (in/active windows) */
     notebook tab:checked {
       border-color: #ff355b;
@@ -1616,6 +1618,8 @@ headerbar {
   border-style: ridge;
   border-width: 5px;
   border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
+  	font-size: smaller;
+	font-family: "Roboto Condensed";}
   box-shadow: inset 2px 2px @palevioletred, inset -2px -2px @purple; }
   /* inactive window */
   headerbar:backdrop {
@@ -1648,25 +1652,22 @@ headerbar {
     headerbar .subtitle:backdrop {
       color: rgba(0, 0, 0, 0.7); }
   headerbar button {
-    padding: 4px 8px;
+    padding: 0.1em;
     border-style: solid;
     border-width: 1px;
     border-radius: 0px;
     color: @black;
-    border-color: @neutral02;
-    border-top-color: @border01;
-    border-left-color: @border01;
-    background-color: @neutral01;
+    border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
+    zborder-top-color: @border01;
+    zborder-left-color: @border01;
+    background-color: @border01-light;
     -gtk-outline-radius: 0px;
     outline-color: @accent01;
     outline-offset: 2px;
     outline-style: solid; }
     headerbar button:active, headerbar button:checked {
       color: @black;
-      border-top-color: @neutral02;
-      border-left-color: @neutral02;
-      border-bottom-color: @border01;
-      border-right-color: @border01;
+      border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
       background-color: @accent03;
       background-image: none; }
       headerbar button:active:disabled, headerbar button:checked:disabled {
