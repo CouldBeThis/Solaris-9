@@ -80,53 +80,77 @@ zzzexample {
 @define-color silver-bfbfbf #bfbfbf;
 @define-color silver-c2c6d3 #c2c6d3;
 @define-color black #232323;
+/*
 @define-color black #252525;
 @define-color black #2C2C2C;
 @define-color black #2a2a2a;
 @define-color black #2c2d31;
 @define-color black #303030;
 @define-color black #333333;
+*/
 @define-color black01 #1a1a1a;
 @define-color brown #884444;
+/*
 @define-color brown #964242;
 @define-color brown #9c4848;
 @define-color brown #A74949;
+*/
 @define-color cadetblue #468192;
+/*
 @define-color cadetblue #4992A7;
+*/
 @define-color chocolate #b86814;
+/*
 @define-color chocolate #c86f10;
+*/
 @define-color darkorange #FF8300;
+/*
 @define-color darkorange #ec7c06;
 @define-color darkorange #ff8d14;
 @define-color darkorange #ff8f1a;
+*/
 @define-color darkslateblue #334175;
+/*
 @define-color darkslateblue #3a4a86;
+*/
 @define-color darkslateblue-1f3d7a #1f3d7a;
 @define-color gainsboro #d7dae3;
 @define-color indianred #7e4242;
+/*
 @define-color indianred #a9696e;
 @define-color indianred #b96d6d;
+*/
 @define-color indianred02 #b74d4d;
+/*
 @define-color indianred02 #b94f4f;
+*/
 @define-color lavenderblush #f7edf2;
 @define-color lemonchiffon #FFFFBF;
 @define-color maroon #642c2c;
 @define-color maroon02 #593737;
 @define-color palevioletred #dd88ae;
 @define-color peru #7a4e1f;
+/*
 @define-color peru #926a46;
 @define-color peru #A77549;
+*/
 @define-color purple #5f3a4b;
 @define-color purple02 #724157;
 @define-color rosybrown-ca9292 #ca9292;
 @define-color royalblue #495DA7;
+/*
 @define-color royalblue #4f66b9;
+*/
 @define-color royalblue02 #1463ff;
+/*
 @define-color royalblue02 #1a66ff;
+*/
 @define-color slategray #757886;
+/*
 @define-color slategray #767985;
 @define-color slategray #787b87;
 @define-color slategray #7c7f8d;
+*/
 @define-color snow #f6eded;
 @define-color thistle-e0b8ca #e0b8ca;
 @define-color wheat #fbe4bc;
