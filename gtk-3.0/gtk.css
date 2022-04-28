@@ -1715,9 +1715,10 @@ headerbar {
     padding: 4px 8px; }
   headerbar.titlebar, .titlebar headerbar {
     border-radius: 0px 0px 0px 0px; }
+  /* CBT: close button */
   headerbar .titlebutton.close, headerbar .titlebutton.maximize, headerbar .titlebutton.minimize, headerbar .titlebutton:not(separator) {
-    min-width: 19px;
-    min-height: 19px;
+    min-width: 38px;
+    min-height: 38px;
     color: transparent;
     background: none;
     box-shadow: none;
@@ -1728,17 +1729,17 @@ headerbar {
     background-position: center;
     background-repeat: no-repeat; }
   headerbar .titlebutton.close {
-    background-image: url("assets/close-active.png"); }
+    background-image: url("assets/close-large.png"); }
     headerbar .titlebutton.close:backdrop {
-      background-image: url("assets/close-inactive.png"); }
+      background-image: url("assets/close-large.png"); }
   headerbar .titlebutton.minimize {
-    background-image: url("assets/hide-active.png"); }
+    background-image: url("assets/hide-large.png"); }
     headerbar .titlebutton.minimize:backdrop {
-      background-image: url("assets/hide-inactive.png"); }
+      background-image: url("assets/hide-large.png"); }
   headerbar .titlebutton.maximize {
-    background-image: url("assets/maximize-active.png"); }
+    background-image: url("assets/maximize-large.png"); }
     headerbar .titlebutton.maximize:backdrop {
-      background-image: url("assets/maximize-inactive.png"); }
+      background-image: url("assets/maximize-large.png"); }
 
 toolbar {
   padding: 4px;
