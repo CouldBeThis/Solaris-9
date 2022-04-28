@@ -17,7 +17,6 @@ useful documentation:
 @define-color neutral01-contrast #09090a;	/* textcolor */
 
 /* use for borders */
-
 @define-color border01-light		rgba(223, 223, 224, 0.66);	/* top */
 @define-color border01-lightless	rgba(223, 223, 224, 0.33);	/* left */
 @define-color border01-darkless		rgba(25, 25, 25, 0.33);		/* right */
