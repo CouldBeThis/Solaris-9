@@ -10,10 +10,11 @@ useful documentation:
 
 /* used to identify where and what while working */
 @define-color FINDME #2AC22C;
+@define-color FINDME2 #FFBF00;
 
-/* main window */ 
+/* main window */
 @define-color neutral01 #a3b1bf;			/* background */
-@define-color neutral01-contrast #09090a;	/* textcolor */ 
+@define-color neutral01-contrast #09090a;	/* textcolor */
 
 /* use for borders */
 
@@ -22,7 +23,7 @@ useful documentation:
 @define-color border01-darkless		rgba(25, 25, 25, 0.33);		/* right */
 @define-color border01-dark			rgba(25, 25, 25, 0.66);		/* bottom */
 
-zzzexample { 
+zzzexample {
 	border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
 }
 
@@ -32,10 +33,10 @@ zzzexample {
 /* CBT:	titlebar */
 @define-color accent01 #e95678; /* backg */
 @define-color accent01-contrast #dfdfe0; /* text */
-	/* note: Below color is created and enforced on inactive titlebars 
-	 * of xfwm somewhere that I can't figure out. So I am just going 
-	 * with it and using sake color for gtk themes.  
-	 * TODO: Find out where the darkening is happening and consider 
+	/* note: Below color is created and enforced on inactive titlebars
+	 * of xfwm somewhere that I can't figure out. So I am just going
+	 * with it and using sake color for gtk themes.
+	 * TODO: Find out where the darkening is happening and consider
 	 * another color. Especially for the text. */
 @define-color accent01-dim rgba(171,51,79,1); /* inactive title backg */
 @define-color accent01-dim-contrast rgba(83, 96, 110,1); /* inactive title text */
@@ -209,7 +210,7 @@ rgba(255, 255, 255, 0.95)
 	/* active_color_1 titlebar/headerbar active*/
   .gtkstyle-fallback:selected {
     color: @accent01-contrast;
-    background-color: @accent01; } 
+    background-color: @accent01; }
 
 image, image:disabled, label, label:disabled, box, box:disabled {
   background-color: transparent; }
@@ -339,7 +340,7 @@ button {
   zoutline-style: solid; }
   button:active, button:checked {
     color: @neutral01-contrast;
-    background-image: none; 
+    background-image: none;
     border-color: @border01-lightless @border01-light @border01-darkless @border01-dark;
     border-color: @border01-dark @border01-lightless @border01-light @border01-darkless;
     border-style: solid;
@@ -785,17 +786,21 @@ filechooserbutton:drop(active) {
   caret-color: @black; }
 
 menu, .menu {
-  margin: 0px;
-  padding: 0;
-  border-radius: 0px;
-  border-style: solid;
-  border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
-  color: @black; }
+	margin: 0px;
+	padding: 0;
+	border-radius: 0px;
+	border-style: solid;
+	border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
+	font-size: small;
+	font-family: "Roboto Condensed";}
+
   .csd menu, .csd .menu {
-    padding: 0px;
-    margin: 0px;
-    border-radius: 0px;
-    border-width: 1px;
+	font-size: small;
+	font-family: "Roboto Condensed";
+	padding: 0px;
+	margin: 0px;
+	border-radius: 0px;
+	border-width: 1px;
 	border-style: solid;
 	border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;}
   menu > arrow, .menu > arrow {
@@ -804,34 +809,38 @@ menu, .menu {
     min-width: 16px;
     min-height: 16px; }
     menu > arrow.top, .menu > arrow.top {
-      margin-top: -6px;
-      border-bottom: 1px solid @accent03;
-      -gtk-icon-source: -gtk-icontheme("pan-up-symbolic"); }
+		margin-top: -6px;
+		border-bottom: 1px solid @accent03;
+		-gtk-icon-source: -gtk-icontheme("pan-up-symbolic"); }
     menu > arrow.bottom, .menu > arrow.bottom {
-      margin-bottom: -6px;
-      border-top: 1px solid @accent03;
-      -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
+		margin-bottom: -6px;
+		border-top: 1px solid @accent03;
+		-gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
 
 menubar, .menubar {
-  -GtkWidget-window-dragging: true;
-  padding: 0px;
-  margin: 0px
-  border: 1px solid @neutral02;
-  color: @black;
-  background-color: @neutral01;
-  border-top-color: @border01-light;
-  border-left-color: @border01-darkless;}
+	-GtkWidget-window-dragging: true;
+	padding: 0px;
+	margin: 0px
+	border: 1px solid @neutral02;
+	color: @black;
+	background-color: @neutral01;
+	border-top-color: @border01-light;
+	border-left-color: @border01-darkless;
+	font-size: small;
+	font-family: "Roboto Condensed";}
   menubar:backdrop, .menubar:backdrop {
     color: @black;
     background-color: @neutral01; }
 
 menubar > menuitem, .menubar > menuitem {
-  padding: 0px 0.2em 0px 0.2em;
-  margin: 0px
-  border: none;
-  color: @black;
-  background-color: transparent;
-    border-right-width: 2px;
+	font-size: small;
+	font-family: "Roboto Condensed";
+	padding: 0px 0.2em 0px 0.2em;
+	margin: 0px
+	border: none;
+	color: @black;
+	background-color: transparent;
+	border-right-width: 2px;
 	border-right-style: solid;
 	border-right-color: @border01-light @border01-darkless @border01-dark @border01-lightless; }
   menubar > menuitem:hover, .menubar > menuitem:hover {
@@ -845,13 +854,15 @@ menubar > menuitem, .menubar > menuitem {
     background-color: transparent; }
 
 menu menuitem, .menu menuitem {
-  min-height: 16px;
-  min-width: 40px;
-  padding: 4px;
-  border: 1px solid transparent;
-  border-radius: 0;
-  color: @black;
-  background-color: @neutral01; }
+	font-size: small;
+	font-family: "Roboto Condensed";
+	min-height: 16px;
+	min-width: 40px;
+	padding: 4px;
+	border: 1px solid transparent;
+	border-radius: 0;
+	color: @black;
+	background-color: @neutral01; }
   menu menuitem:hover, .menu menuitem:hover {
     background-color: @lightslategray-878ca0;
     border-color: @neutral02;
@@ -863,11 +874,11 @@ menu menuitem, .menu menuitem {
     min-width: 16px;
     min-height: 16px; }
     menu menuitem arrow:dir(ltr), .menu menuitem arrow:dir(ltr) {
-      margin-left: 10px;
-      -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
+		margin-left: 10px;
+		-gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
     menu menuitem arrow:dir(rtl), .menu menuitem arrow:dir(rtl) {
-      margin-right: 10px;
-      -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl"); }
+		margin-right: 10px;
+		-gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl"); }
 
 menuitem accelerator {
   color: alpha(currentColor, 0.55);}
@@ -954,7 +965,7 @@ notebook {
     border-left-color: @border01-lightless; }
     /* CBT: BackG: Behind elements if not otherwise defined */
     notebook > stack:not(:only-child) {
-      background-color: @neutral01;  
+      background-color: @neutral01;
       border: 10px solid #53606e;}
     .nautilus-window notebook > stack {
       box-shadow: inset 0 0 0 6px @neutral01;
@@ -965,11 +976,13 @@ notebook {
     margin: 0.1em;		/*space between tabs */
     border-width: 1px;
     border-style: solid;
+    border-width: 5px;
+    border-style: double;
     border-radius: 5px;
     zborder-color: @neutral02;
     zborder-color: #ff355b;
     color: @black;
-	background-color: @accent03; 
+	background-color: @accent03;
 	font-size: small;
 	zfont-family: "Fira Sans Compressed";
 	font-family: "Roboto Condensed";
@@ -977,7 +990,7 @@ notebook {
     /* CBT: Current tab (in/active windows) */
     notebook tab:checked {
       border-color: #ff355b;
-      background-color: #53606e; 
+      background-color: #53606e;
       color: #dfdfe0;}
   notebook > header {
     padding-top: 2px;
@@ -1321,8 +1334,8 @@ scrollbar {
   border: 1px solid @neutral02;
   border-bottom-color: @border01-dark;
   border-right-color: @border01-darkless;
-  background-color: @accent03; 
-  border: 2px solid #6cbeb5; 
+  background-color: @accent03;
+  border: 2px solid #6cbeb5;
   background-color: #78c2b3;}
   scrollbar trough {
     border: none;
@@ -1621,7 +1634,7 @@ headerbar {
   padding: 0px 7px 0px 7px;
   zmin-height: 34px;
   color: @accent01-contrast;
-  background-color: @accent01; 
+  background-color: @accent01;
   border-style: ridge;
   border-width: 5px;
   border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
