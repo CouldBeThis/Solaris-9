@@ -22,6 +22,11 @@ useful documentation:
 @define-color border01-lightless	rgba(223, 223, 224, 0.33);	/* left */
 @define-color border01-darkless		rgba(25, 25, 25, 0.33);		/* right */
 @define-color border01-dark			rgba(25, 25, 25, 0.66);		/* bottom */
+/* the above assigned to alternative names */
+@define-color border01-top			@border01-light;			/* top */
+@define-color border01-left			@border01-lightless;		/* left */
+@define-color border01-right		@border01-darkless;			/* right */
+@define-color border01-bottom		@border01-dark;				/* bottom */
 
 zzzexample {
 	border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
@@ -2690,6 +2695,9 @@ UnityPanelWidget, .unity-panel {
   UnityPanelWidget.menuitem, UnityPanelWidget .menuitem, .unity-panel.menuitem, .unity-panel .menuitem {
     border-width: 0 1px;
     color: @black; }
+
+.xfce4-panel .background, .xfce4-panel .horizontal .background {
+    background-color: @FINDME; }
 
 @keyframes playbackmenuitem_spinner {
   to {
