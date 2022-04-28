@@ -34,6 +34,10 @@ zzzexample {
 /* some of the 1px outlines inside windows*/
 @define-color neutral02 #b2c8d6;
 
+@import url("gtk-colors.css");
+
+
+
 /* CBT:	titlebar */
 @define-color accent01 #e95678; /* backg */
 @define-color accent01-contrast #dfdfe0; /* text */
@@ -750,11 +754,6 @@ terminal-screen-container scrollbar {
   border-style: solid;
   border-color: @neutral02; }
 
-.nautilus-window notebook, .nautilus-window notebook > stack:not(:only-child) searchbar {
-  background-color: @accent01-contrast-off; }
-
-.caja-location-entry {
-  padding: 3px 5px; }
 
 scrolledwindow.frame, scrolledwindow viewport.frame {
   border: none; }
@@ -772,19 +771,6 @@ popover.background.touch-selection, .csd popover.background.touch-selection {
 .monospace {
   font-family: Monospace; }
 
-.gedit-search-entry-occurrences-tag {
-  color: alpha(currentColor, 0.7);
-  border: none;
-  margin: 2px;
-  padding: 2px; }
-
-.gedit-search-slider {
-  border-color: @neutral02;
-  padding: 6px;
-  border-radius: 0 0 0px 0px;
-  border-width: 0 1px 1px 1px;
-  border-style: solid;
-  background-color: @neutral01; }
 
 button.circular, button.circular-button {
   padding: 0;
@@ -1825,7 +1811,7 @@ toolbar {
     border-left-color: @border01-lightless;
     background-color: @neutral01;
     -gtk-outline-radius: 0px;
-    outline-color: @accent01;
+    zoutline-color: @accent01;
     outline-offset: 2px;
     outline-style: solid; }
     .primary-toolbar button:active, .primary-toolbar button:checked, .primary-toolbar .raised button:active, .primary-toolbar .raised button:checked {
@@ -1979,21 +1965,6 @@ filechooser .sidebar, .nautilus-window .sidebar, .nemo-window .sidebar {
   filechooser .sidebar .expander, .nautilus-window .sidebar .expander, .nemo-window .sidebar .expander {
     color: @black; }
     filechooser .sidebar .expander:hover, .nautilus-window .sidebar .expander:hover, .nemo-window .sidebar .expander:hover {
-      color: @black; }
-
-.caja-navigation-window .caja-side-pane {
-  background-color: @neutral01; }
-  .caja-navigation-window .caja-side-pane .view:not(:selected), .caja-navigation-window .caja-side-pane iconview {
-    border: none;
-    color: @black;
-    background-color: transparent; }
-  .caja-navigation-window .caja-side-pane frame > border, .caja-navigation-window .caja-side-pane .frame {
-    border: none; }
-  .caja-navigation-window .caja-side-pane row:not(:selected), .caja-navigation-window .caja-side-pane view row:not(:selected), .caja-navigation-window .caja-side-pane row.sidebar-row:not(:selected) {
-    color: @black; }
-  .caja-navigation-window .caja-side-pane .expander {
-    color: @black; }
-    .caja-navigation-window .caja-side-pane .expander:hover {
       color: @black; }
 
 stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar.sidebar.left:dir(rtl) list {
@@ -2341,14 +2312,6 @@ messagedialog {
       border-bottom-right-radius: 0px;
       -gtk-outline-radius: 0 0 0px 0px; }
 
-.caja-desktop, .nemo-desktop.nemo-canvas-item, .nautilus-desktop.nautilus-canvas-item {
-  color: @accent01-contrast;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.8); }
-  .caja-desktop:active, .nemo-desktop.nemo-canvas-item:active, .nautilus-desktop.nautilus-canvas-item:active {
-    color: @accent01-contrast; }
-  .caja-desktop:selected, .nemo-desktop.nemo-canvas-item:selected, .nautilus-desktop.nautilus-canvas-item:selected {
-    color: @accent01-contrast;
-    text-shadow: none; }
 
 XfdesktopIconView .view {
   border-radius: 0px;
@@ -2441,116 +2404,6 @@ panel-toplevel.background button {
 panel-toplevel.background na-tray-applet {
   -NaTrayApplet-icon-padding: 0;
   -NaTrayApplet-icon-size: 16px; }
-
-.mate-panel-menu-bar menubar > menuitem {
-  color: @black;
-  background-color: @neutral01; }
-
-.mate-panel-menu-bar {
-  color: @black;
-  background-color: @neutral01; }
-  .mate-panel-menu-bar, .mate-panel-menu-bar .menubar {
-    background-color: @neutral01; }
-  .mate-panel-menu-bar menubar, .mate-panel-menu-bar menubar menuitem, .mate-panel-menu-bar togglebutton {
-    border-color: transparent;
-    background-color: transparent;
-    background-image: none; }
-  .mate-panel-menu-bar menubar menuitem:hover, .mate-panel-menu-bar menubar menuitem:active {
-    color: @accent01-contrast;
-    background-color: @black; }
-  .mate-panel-menu-bar .menubar > .menuitem {
-    padding-top: 0;
-    padding-bottom: 0; }
-  .mate-panel-menu-bar GtkMenu .label {
-    color: @black;
-    font-style: normal; }
-    .mate-panel-menu-bar GtkMenu .label:disabled {
-      color: @dimgray-575962; }
-  .mate-panel-menu-bar button, .mate-panel-menu-bar button.flat {
-    background-color: transparent; }
-  .mate-panel-menu-bar > .button:not(#tasklist-button) {
-    border-color: transparent;
-    border-radius: 0px;
-    color: @black;
-    box-shadow: none;
-    background-color: transparent; }
-    .mate-panel-menu-bar > .button:not(#tasklist-button):hover {
-      color: @black;
-      background-color: @neutral01;
-      border-color: @neutral02;
-      border-top-color: @border01-light;
-      border-left-color: @border01-lightless;
-      background-color: @neutral01; }
-    .mate-panel-menu-bar > .button:not(#tasklist-button):active, .mate-panel-menu-bar > .button:not(#tasklist-button):checked {
-      color: @black;
-      border-top-color: @neutral02;
-      border-left-color: @neutral02;
-      border-bottom-color: @border01-dark;
-      border-right-color: @border01-darkless;
-      background-color: @accent03;
-      background-image: none; }
-      .mate-panel-menu-bar > .button:not(#tasklist-button):active:disabled, .mate-panel-menu-bar > .button:not(#tasklist-button):checked:disabled {
-        color: @black-off;
-        text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
-        background-color: @lightslategray-9397a8; }
-    .mate-panel-menu-bar > .button:not(#tasklist-button):disabled {
-      border-color: transparent;
-      color: rgba(0, 0, 0, 0.8);
-      text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
-      background-color: transparent; }
-  .mate-panel-menu-bar #tasklist-button {
-    padding: 4px 8px;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 0px;
-    color: @black;
-    border-color: @neutral02;
-    border-top-color: @border01-light;
-    border-left-color: @border01-lightless;
-    background-color: @neutral01;
-    -gtk-outline-radius: 0px;
-    outline-color: @accent01;
-    outline-offset: 2px;
-    outline-style: solid; }
-    .mate-panel-menu-bar #tasklist-button:active, .mate-panel-menu-bar #tasklist-button:checked {
-      color: @black;
-      border-top-color: @neutral02;
-      border-left-color: @neutral02;
-      border-bottom-color: @border01-dark;
-      border-right-color: @border01-darkless;
-      background-color: @accent03;
-      background-image: none; }
-      .mate-panel-menu-bar #tasklist-button:active:disabled, .mate-panel-menu-bar #tasklist-button:checked:disabled {
-        color: @black-off;
-        text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
-        background-color: @lightslategray-9397a8; }
-    .mate-panel-menu-bar #tasklist-button:disabled {
-      color: @black;
-      text-shadow: 1px 1px rgba(255, 255, 255, 0.85); }
-  .mate-panel-menu-bar PanelSeparator {
-    color: @neutral02;
-    padding-top: 4px;
-    padding-bottom: 4px; }
-  .mate-panel-menu-bar NaTrayApplet {
-    -NaTrayApplet-icon-padding: 2; }
-  .mate-panel-menu-bar #PanelApplet label {
-    color: @black; }
-  .mate-panel-menu-bar .caja-desktop.entry, .mate-panel-menu-bar .caja-navigation-window .view.entry {
-    background-image: none;
-    border-radius: 0px;
-    box-shadow: none;
-    border-color: black;
-    background-color: @accent01-contrast-off; }
-    .mate-panel-menu-bar .caja-desktop.entry:selected, .mate-panel-menu-bar .caja-navigation-window .view.entry:selected {
-      color: @accent01-contrast;
-      background-color: @black; }
-
-.mintmenu:hover {
-  background-color: @silver-c2c6d3; }
-
-.mintmenu:selected {
-  color: @accent01-contrast;
-  background-color: @black; }
 
 .wnck-pager {
   background-color: rgba(0, 0, 0, 0.04); }
@@ -2665,62 +2518,14 @@ wnck-pager {
   wnck-pager:selected {
     background-color: black; }
 
-.nemo-window .nemo-window-pane widget.entry {
-  border: 1px solid;
-  border-radius: 3px;
-  border-color: @black;
-  color: @black;
-  background-color: @accent01-contrast-off; }
-  .nemo-window .nemo-window-pane widget.entry:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus {
-    color: @accent01-contrast;
-    background-color: @black; }
-
-UnityDecoration {
-  -UnityDecoration-extents: 28px 0 0 0;
-  -UnityDecoration-input-extents: 10px;
-  -UnityDecoration-shadow-offset-x: 1px;
-  -UnityDecoration-shadow-offset-y: 1px;
-  -UnityDecoration-active-shadow-color: rgba(0, 0, 0, 0.7);
-  -UnityDecoration-active-shadow-radius: 8px;
-  -UnityDecoration-inactive-shadow-color: rgba(0, 0, 0, 0.5);
-  -UnityDecoration-inactive-shadow-radius: 5px;
-  -UnityDecoration-glow-size: 10px;
-  -UnityDecoration-glow-color: @black;
-  -UnityDecoration-title-indent: 10px;
-  -UnityDecoration-title-fade: 35px;
-  -UnityDecoration-title-alignment: 0.0; }
-  UnityDecoration .top {
-    border: none;
-    border-radius: 0px 0px 0 0;
-    padding: 1px 8px 0 8px;
-    background-color: @accent01;
-    color: @lavenderblush;
-    text-shadow: none; }
-    UnityDecoration .top:backdrop {
-      background-color: @neutral01;
-      color: @thistle-e0b8ca; }
-  UnityDecoration .left, UnityDecoration .right, UnityDecoration.bottom {
-    background-color: @accent01; }
-    UnityDecoration .left:backdrop, UnityDecoration .right:backdrop, UnityDecoration.bottom:backdrop {
-      background-color: @accent01; }
-  UnityDecoration.menuitem, UnityDecoration .menuitem {
-    border-radius: 0; }
-    UnityDecoration.menuitem:hover, UnityDecoration.menuitem *:hover, UnityDecoration .menuitem:hover, UnityDecoration .menuitem *:hover {
-      background-color: @black;
-      color: @accent01-contrast; }
-
-UnityPanelWidget, .unity-panel {
-  border-width: 0 0 1px 0;
-  border-style: solid;
-  border-color: @neutral01;
-  background-color: @neutral01;
-  color: @black; }
-  UnityPanelWidget.menuitem, UnityPanelWidget .menuitem, .unity-panel.menuitem, .unity-panel .menuitem {
-    border-width: 0 1px;
-    color: @black; }
+/* CBT: Move all the base theme's application specific to a different 
+ * file and include it. If Modified from Solaris9, consider bringing 
+ * back here, into a new file, or other. ? 
+ * EXCLUDES xfce panel, widgets etc*/
+@import url("gtk-specificapplications.css");
 
 .xfce4-panel .background, .xfce4-panel .horizontal .background {
-    background-color: @FINDME; }
+    background-color: @neutral01; }
 
 @keyframes playbackmenuitem_spinner {
   to {
