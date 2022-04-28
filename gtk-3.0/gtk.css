@@ -1003,7 +1003,7 @@ notebook {
 	zfont-family: "ProFont";}
     /* CBT: Current tab (in/active windows) */
     notebook tab:checked {
-      border-color: #ff355b;
+      border-color: #fff;
       background-color: #53606e;
       color: #dfdfe0;}
   notebook > header {
