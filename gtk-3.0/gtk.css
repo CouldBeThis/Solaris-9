@@ -1685,15 +1685,14 @@ headerbar {
     color: rgba(255, 255, 255, 0.7); }
     headerbar .subtitle:backdrop {
       color: rgba(0, 0, 0, 0.7); }
+/* CBT: buttons in titlebar that are NOT window action buttons */
   headerbar button {
     padding: 0.1em;
     border-style: solid;
     border-width: 1px;
     border-radius: 0px;
     color: @black;
-    border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
-    zborder-top-color: @border01-light;
-    zborder-left-color: @border01-lightless;
+    border-color: @border01-top @border01-right @border01-bottom @border01-left;
     background-color: @border01-light;
     -gtk-outline-radius: 0px;
     outline-color: @accent01;
@@ -1701,7 +1700,7 @@ headerbar {
     outline-style: solid; }
     headerbar button:active, headerbar button:checked {
       color: @black;
-      border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
+	  border-color: @border01-top @border01-right @border01-bottom @border01-left;
       background-color: @accent03;
       background-image: none; }
       headerbar button:active:disabled, headerbar button:checked:disabled {
@@ -1722,24 +1721,26 @@ headerbar {
     color: transparent;
     background: none;
     box-shadow: none;
-    border: none;
+    zborder: none;
+    border-width: 2px;
+    border-color: white black black white;
     padding: 0;
     border-radius: 0;
     -gtk-icon-shadow: none;
     background-position: center;
     background-repeat: no-repeat; }
   headerbar .titlebutton.close {
-    background-image: url("assets/close-large.png"); }
+    background-image: url("assets/close-large-borderless.png"); }
     headerbar .titlebutton.close:backdrop {
-      background-image: url("assets/close-large.png"); }
+      background-image: url("assets/close-large-borderless.png"); }
   headerbar .titlebutton.minimize {
-    background-image: url("assets/hide-large.png"); }
+    background-image: url("assets/hide-large-borderless.png"); }
     headerbar .titlebutton.minimize:backdrop {
-      background-image: url("assets/hide-large.png"); }
+      background-image: url("assets/hide-large-borderless.png"); }
   headerbar .titlebutton.maximize {
-    background-image: url("assets/maximize-large.png"); }
+    background-image: url("assets/maximize-large-borderless.png"); }
     headerbar .titlebutton.maximize:backdrop {
-      background-image: url("assets/maximize-large.png"); }
+      background-image: url("assets/maximize-large-borderless.png"); }
 
 toolbar {
   padding: 4px;
