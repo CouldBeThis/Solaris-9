@@ -1728,17 +1728,17 @@ headerbar {
     background-position: center;
     background-repeat: no-repeat; }
   headerbar .titlebutton.close {
-    background-image: url("assets/close-focused.png"); }
+    background-image: url("assets/close-active.png"); }
     headerbar .titlebutton.close:backdrop {
-      background-image: url("assets/close-unfocused.png"); }
+      background-image: url("assets/close-inactive.png"); }
   headerbar .titlebutton.minimize {
-    background-image: url("assets/minimize-focused.png"); }
+    background-image: url("assets/hide-active.png"); }
     headerbar .titlebutton.minimize:backdrop {
-      background-image: url("assets/minimize-unfocused.png"); }
+      background-image: url("assets/hide-inactive.png"); }
   headerbar .titlebutton.maximize {
-    background-image: url("assets/maximize-focused.png"); }
+    background-image: url("assets/maximize-active.png"); }
     headerbar .titlebutton.maximize:backdrop {
-      background-image: url("assets/maximize-unfocused.png"); }
+      background-image: url("assets/maximize-inactive.png"); }
 
 toolbar {
   padding: 4px;
