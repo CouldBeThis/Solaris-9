@@ -50,7 +50,10 @@ headerbar {
 border-width: 8px 22px 8px 22px;
 	font-size: smaller;
 	font-family: "Roboto Condensed";
-
+	font-size: small;
+	zfont-family: "Fira Sans Compressed";
+	font-family: "Roboto Condensed";
+	zfont-family: "ProFont";}
 	}
 
 
