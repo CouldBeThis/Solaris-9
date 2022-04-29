@@ -841,14 +841,17 @@ menubar, .menubar {
 	border-top-color: @border01-light;
 	border-left-color: @border01-darkless;
 	font-size: small;
-	font-family: "Roboto Condensed";}
+	font-family: "Roboto Condensed";
+	font-family: "ProFont";}
   menubar:backdrop, .menubar:backdrop {
     color: @black;
     background-color: @neutral01; }
 
 menubar > menuitem, .menubar > menuitem {
 	font-size: small;
-	font-family: "Roboto Condensed";
+	zfont-family: "Roboto Condensed";
+	font-family: "ProFont";
+	zfont-stretch: 50%;
 	padding: 0px 0.2em 0px 0.2em;
 	margin: 0px
 	border: none;
@@ -2335,8 +2338,7 @@ XfdesktopIconView:active {
 
 panel-toplevel.background, panel-toplevel.background menubar {
   background-color: @neutral01;
-  color: @black;
-	font-family: "ProFont"; }
+  color: @black; }
 panel-toplevel.background menubar, panel-toplevel.background #PanelApplet label, panel-toplevel.background #PanelApplet image {
 	color: @black; }
 panel-toplevel.background menubar > menuitem, panel-toplevel.background menubar > menuitem label:backdrop {
