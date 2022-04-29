@@ -242,7 +242,7 @@ rgba(255, 255, 255, 0.95)
 	/* active_color_1 titlebar/headerbar active*/
   .gtkstyle-fallback:selected {
     color: @accent01-contrast;
-    background-color: @accent01; }
+    background-color: @accent01;  }
 
 image, image:disabled, label, label:disabled, box, box:disabled {
   background-color: transparent; }
@@ -1645,15 +1645,19 @@ colorchooser #add-color-button {
 
 /* CBT: the combo titlebar/button bar CSD */
 headerbar {
-  padding: 0px 7px 0px 7px;
-  zmin-height: 34px;
-  color: @accent01-contrast;
-  background-color: @accent01;
-  border-style: ridge;
-  border-width: 5px;
-  border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
-  	font-size: smaller;
-	font-family: "Roboto Condensed";}
+	padding: 0px 7px 0px 7px;
+	zmin-height: 34px;
+	height: 24px;
+	color: @accent01-contrast;
+	border-color: @FINDME;
+	background-color: @accent01;
+	border-style: solid;
+	border-width: 6px;
+	border-image: url("assets/window-border-equal.png") 6 10 6 9 stretch stretch;
+	font-size: smaller;
+	font-family: "Roboto Condensed";
+
+	}
   box-shadow: inset 2px 2px @palevioletred, inset -2px -2px @purple; }
   /* inactive window */
   headerbar:backdrop {
@@ -1662,7 +1666,7 @@ headerbar {
     background-color: @accent01-dim;
     box-shadow: inset 2px 2px @gainsboro, inset -2px -2px @lightslategray-878ca0; }
   .tiled headerbar, .tiled headerbar:backdrop, .maximized headerbar, .maximized headerbar:backdrop {
-    border-radius: 0; }
+    border-radius: 0;}
   separator:first-child + headerbar, separator:first-child + headerbar:backdrop, headerbar:first-child, headerbar:first-child:backdrop {
     border-top-left-radius: 0px; }
     .maximized separator:first-child + headerbar, .tiled separator:first-child + headerbar, .maximized separator:first-child + headerbar:backdrop, .tiled separator:first-child + headerbar:backdrop, .maximized headerbar:first-child, .tiled headerbar:first-child, .maximized headerbar:first-child:backdrop, .tiled headerbar:first-child:backdrop {
@@ -1682,7 +1686,7 @@ headerbar {
     font-size: smaller;
     padding-left: 12px;
     padding-right: 12px;
-    color: rgba(255, 255, 255, 0.7); }
+    color: rgba(255, 255, 255, 0.7);}
     headerbar .subtitle:backdrop {
       color: rgba(0, 0, 0, 0.7); }
 /* CBT: buttons in titlebar that are NOT window action buttons */
@@ -1709,12 +1713,12 @@ headerbar {
         background-color: @lightslategray-9397a8; }
     headerbar button:disabled {
       color: @black;
-      text-shadow: 1px 1px rgba(255, 255, 255, 0.85); }
+      text-shadow: 1px 1px rgba(255, 255, 255, 0.85);}
   headerbar entry {
     padding: 4px 8px; }
   headerbar.titlebar, .titlebar headerbar {
     border-radius: 0px 0px 0px 0px; }
-  /* CBT: close button */
+  /* CBT: window action buttons */
   headerbar .titlebutton.close, headerbar .titlebutton.maximize, headerbar .titlebutton.minimize, headerbar .titlebutton:not(separator) {
     min-width: 38px;
     min-height: 38px;
@@ -1732,6 +1736,7 @@ headerbar {
   headerbar .titlebutton.close {
     background-image: url("assets/close-large-borderless.png"); }
     headerbar .titlebutton.close:backdrop {
+    zbackground-color: @neutral02;
       background-image: url("assets/close-large-borderless.png"); }
   headerbar .titlebutton.minimize {
     background-image: url("assets/hide-large-borderless.png"); }
@@ -1790,7 +1795,7 @@ toolbar {
 
 .primary-toolbar {
   -GtkWidget-window-dragging: true;
-  padding: 4px;
+  padding: 0px;
   border-width: 1px;
   border-style: solid;
   border-color: @neutral02;
