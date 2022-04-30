@@ -50,8 +50,31 @@ zzzexample {
 @define-color accent01-dim-contrast rgba(83, 96, 110,1); /* inactive title text */
 /* BackG:	inactive tabs, scrollbar */
 
-@define-color accent03 #c1c8d6;
-@define-color accent03 #c1c8d6;
+@define-color accent02 #292a30; /* salmon
+rgb(255, 129, 112) */
+@define-color accent03 #ff8170; /* mediumaquamarine
+rgb(120, 194, 179) */
+@define-color accent04 #78c2b3; /* sandybrown
+rgb(255, 161, 79) */
+@define-color accent05 #ffa14f; /* deepskyblue
+rgb(78, 176, 204) */
+@define-color accent06 #4eb0cc; /* mediumpurple rgb(178, 129, 235) */
+@define-color accent07 #b281eb; /* darkseagreen rgb(132, 179, 96) */
+@define-color accent08 #53606e; /* hotpink rgb(255, 122, 178) */
+@define-color accent09 #ff7ab2; /* paleturquoise rgb(172, 242, 228) */
+@define-color accent10 #acf2e4; /* darkkhaki rgb(217, 201, 124) */
+@define-color accent11 #d9c97c; /* skyblue rgb(107, 223, 255) */
+@define-color accent12 #6bdfff; /* plum rgb(218, 186, 255) */
+@define-color accent13 #dabaff; /* lightgreen rgb(176, 230, 135) */
+@define-color accent14 #b2c8d6; /* orangered rgb(243, 74, 0) */
+@define-color accent15 #191919; /* indianred rgb(255, 53, 91) */
+@define-color accent16 #ff355b; /* lightgreen rgb(182, 232, 117) */
+@define-color accent17 #b6e875; /* orange rgb(255, 193, 80) */ 
+@define-color accent18 #ffc150; /* lightskyblue rgb(117, 211, 255) */
+@define-color accent19 #75d4ff; /* mediumpurple rgb(185, 117, 230) */
+@define-color accent20 #b975e6; /* mediumturquoise rgb(108, 190, 181) */
+
+
 @define-color zaccent03 #ffc150;
 
 @define-color black #000000;
