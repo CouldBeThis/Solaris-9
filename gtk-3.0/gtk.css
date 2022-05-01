@@ -50,6 +50,7 @@ zzzexample {
 @define-color accent01-dim-contrast rgba(83, 96, 110,1); /* inactive title text */
 /* BackG:	inactive tabs, scrollbar */
 
+/* XCODEDARK color scheme colors (except greys) */
 @define-color accent02 #292a30; /* salmon
 rgb(255, 129, 112) */
 @define-color accent03 #ff8170; /* mediumaquamarine
@@ -74,8 +75,6 @@ rgb(78, 176, 204) */
 @define-color accent19 #75d4ff; /* mediumpurple rgb(185, 117, 230) */
 @define-color accent20 #b975e6; /* mediumturquoise rgb(108, 190, 181) */
 
-
-@define-color zaccent03 #ffc150;
 
 @define-color black #000000;
 @define-color black-off #09090a;
@@ -1749,15 +1748,16 @@ headerbar {
     border-radius: 0px 0px 0px 0px; }
   /* CBT: window action buttons */
   headerbar .titlebutton.close, headerbar .titlebutton.maximize, headerbar .titlebutton.minimize, headerbar .titlebutton:not(separator) {
-    min-width: 38px;
-    min-height: 38px;
+    min-width: 28px;
+    min-height: 28px;
     color: transparent;
     background: none;
     box-shadow: none;
     zborder: none;
-    border-width: 2px;
+    border-width: 2px;r01-right @border01-bottom @border01-left;
     border-color: white black black white;
     padding: 0;
+    margin: 1px;
     border-radius: 0;
     -gtk-icon-shadow: none;
     background-position: center;
@@ -1766,15 +1766,18 @@ headerbar {
     background-image: url("assets/close-large-borderless.png"); }
     headerbar .titlebutton.close:backdrop {
     zbackground-color: @neutral02;
-      background-image: url("assets/close-large-borderless.png"); }
+      background-image: url("assets/close-large-borderless.png"); 
+    border-color: @border01-top @borde}
   headerbar .titlebutton.minimize {
     background-image: url("assets/hide-large-borderless.png"); }
     headerbar .titlebutton.minimize:backdrop {
-      background-image: url("assets/hide-large-borderless.png"); }
+      background-image: url("assets/hide-large-borderless.png"); 
+    border-color: @border01-top @borde}
   headerbar .titlebutton.maximize {
     background-image: url("assets/maximize-large-borderless.png"); }
     headerbar .titlebutton.maximize:backdrop {
-      background-image: url("assets/maximize-large-borderless.png"); }
+      background-image: url("assets/maximize-large-borderless.png"); 
+    border-color: @border01-top @borde}
 
 toolbar {
   padding: 4px;
@@ -2637,3 +2640,5 @@ read if you used those and something break with a version upgrade you're on your
 @define-color wm_button_active_color_b shade(@neutral01, 0.89);
 @define-color wm_button_active_color_c shade(@neutral01, 0.9);
 @define-color content_view_bg @accent01-contrast-off;
+
+
