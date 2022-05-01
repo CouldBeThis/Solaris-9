@@ -2033,22 +2033,51 @@ treeview {
       color: @accent01-contrast;
       background-color: @black; }
 
-filechooser.csd.background, filechooser placessidebar list, .nautilus-window.csd.background, .nautilus-window placessidebar list, .nemo-window.csd.background, .nemo-window placessidebar list {
-  background-color: @neutral01; }
-filechooser .sidebar, .nautilus-window .sidebar, .nemo-window .sidebar {
-  background-color: @neutral01; }
-  filechooser .sidebar .view:not(:selected), filechooser .sidebar iconview, .nautilus-window .sidebar .view:not(:selected), .nautilus-window .sidebar iconview, .nemo-window .sidebar .view:not(:selected), .nemo-window .sidebar iconview {
-    border: none;
-    color: @black;
-    background-color: transparent; }
-  filechooser .sidebar frame > border, filechooser .sidebar .frame, .nautilus-window .sidebar frame > border, .nautilus-window .sidebar .frame, .nemo-window .sidebar frame > border, .nemo-window .sidebar .frame {
-    border: none; }
-  filechooser .sidebar row:not(:selected), filechooser .sidebar view row:not(:selected), filechooser .sidebar row.sidebar-row:not(:selected), .nautilus-window .sidebar row:not(:selected), .nautilus-window .sidebar view row:not(:selected), .nautilus-window .sidebar row.sidebar-row:not(:selected), .nemo-window .sidebar row:not(:selected), .nemo-window .sidebar view row:not(:selected), .nemo-window .sidebar row.sidebar-row:not(:selected) {
-    color: @black; }
-  filechooser .sidebar .expander, .nautilus-window .sidebar .expander, .nemo-window .sidebar .expander {
-    color: @black; }
-    filechooser .sidebar .expander:hover, .nautilus-window .sidebar .expander:hover, .nemo-window .sidebar .expander:hover {
-      color: @black; }
+filechooser.csd.background, 
+filechooser placessidebar list, 
+.nautilus-window.csd.background, 
+.nautilus-window placessidebar list, 
+.nemo-window.csd.background, 
+.nemo-window placessidebar list {
+	background-color: @neutral01; }
+filechooser .sidebar, 
+.nautilus-window .sidebar, 
+.nemo-window .sidebar {
+	background-color: @neutral01; }
+	filechooser .sidebar .view:not(:selected), 
+	filechooser .sidebar iconview, 
+	.nautilus-window .sidebar .view:not(:selected), 
+	.nautilus-window .sidebar iconview, 
+	.nemo-window .sidebar .view:not(:selected), 
+	.nemo-window .sidebar iconview {
+		border: none;
+		color: @black;
+		background-color: transparent; }
+	filechooser .sidebar frame > border, 
+	filechooser .sidebar .frame, 
+	.nautilus-window .sidebar frame > border, 
+	.nautilus-window .sidebar .frame, 
+	.nemo-window .sidebar frame > border, 
+	.nemo-window .sidebar .frame {
+		border: none; }
+	filechooser .sidebar row:not(:selected), 
+		filechooser .sidebar view row:not(:selected), 
+	filechooser .sidebar row.sidebar-row:not(:selected), 
+	.nautilus-window .sidebar row:not(:selected), 
+	.nautilus-window .sidebar view row:not(:selected), 
+	.nautilus-window .sidebar row.sidebar-row:not(:selected), 
+	.nemo-window .sidebar row:not(:selected), 
+	.nemo-window .sidebar view row:not(:selected), 
+	.nemo-window .sidebar row.sidebar-row:not(:selected) {
+		color: @black; }
+		filechooser .sidebar .expander, 
+	.nautilus-window .sidebar .expander, 
+	.nemo-window .sidebar .expander {
+		color: @black; }
+	filechooser .sidebar .expander:hover, 
+	.nautilus-window .sidebar .expander:hover, 
+	.nemo-window .sidebar .expander:hover {
+		color: @black; }
 
 stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar.sidebar.left:dir(rtl) list {
   border-right: 1px solid @neutral02;
