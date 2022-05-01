@@ -1395,7 +1395,12 @@ scrollbar {
 	scrollbar trough {
 		border: none;
 		border-radius: 0; }
-	scrollbar button, scrollbar button:backdrop, scrollbar button:active, scrollbar button:active:backdrop, scrollbar button:disabled, scrollbar button:disabled:backdrop {
+	scrollbar button,
+	scrollbar button:backdrop, 
+	scrollbar button:active, 
+	scrollbar button:active:backdrop, 
+	scrollbar button:disabled, 
+	scrollbar button:disabled:backdrop {
 		border: none;
 		box-shadow: none;
 		color: transparent;
@@ -1427,7 +1432,7 @@ scrollbar {
 	scrollbar.vertical slider {
 		min-width: 11px;
 		min-height: 145px;
-		padding: 3; /* effectively controls overall slider thickness */
+		padding: 3; /* effectively controls overall slider thickness (?) */
 		border: 5px double @accent01;
 		background-color: #53606e; /* main color */
 		background-clip: padding-box;
@@ -1442,6 +1447,11 @@ scrollbar {
 	treeview ~ scrollbar.vertical {
 		border-top: 1px solid @neutral02;
 		margin-top: -1px; }
+
+
+
+
+
 
 separator {
   -gtk-icon-source: none;
