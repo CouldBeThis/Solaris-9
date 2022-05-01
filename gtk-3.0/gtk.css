@@ -1382,7 +1382,12 @@ scrollbar {
 	/* CBT: The background of the entire scrollbar */
 	scrollbar trough {
 		zborder: 3px solid @FINDME;
-		border-radius: 0; }
+		border-radius: 0; 
+		zbackground-image: url("assets/thatch02.png");}
+	scrollbar.horizontal trough {
+		background-image: url("assets/thatch16.png");}
+	scrollbar.vertical trough {
+		background-image: url("assets/thatch16.png");}
 	scrollbar button,
 	scrollbar button:backdrop, 
 	scrollbar button:active, 
@@ -1435,15 +1440,11 @@ scrollbar {
 	    border-width: 2px;
 	    border-color: white black black white;
 	    border-style: solid;
-		
 	}
 
 	scrollbar.horizontal button {
 		min-height: 11px;
-		min-width: 11px;
-	    padding: 0;
-	    margin: 1px;
-	    border-radius: 0;}
+		min-width: 11px;}
 		scrollbar.horizontal button.down {
 			background-image: url("assets/arrow-right.png"); }
 		scrollbar.horizontal button.up {
@@ -1455,7 +1456,7 @@ scrollbar {
 		scrollbar.vertical button.down {
 			background-image: url("assets/arrow-down.png");}
 		scrollbar.vertical button.up {
-			background-image: url("assets/arrow.png");}
+			background-image: url("assets/arrow-up.png");}
 			
 			
 	treeview ~ scrollbar.vertical {
