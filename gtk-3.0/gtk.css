@@ -1373,18 +1373,6 @@ scrolledwindow {
   border-right-color: @border01-darkless; }
 
 /* CBT: scrolling */
-
-
-    padding: 0.1em 0.5em 0.1em 0.5em;
-    margin: 0.1em;		/*space between tabs */
-
-    color: @black;
-	background-color: @silver-bfbfbf;
-    /* CBT: Current tab (in/active windows) */
-    notebook tab:checked {
-      border-color: #fff;
-      color: #dfdfe0;}
-
 scrollbar {
 	zborder: 1px solid @neutral02;
 	zborder-bottom-color: @border01-dark;
@@ -1411,9 +1399,26 @@ scrollbar {
 		background-repeat: no-repeat; }
 	scrollbar.overlay-indicator {
 		opacity: 1; }
+
+	/* CBT: Shared between left/right and up/down sliders */
+	scrollbar.horizontal slider,
+	scrollbar.vertical slider {
+		padding: 3; /* effectively controls overall slider thickness (?) */
+		border: 5px double @accent01;
+		background-color: #53606e; /* main color */
+		background-clip: padding-box;
+	}
+	/* CBT: ONLY what is unique to left/right slider */
 	scrollbar.horizontal slider {
 		min-width: 45px;
 		min-height: 11px;
+		}
+	/* CBT: ONLY what is unique to up/down slider */
+	scrollbar.vertical slider {
+		min-width: 11px;
+		min-height: 45px;
+		}
+/* ?junk
 		margin: 0;
 		border: 1px solid @neutral02;
 		border-top-color: @border01-light;
@@ -1421,6 +1426,8 @@ scrollbar {
 		border-radius: 0px;
 		background-clip: padding-box;
 		background-color: @neutral01; }
+*/
+
 	scrollbar.horizontal button {
 		min-height: 11px;
 		min-width: 11px; }
@@ -1428,15 +1435,7 @@ scrollbar {
 			background-image: url("assets/arrow-right.png"); }
 		scrollbar.horizontal button.up {
 			background-image: url("assets/arrow-left.png"); }
-	/* CBT: indicator box in up/down scrollbar */
-	scrollbar.vertical slider {
-		min-width: 11px;
-		min-height: 145px;
-		padding: 3; /* effectively controls overall slider thickness (?) */
-		border: 5px double @accent01;
-		background-color: #53606e; /* main color */
-		background-clip: padding-box;
-		}
+			
 	scrollbar.vertical button {
 		min-height: 11px;
 		min-width: 11px; }
@@ -1444,6 +1443,9 @@ scrollbar {
 			background-image: url("assets/arrow-down.png"); }
 		scrollbar.vertical button.up {
 			background-image: url("assets/arrow-up.png"); }
+			
+			
+			
 	treeview ~ scrollbar.vertical {
 		border-top: 1px solid @neutral02;
 		margin-top: -1px; }
