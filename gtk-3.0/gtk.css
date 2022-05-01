@@ -1412,6 +1412,7 @@ scrollbar {
 		border: 5px double @accent01;
 		background-color: #53606e; /* main color */
 		background-clip: padding-box;
+		background-image: url("assets/thatch13.png");
 	}
 	/* CBT: ONLY what is unique to left/right slider */
 	scrollbar.horizontal slider {
@@ -1425,21 +1426,13 @@ scrollbar {
 		min-height: 11px;
 		min-width: 45px;
 		}
-/* ?junk
-		margin: 0;
-		border: 1px solid @neutral02;
-		border-top-color: @border01-light;
-		border-left-color: @border01-lightless;
-		border-radius: 0px;
-		background-clip: padding-box;
-		background-color: @neutral01; }
-*/
 
 	scrollbar.horizontal button,
 	scrollbar.vertical button {
 	    border-width: 4px;
 	    border-color: white black black white;
 	    border-style: solid;
+	    background-color: @accent01;
 	}
 
 	scrollbar.horizontal button {
@@ -1708,113 +1701,126 @@ colorchooser #add-color-button {
   padding-left: 0;
   padding-right: 0; }
 
+
 /* CBT: the combo titlebar/button bar CSD */
 headerbar {
 	padding: 0px 7px 0px 7px;
-	zmin-height: 34px;
 	height: 24px;
 	color: @accent01-contrast;
-	zborder-color: @FINDME;
 	background-color: @accent01;
 	border-style: solid;
 	border-width: 6px;
-	border-image: url("assets/window-border-equal.png") 6 10 6 9 stretch stretch;
+	border-image: url("assets/window-border-equal.png") 6 10 6 9 stretch;
 	font-size: smaller;
 	font-family: "Roboto Condensed";
-
 	}
-  box-shadow: inset 2px 2px @palevioletred, inset -2px -2px @purple; }
-  /* inactive window */
-  headerbar:backdrop {
-    color: @accent01-dim-contrast;
-    background-image: none;
-    background-color: @accent01-dim;
-    box-shadow: inset 2px 2px @gainsboro, inset -2px -2px @lightslategray-878ca0; }
-  .tiled headerbar, .tiled headerbar:backdrop, .maximized headerbar, .maximized headerbar:backdrop {
-    border-radius: 0;}
-  separator:first-child + headerbar, separator:first-child + headerbar:backdrop, headerbar:first-child, headerbar:first-child:backdrop {
-    border-top-left-radius: 0px; }
-    .maximized separator:first-child + headerbar, .tiled separator:first-child + headerbar, .maximized separator:first-child + headerbar:backdrop, .tiled separator:first-child + headerbar:backdrop, .maximized headerbar:first-child, .tiled headerbar:first-child, .maximized headerbar:first-child:backdrop, .tiled headerbar:first-child:backdrop {
-      border-radius: 0; }
-  headerbar:last-child, headerbar:last-child:backdrop {
-    border-top-right-radius: 0px; }
-    .maximized headerbar:last-child, .tiled headerbar:last-child, .maximized headerbar:last-child:backdrop, .tiled headerbar:last-child:backdrop {
-      border-radius: 0; }
-  headerbar .title {
-    padding-left: 12px;
-    padding-right: 12px;
-    font-weight: bold;
-    color: @accent01-contrast; }
-    headerbar .title:backdrop {
-      color: @black; }
-  headerbar .subtitle {
-    font-size: smaller;
-    padding-left: 12px;
-    padding-right: 12px;
-    color: rgba(255, 255, 255, 0.7);}
-    headerbar .subtitle:backdrop {
-      color: rgba(0, 0, 0, 0.7); }
+	/* inactive window */
+	headerbar:backdrop {
+		color: @accent01-dim-contrast;
+		background-image: none;
+		background-color: @accent01-dim; }
+		.tiled headerbar, 
+		.tiled headerbar:backdrop, 
+		.maximized headerbar, 
+		.maximized headerbar:backdrop {
+			border-radius: 0;}
+	separator:first-child + headerbar, 
+	separator:first-child + headerbar:backdrop, 
+	headerbar:first-child, 
+	headerbar:first-child:backdrop {
+		border-top-left-radius: 0px; }
+		.maximized separator:first-child + headerbar, 
+		.tiled separator:first-child + headerbar, 
+		.maximized separator:first-child + headerbar:backdrop, 
+		.tiled separator:first-child + headerbar:backdrop, 
+		.maximized headerbar:first-child, 
+		.tiled headerbar:first-child, 
+		.maximized headerbar:first-child:backdrop, 
+		.tiled headerbar:first-child:backdrop {
+			border-radius: 0; }
+	headerbar:last-child, 
+	headerbar:last-child:backdrop {
+		border-top-right-radius: 0px; }
+		.maximized headerbar:last-child, 
+		.tiled headerbar:last-child, 
+		.maximized headerbar:last-child:backdrop, 
+		.tiled headerbar:last-child:backdrop {
+			border-radius: 0; }
+	headerbar .title {
+		padding-left: 12px;
+		padding-right: 12px;
+		font-weight: bold;
+		color: @accent01-contrast; }
+		headerbar .title:backdrop {
+			color: @black; }
+	headerbar .subtitle {
+		font-size: smaller;
+		padding-left: 12px;
+		padding-right: 12px;
+		color: rgba(255, 255, 255, 0.7);}
+		headerbar .subtitle:backdrop {
+			color: rgba(0, 0, 0, 0.7); }
 /* CBT: buttons in titlebar that are NOT window action buttons */
-  headerbar button {
-    padding: 0.1em;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 0px;
-    color: @black;
-    border-color: @border01-top @border01-right @border01-bottom @border01-left;
-    background-color: @border01-light;
-    -gtk-outline-radius: 0px;
-    outline-color: @accent01;
-    outline-offset: 2px;
-    outline-style: solid; }
-    headerbar button:active, headerbar button:checked {
-      color: @black;
-	  border-color: @border01-top @border01-right @border01-bottom @border01-left;
-      background-color: @silver-bfbfbf;
-      background-image: none; }
-      headerbar button:active:disabled, headerbar button:checked:disabled {
-        color: @black-off;
-        text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
-        background-color: @lightslategray-9397a8; }
-    headerbar button:disabled {
-      color: @black;
-      text-shadow: 1px 1px rgba(255, 255, 255, 0.85);}
-  headerbar entry {
-    padding: 4px 8px; }
-  headerbar.titlebar, .titlebar headerbar {
-    border-radius: 0px 0px 0px 0px; }
-  /* CBT: window action buttons */
-  headerbar .titlebutton.close, headerbar .titlebutton.maximize, headerbar .titlebutton.minimize, headerbar .titlebutton:not(separator) {
-    min-width: 28px;
-    min-height: 28px;
-    color: transparent;
-    background: none;
-    box-shadow: none;
-    zborder: none;
-/*    r01-right @border01-bottom @border01-left;*/
-    border-width: 2px;
-    border-color: white black black white;
-    padding: 0;
-    margin: 1px;
-    border-radius: 0;
-    -gtk-icon-shadow: none;
-    background-position: center;
-    background-repeat: no-repeat; }
-  headerbar .titlebutton.close {
-    background-image: url("assets/close-large-borderless.png"); }
-    headerbar .titlebutton.close:backdrop {
-    zbackground-color: @neutral02;
-      background-image: url("assets/close-large-borderless.png"); 
+	headerbar button {
+		padding: 0.1em;
+		border-style: solid;
+		border-width: 1px;
+		border-radius: 0px;
+		color: @black;
+		border-color: @border01-top @border01-right @border01-bottom @border01-left;
+		background-color: @border01-light;
+		-gtk-outline-radius: 0px;
+		outline-color: @accent01;
+		outline-offset: 2px;
+		outline-style: solid; }
+		headerbar button:active, 
+		headerbar button:checked {
+			color: @black;
+		border-color: @border01-top @border01-right @border01-bottom @border01-left;
+			background-color: @silver-bfbfbf;
+			background-image: none; }
+			headerbar button:active:disabled, 
+			headerbar button:checked:disabled {
+				color: @black-off;
+				text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
+				background-color: @lightslategray-9397a8; }
+		headerbar button:disabled {
+			color: @black;
+			text-shadow: 1px 1px rgba(255, 255, 255, 0.85);}
+	headerbar entry {
+		padding: 4px 8px; }
+	headerbar.titlebar, 
+	.titlebar headerbar {
+		border-radius: 0px 0px 0px 0px; }
+	/* CBT: window action buttons */
+	headerbar .titlebutton.close, 
+	headerbar .titlebutton.maximize, 
+	headerbar .titlebutton.minimize, 
+	headerbar .titlebutton:not(separator) {
+		min-width: 28px;
+		min-height: 28px;
+		color: transparent;
+		background: none;
+		box-shadow: none;
+		border-width: 2px;
+		border-color: white black black white;
+		padding: 0;
+		margin: 1px;
+		border-radius: 0;
+		-gtk-icon-shadow: none;
+		background-position: center;
+		background-repeat: no-repeat; }
+	headerbar .titlebutton.close {
+		background-image: url("assets/close-large-borderless.png"); }
+		headerbar .titlebutton.close:backdrop {
 }
-  headerbar .titlebutton.minimize {
-    background-image: url("assets/hide-large-borderless.png"); }
-    headerbar .titlebutton.minimize:backdrop {
-      background-image: url("assets/hide-large-borderless.png"); 
+	headerbar .titlebutton.minimize {
+		background-image: url("assets/hide-large-borderless.png"); }
+		headerbar .titlebutton.minimize:backdrop {
 }
-  headerbar .titlebutton.maximize {
-    background-image: url("assets/maximize-large-borderless.png"); }
-    headerbar .titlebutton.maximize:backdrop {
-      background-image: url("assets/maximize-large-borderless.png"); 
+	headerbar .titlebutton.maximize {
+		background-image: url("assets/maximize-large-borderless.png"); }
+		headerbar .titlebutton.maximize:backdrop {
 }
 
 toolbar {
