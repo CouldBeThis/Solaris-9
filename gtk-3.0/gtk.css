@@ -1374,14 +1374,14 @@ scrolledwindow {
 
 /* CBT: scrolling */
 scrollbar {
-	zborder: 1px solid @neutral02;
 	zborder-bottom-color: @border01-dark;
 	zborder-right-color: @border01-darkless;
 	background-color: @silver-bfbfbf;
 	zborder: 2px solid @accent18;
 	zbackground-color: @accent18;}
+	/* CBT: The background of the entire scrollbar */
 	scrollbar trough {
-		border: none;
+		zborder: 3px solid @FINDME;
 		border-radius: 0; }
 	scrollbar button,
 	scrollbar button:backdrop, 
@@ -1392,31 +1392,33 @@ scrollbar {
 		border: none;
 		box-shadow: none;
 		color: transparent;
-		padding: 0;
+		padding: 10; /* CBT: somewhat resizes but creates H/V overalp */
 		background-color: transparent;
 		background-size: auto;
 		background-position: center center;
-		background-repeat: no-repeat; }
+		background-repeat: no-repeat; 
+		zborder: 2px solid cyan;}
 	scrollbar.overlay-indicator {
-		opacity: 1; }
+		opacity: 1; /* CBT: change to make entire scrollbar semi-opaque */ }
 
 	/* CBT: Shared between left/right and up/down sliders */
 	scrollbar.horizontal slider,
 	scrollbar.vertical slider {
-		padding: 3; /* effectively controls overall slider thickness (?) */
 		border: 5px double @accent01;
 		background-color: #53606e; /* main color */
 		background-clip: padding-box;
 	}
 	/* CBT: ONLY what is unique to left/right slider */
 	scrollbar.horizontal slider {
-		min-width: 45px;
+		padding: 3 40; /* effectively controls overall slider size (?) */
 		min-height: 11px;
+		min-width: 41px;
 		}
 	/* CBT: ONLY what is unique to up/down slider */
 	scrollbar.vertical slider {
-		min-width: 11px;
-		min-height: 45px;
+		padding: 40 3; /* effectively controls overall slider size (?) */
+		min-height: 11px;
+		min-width: 45px;
 		}
 /* ?junk
 		margin: 0;
@@ -1428,22 +1430,32 @@ scrollbar {
 		background-color: @neutral01; }
 */
 
+	scrollbar.horizontal button,
+	scrollbar.vertical button {
+	    border-width: 2px;
+	    border-color: white black black white;
+	    border-style: solid;
+		
+	}
+
 	scrollbar.horizontal button {
 		min-height: 11px;
-		min-width: 11px; }
+		min-width: 11px;
+	    padding: 0;
+	    margin: 1px;
+	    border-radius: 0;}
 		scrollbar.horizontal button.down {
 			background-image: url("assets/arrow-right.png"); }
 		scrollbar.horizontal button.up {
-			background-image: url("assets/arrow-left.png"); }
+			background-image: url("assets/arrow-left.png");}
 			
 	scrollbar.vertical button {
-		min-height: 11px;
-		min-width: 11px; }
+		min-height: 40px;
+		min-width: 40px;} 
 		scrollbar.vertical button.down {
-			background-image: url("assets/arrow-down.png"); }
+			background-image: url("assets/arrow-down.png");}
 		scrollbar.vertical button.up {
-			background-image: url("assets/arrow-up.png"); }
-			
+			background-image: url("assets/arrow.png");}
 			
 			
 	treeview ~ scrollbar.vertical {
@@ -1778,8 +1790,8 @@ headerbar {
     background: none;
     box-shadow: none;
     zborder: none;
+/*    r01-right @border01-bottom @border01-left;*/
     border-width: 2px;
-    r01-right @border01-bottom @border01-left;
     border-color: white black black white;
     padding: 0;
     margin: 1px;
@@ -1792,17 +1804,17 @@ headerbar {
     headerbar .titlebutton.close:backdrop {
     zbackground-color: @neutral02;
       background-image: url("assets/close-large-borderless.png"); 
-    border-color: @border01-top @borde}
+}
   headerbar .titlebutton.minimize {
     background-image: url("assets/hide-large-borderless.png"); }
     headerbar .titlebutton.minimize:backdrop {
       background-image: url("assets/hide-large-borderless.png"); 
-    border-color: @border01-top @borde}
+}
   headerbar .titlebutton.maximize {
     background-image: url("assets/maximize-large-borderless.png"); }
     headerbar .titlebutton.maximize:backdrop {
       background-image: url("assets/maximize-large-borderless.png"); 
-    border-color: @border01-top @borde}
+}
 
 toolbar {
   padding: 4px;
