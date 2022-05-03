@@ -237,12 +237,26 @@ rgba(255, 255, 255, 0.95)
 	outline-color: @neutral02;
 	-gtk-outline-radius: 0; }
 
+/* CBT: used in some places as background */
 .background {
 	color: @black;
-	background-color: rgba(174, 178, 195, 0.999); }
+	background-color: @accent06; 
+	background-color: @accent18; 
+	zbackground-image: url("assets/thatch06.png"), 
+		linear-gradient(180deg, rgba(131,58,180,0.5) 0%, rgba(253,29,29,0.5) 50%, rgba(252,176,69,0.5) 100%);
+		background-image: url("assets/thatch22.png");
+
+	}
 	.background:backdrop {
 		color: @black;
-		background-color: @neutral01; }
+		background-color: @neutral01; 
+	background-color: @accent14; 
+	zbackground-color: @accent18; 
+	background-image: url("assets/thatch24.png");
+
+
+	zbackground-size: auto;}
+
 
 *:disabled {
 	-gtk-icon-effect: dim; }
@@ -1471,13 +1485,16 @@ separator {
 		background-color: @neutral02; }
 	button separator {
 		margin: 4px 1px; }
-	.sidebar view separator, view separator, separator .separator, separator {
+	.sidebar view separator, 
+	view separator, 
+	separator .separator, separator {
 		border: none;
 		background-color: @neutral02; }
 		.sidebar view separator:backdrop, view separator:backdrop, separator .separator:backdrop, separator:backdrop {
 			border: none;
 			background-color: @neutral02; }
-	.primary-toolbar separator, toolbar separator {
+	.primary-toolbar separator, 
+	toolbar separator {
 		background-color: @lightslategray-9196a9; }
 		.primary-toolbar separator:backdrop, toolbar separator:backdrop {
 			background-color: @neutral02; }
@@ -1489,20 +1506,26 @@ separator {
 		box-shadow: none; }
 		headerbar separator:backdrop {
 			background-color: @neutral02; }
-	.titlebar separator, .titlebar:not(headerbar) > separator, .titlebar separator.titlebutton, .titlebar:not(headerbar) > separator.titlebutton {
+	.titlebar separator, 
+	.titlebar:not(headerbar) > separator, 
+	.titlebar separator.titlebutton, 
+	.titlebar:not(headerbar) > separator.titlebutton {
 		-GtkWidget-window-dragging: true;
 		background-color: @purple02;
 		box-shadow: 1px 1px rgba(255, 255, 255, 0.4); }
 		.titlebar separator:backdrop, .titlebar:not(headerbar) > separator:backdrop, .titlebar separator.titlebutton:backdrop, .titlebar:not(headerbar) > separator.titlebutton:backdrop {
 			background-color: @neutral02; }
-	headerbar separator.titlebutton, .titlebar:not(headerbar) separator.titlebutton {
+	headerbar separator.titlebutton, 
+	.titlebar:not(headerbar) separator.titlebutton {
 		min-width: 1px;
 		min-height: 1px;
 		background-color: @purple02;
 		box-shadow: 1px 1px rgba(255, 255, 255, 0.4); }
 		headerbar separator.titlebutton:backdrop, .titlebar:not(headerbar) separator.titlebutton:backdrop {
 			background-color: @neutral02; }
-	.primary-toolbar button separator, toolbar button separator, .primary-toolbar:not(.libreoffice-toolbar) separator {
+	.primary-toolbar button separator, 
+	toolbar button separator, 
+	.primary-toolbar:not(.libreoffice-toolbar) separator {
 		border-color: @neutral02; }
 		.primary-toolbar button separator:backdrop, toolbar button separator:backdrop, .primary-toolbar:not(.libreoffice-toolbar) separator:backdrop {
 			border-color: @neutral02; }
@@ -1511,7 +1534,8 @@ separator {
 		box-shadow: none; }
 		headerbar button separator:backdrop {
 			border-color: @neutral02; }
-	.titlebutton button separator, .titlebutton separator.titlebutton {
+	.titlebutton button separator, 
+	.titlebutton separator.titlebutton {
 		border-color: @purple02;
 		box-shadow: 1px 1px rgba(255, 255, 255, 0.4); }
 		.titlebutton button separator:backdrop, .titlebutton separator.titlebutton:backdrop {
@@ -1823,6 +1847,7 @@ headerbar {
 		headerbar .titlebutton.maximize:backdrop {
 }
 
+/* CBT: items at top of window in some places */
 toolbar {
 	padding: 4px;
 	border: 1px solid @neutral02;
@@ -2095,6 +2120,7 @@ stacksidebar row {
 
 placessidebar > viewport.frame {
 	border-style: none; }
+/* CBT: sidebar in thunar */
 placessidebar row {
 	min-height: 36px;
 	padding: 0px; }
