@@ -15,6 +15,19 @@ useful documentation:
 /* main window */
 @define-color neutral01 #a3b1bf;			/* background */
 @define-color neutral01-contrast #09090a;	/* textcolor */
+@define-color neutral02 #838795;			/* background */
+@define-color neutral02-contrast #000;	/* textcolor */
+@define-color neutral03 #878ca0;			/* background */
+@define-color neutral03-contrast #000;	/* textcolor */
+@define-color neutral04 #898d9a;			/* background */
+@define-color neutral04-contrast #000;	/* textcolor */
+@define-color neutral05 #8b8e9c;			/* background */
+@define-color neutral05-contrast #000;	/* textcolor */
+@define-color neutral06 #9196a9;			/* background */
+@define-color neutral06-contrast #000;	/* textcolor */
+@define-color neutral07 #9397a8;			/* background */
+@define-color neutral07-contrast #000;	/* textcolor */
+
 
 /* use for borders */
 @define-color border01-light		rgba(223, 223, 224, 0.66);	/* top */
@@ -241,7 +254,7 @@ rgba(255, 255, 255, 0.95)
 .background {
 	color: @black;
 	background-color: @accent06; 
-	background-color: @accent18; 
+	zbackground-color: @accent18; 
 	zbackground-image: url("assets/thatch06.png"), 
 		linear-gradient(180deg, rgba(131,58,180,0.5) 0%, rgba(253,29,29,0.5) 50%, rgba(252,176,69,0.5) 100%);
 		background-image: url("assets/thatch22.png");
