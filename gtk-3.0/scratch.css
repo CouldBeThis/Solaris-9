@@ -25,7 +25,6 @@ headerbar {
 background: linear-gradient(0deg, rgba(31,28,30,1) 0%, rgba(246,246,246,1) 10%, rgba(31,28,30,1) 13%, @accent01 18%, @accent01 83%, rgba(31,28,30,1) 88%, rgba(246,246,246,1) 90%, rgba(31,28,30,1) 100%); 
 }
 
-
 /* CBT: the combo titlebar/button bar CSD */
 headerbar {
 	padding: 0px 7px 0px 7px;
