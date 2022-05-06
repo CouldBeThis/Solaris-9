@@ -2483,7 +2483,8 @@ wnck-pager {
 	}
 	wnck-pager:hover {
 	background-color: @accent03;
-	background-image: url("assets/thatch34.png"); 
+	background-image: url("assets/thatch27.png"); 
+	background-size: 100%;
 	border-style: solid;
 	border-width: 1px;
 	border-image: url("assets/window-border-equal.png") 5 10 6 9 stretch stretch;}

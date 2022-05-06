@@ -15,7 +15,9 @@ useful documentation:
 @define-color FINDME2 #FFBF00;
 
 /* some of the 1px outlines inside windows*/
+/*
 @define-color neutral02 #b2c8d6;
+*/
 
 /* main window */
 @define-color neutral01 #a3b1bf;			/* background */
