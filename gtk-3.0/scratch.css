@@ -34,6 +34,7 @@ headerbar {
 	background-color: @accent01;
 	border-style: solid;
 	border-width: 8px;
+	border-image: url("assets/window-border-equal.png") 5 10 6 9 stretch stretch;
 		zborder-image: url("assets/window-border-equal.png") 5 9;
 	zbackground-image: url("assets/title-large.png");
 	zbackground-repeat: repeat-x;
@@ -45,7 +46,6 @@ headerbar {
 	zborder-image-repeat: spaces;
 	zborder-image: url("assets-working/bg.png");
 	zborder-image-slice: 30 fill;
-	border-image: url("assets/window-border-equal.png") 5 10 6 9 stretch stretch;
 border-width: 8px 22px 8px 22px;
 	font-size: smaller;
 	font-family: "Roboto Condensed";
