@@ -1,44 +1,9 @@
 
-/* define theme colors
-useful documentation:
-* https://docs.gtk.org/gtk3/css-overview.html#specifying-colors-in-various-ways
-*/
-
-/* ######################### */
-/* ### main theme colors ### */
-/* ######################### */
-
-/* used to identify where and what while working */
-@define-color FINDME #2AC22C;
-@define-color FINDME2 #FFBF00;
-
-/* main window */
-@define-color neutral01 #a3b1bf;			/* background */
-@define-color neutral01-contrast #09090a;	/* textcolor */
-@define-color neutral02 #838795;			/* background */
-@define-color neutral02-contrast #000;	/* textcolor */
-@define-color neutral03 #878ca0;			/* background */
-@define-color neutral03-contrast #000;	/* textcolor */
-@define-color neutral04 #898d9a;			/* background */
-@define-color neutral04-contrast #000;	/* textcolor */
-@define-color neutral05 #8b8e9c;			/* background */
-@define-color neutral05-contrast #000;	/* textcolor */
-@define-color neutral06 #9196a9;			/* background */
-@define-color neutral06-contrast #000;	/* textcolor */
-@define-color neutral07 #9397a8;			/* background */
-@define-color neutral07-contrast #000;	/* textcolor */
 
 
-/* use for borders */
-@define-color border01-light		rgba(223, 223, 224, 0.66);	/* top */
-@define-color border01-lightless	rgba(223, 223, 224, 0.33);	/* left */
-@define-color border01-darkless		rgba(25, 25, 25, 0.33);		/* right */
-@define-color border01-dark			rgba(25, 25, 25, 0.66);		/* bottom */
-/* the above assigned to alternative names */
-@define-color border01-top			@border01-light;			/* top */
-@define-color border01-left			@border01-lightless;		/* left */
-@define-color border01-right		@border01-darkless;			/* right */
-@define-color border01-bottom		@border01-dark;				/* bottom */
+/* define theme colors */
+@import url("gtk-colors.css");
+
 
 zzzexample {
 	border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
