@@ -1,5 +1,8 @@
 
 
+/*
+ * TODO: icon themes with recoloring per palette https://developer-old.gnome.org/gtk4/stable/ch39s03.html
+*/
 
 /* define theme colors */
 @import url("gtk-colors.css");
@@ -9,8 +12,7 @@ zzzexample {
 	border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
 }
 
-/* some of the 1px outlines inside windows*/
-@define-color neutral02 #b2c8d6;
+
 
 @import url("gtk-colors.css");
 
@@ -46,7 +48,7 @@ zzzexample {
 	zbackground-color: @accent18; 
 	zbackground-image: url("assets/thatch06.png"), 
 		linear-gradient(180deg, rgba(131,58,180,0.5) 0%, rgba(253,29,29,0.5) 50%, rgba(252,176,69,0.5) 100%);
-		background-image: url("assets/thatch22.png");
+		zbackground-image: url("assets/thatch.png");
 
 	}
 	.background:backdrop {
@@ -54,7 +56,7 @@ zzzexample {
 		background-color: @neutral01; 
 	background-color: @accent14; 
 	zbackground-color: @accent18; 
-	background-image: url("assets/thatch24.png");
+	background-image: url("assets/thatch18.png");
 
 
 	zbackground-size: auto;}

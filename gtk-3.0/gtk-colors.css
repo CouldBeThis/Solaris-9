@@ -14,21 +14,24 @@ useful documentation:
 @define-color FINDME #2AC22C;
 @define-color FINDME2 #FFBF00;
 
+/* some of the 1px outlines inside windows*/
+@define-color neutral02 #b2c8d6;
+
 /* main window */
 @define-color neutral01 #a3b1bf;			/* background */
 @define-color neutral01-contrast #09090a;	/* textcolor */
 @define-color neutral02 #838795;			/* background */
-@define-color neutral02-contrast #000;	/* textcolor */
+@define-color neutral02-contrast #000000;	/* textcolor */
 @define-color neutral03 #878ca0;			/* background */
-@define-color neutral03-contrast #000;	/* textcolor */
+@define-color neutral03-contrast #000000;	/* textcolor */
 @define-color neutral04 #898d9a;			/* background */
-@define-color neutral04-contrast #000;	/* textcolor */
+@define-color neutral04-contrast #000000;	/* textcolor */
 @define-color neutral05 #8b8e9c;			/* background */
-@define-color neutral05-contrast #000;	/* textcolor */
+@define-color neutral05-contrast #000000;	/* textcolor */
 @define-color neutral06 #9196a9;			/* background */
-@define-color neutral06-contrast #000;	/* textcolor */
+@define-color neutral06-contrast #000000;	/* textcolor */
 @define-color neutral07 #9397a8;			/* background */
-@define-color neutral07-contrast #000;	/* textcolor */
+@define-color neutral07-contrast #000000;	/* textcolor */
 
 
 /* use for borders */
@@ -56,14 +59,10 @@ useful documentation:
 /* BackG:	inactive tabs, scrollbar */
 
 /* XCODEDARK color scheme colors (except greys) */
-@define-color accent02 #292a30; /* salmon
-rgb(255, 129, 112) */
-@define-color accent03 #ff8170; /* mediumaquamarine
-rgb(120, 194, 179) */
-@define-color accent04 #78c2b3; /* sandybrown
-rgb(255, 161, 79) */
-@define-color accent05 #ffa14f; /* deepskyblue
-rgb(78, 176, 204) */
+@define-color accent02 #292a30; /* salmon rgb(255, 129, 112) */
+@define-color accent03 #ff8170; /* mediumaquamarine rgb(120, 194, 179) */
+@define-color accent04 #78c2b3; /* sandybrown rgb(255, 161, 79) */
+@define-color accent05 #ffa14f; /* deepskyblue rgb(78, 176, 204) */
 @define-color accent06 #4eb0cc; /* mediumpurple rgb(178, 129, 235) */
 @define-color accent07 #b281eb; /* darkseagreen rgb(132, 179, 96) */
 @define-color accent08 #53606e; /* hotpink rgb(255, 122, 178) */
