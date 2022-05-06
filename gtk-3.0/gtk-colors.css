@@ -41,6 +41,30 @@ useful documentation:
 @define-color neutral07 #f0f6f0;			/* background */
 @define-color neutral07-contrast #222323;	/* textcolor */
 
+/* neutral but contrasting */
+@define-color neutral10 #439eb0;			/* background */
+@define-color neutral10-contrast #dfdfe0;	/* textcolor */
+@define-color neutral1 #f0f6f0;			/* background */
+@define-color neutral1-contrast #222323;	/* textcolor */
+@define-color neutral1 #f0f6f0;			/* background */
+@define-color neutral1-contrast #222323;	/* textcolor */
+@define-color neutral1 #f0f6f0;			/* background */
+@define-color neutral1-contrast #222323;	/* textcolor */
+@define-color neutral1 #f0f6f0;			/* background */
+@define-color neutral1-contrast #222323;	/* textcolor */
+@define-color neutral1 #f0f6f0;			/* background */
+@define-color neutral1-contrast #222323;	/* textcolor */
+@define-color neutral1 #f0f6f0;			/* background */
+@define-color neutral1-contrast #222323;	/* textcolor */
+@define-color neutral1 #f0f6f0;			/* background */
+@define-color neutral1-contrast #222323;	/* textcolor */
+@define-color neutral1 #f0f6f0;			/* background */
+@define-color neutral1-contrast #222323;	/* textcolor */
+@define-color neutral1 #f0f6f0;			/* background */
+@define-color neutral1-contrast #222323;	/* textcolor */
+@define-color neutral1 #f0f6f0;			/* background */
+@define-color neutral1-contrast #222323;	/* textcolor */
+
 
 /* use for borders */
 @define-color border01-light		rgba(223, 223, 224, 0.66);	/* top */
@@ -86,6 +110,8 @@ useful documentation:
 @define-color accent18 #ffc150; /* lightskyblue rgb(117, 211, 255) */
 @define-color accent19 #75d4ff; /* mediumpurple rgb(185, 117, 230) */
 @define-color accent20 #b975e6; /* mediumturquoise rgb(108, 190, 181) */
+
+
 
 
 @define-color black #000000;

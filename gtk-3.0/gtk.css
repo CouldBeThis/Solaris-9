@@ -104,8 +104,8 @@ entry {
 	entry:focus {
 		transition: border 100ms ease-in; }
 
-notebook tab label, notebook .prelight-page, notebook .prelight-page label, notebook .active-page, notebook .active-page label {
-	transition: all 200ms ease-in; }
+notebook tab label, notebook .prelight-page, notebook .prelight-page label, notebook .active-page, notebook .active-page label { /* CBT: remove animations whenswitching tabs (uncomment to re-enable)
+	transition: all 200ms ease-in;*/ }
 
 scale, progressbar {
 	transition: 200ms ease-out; }
@@ -826,7 +826,7 @@ notebook {
 		/* CBT: BackG: Behind elements if not otherwise defined */
 		notebook > stack:not(:only-child) {
 			background-color: @neutral01;
-			border: 10px solid #53606e;}
+			border: 10px solid @neutral10;}
 		.nautilus-window notebook > stack {
 			box-shadow: inset 0 0 0 6px @neutral01;
 			background-color: @lightslategray-878ca0;}
@@ -850,25 +850,35 @@ notebook {
 		/* CBT: Current tab (in/active windows) */
 		notebook tab:checked {
 			border-color: #fff;
-			background-color: #53606e;
-			color: #dfdfe0;}
+			background-color: @neutral10;
+			color: @neutral10-contrast;}
 	notebook > header {
 		zpadding-top: 2px;
 		/* CBT: BackG: Behind tabs */
 		background-color: @neutral01; }
+		/* CBT: this will show behind transparency of individual tab border image */
 		notebook > header.top {
-			box-shadow: 0 1px @border01; }
+			box-shadow: 0 1px @border01; 
+			 zbackground: rgb(131,58,180);
+			zbackground: linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); ;}
+			/* CBT: individual tabs */
 			notebook > header.top > tabs > tab {
 				border-bottom: none;
 				margin-top: 2px;
 				margin-bottom: 1px;
-				border-bottom-left-radius: 0;
-				border-bottom-right-radius: 0;
-				border-top-color: @border01-light;
-				border-left-color: @border01-lightless; }
+				zborder-bottom-left-radius: 0;
+				zborder-bottom-right-radius: 0;
+				zborder-top-color: @border01-light;
+				zborder-left-color: @border01-lightless; 
+				border-color: none;
+				border-style: solid;
+				border-width: 8px 18px 0px 18px;
+				border-image: url("assets/thatch29.png") 4 9  repeat;}
 				notebook > header.top > tabs > tab:checked {
 					margin-top: 0;
-					margin-bottom: -1px; }
+					margin-bottom: -1px;
+					border-image: none;
+					border-color: @black; }
 		notebook > header.bottom {
 			padding-top: 0;
 			box-shadow: 0 -1px @neutral02; }
@@ -1228,7 +1238,7 @@ scrollbar {
 	scrollbar.horizontal slider,
 	scrollbar.vertical slider {
 		border: 5px double @accent01;
-		background-color: #53606e; /* main color */
+		background-color: @neutral10; /* main color */
 		background-clip: padding-box;
 		background-image: url("assets/thatch13.png");
 	}
@@ -2478,7 +2488,7 @@ wnck-pager {
 	background-color: @accent04; 
 	zborder: 3px solid blue;
 	border-style: solid;
-	border-width: 8px;
+	border-width: 0px;
 	border-image: url("assets/window-border-equal.png") 5 10 6 9 stretch stretch;
 	}
 	wnck-pager:hover {
