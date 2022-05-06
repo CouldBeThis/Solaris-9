@@ -2269,6 +2269,7 @@ XfdesktopIconView:active {
 
 panel-toplevel.background, panel-toplevel.background menubar {
 	background-color: @neutral01;
+	background-color: @F;
 	color: @black; }
 panel-toplevel.background menubar, panel-toplevel.background #PanelApplet label, panel-toplevel.background #PanelApplet image {
 	color: @black; }
@@ -2355,6 +2356,8 @@ panel-toplevel.background na-tray-applet {
 		background-color: @accent01; }
 
 
+/* CBT https://docs.xfce.org/xfce/xfce4-panel/theming */
+/* CBT: background of items only in panel */
 .xfce4-panel.panel {
 	background-color: @neutral01;}
 	/* CBT: button in panel, for example window list popup */
@@ -2387,12 +2390,14 @@ panel-toplevel.background na-tray-applet {
 		border-color: transparent;
 		color: rgba(0, 0, 0, 0.8);
 		text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
-		background-color: transparent; }
+		background-color: transparent;
+	background-color: @FINDME; }
+	/* CBT: Window buttons */
 	.xfce4-panel.panel .tasklist button {
-		padding: 0.5em;
-		margin: 0.15em;
+		padding: 0em;
+		margin: 0em;
 		border-style: solid;
-		border-width: 1px;
+		border-width: 0px;
 		border-radius: 0px;
 		color: @black;
 		border-color: @neutral02;
@@ -2400,11 +2405,17 @@ panel-toplevel.background na-tray-applet {
 		border-left-color: @border01-lightless;
 		background-color: @neutral01;
 		-gtk-outline-radius: 0px;
-		outline-color: @accent01;
-		outline-offset: 2px;
-		outline-style: solid; 
-	zborder: 4px solid @FINDME; zbackground-color: pink;
-	min-height: 2em;}
+		zoutline-color: @accent01;
+		zoutline-offset: 2px;
+		zoutline-style: solid; 
+		zborder: 4px solid @FINDME; zbackground-color: pink;
+		zmin-height: 4em;
+		text-overflow: ellipsis;
+		zbackground-color: @FINDME;
+		  overflow: visible;}
+		
+			.xfce4-panel.panel .tasklist button:hover {
+			background-color: @accent01;}
 	.xfce4-panel.panel .tasklist button:active, .xfce4-panel.panel .tasklist button:checked {
 		color: @black;
 		border-top-color: @neutral02;
