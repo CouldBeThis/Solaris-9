@@ -25,8 +25,8 @@ zzzexample {
 	-GtkScrollbar-has-secondary-backward-stepper: false;
 	-GtkScrollbar-has-secondary-forward-stepper: false;
 	-GtkScrolledwindow-scrollbar-spacing: 0;
-	-GtkScrolledwindow-scrollbars-within-bevel: 1;
-	-GtkTextView-error-underline-color: @brown;
+	-GtkScrolledwindow-scrollbars-within-bevel: 0;
+	-GtkTextView-error-underline-color: @accent01;
 	-GtkToolbutton-icon-spacing: 6;
 	-GtkToolItemGroup-expander-size: 11;
 	-GtkWidget-text-handle-width: 20;
