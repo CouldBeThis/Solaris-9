@@ -731,7 +731,9 @@ menubar > menuitem, .menubar > menuitem {
 	background-color: transparent;
 	border-width: 0px 1px 0px 0px;
 	border-style: double;
-	border-color: @border01-light @border01-darkless @border01-dark @border01-lightless; }
+	border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
+	zborder: 8px solid @FINDME; zbackground: @FINDME2;
+	zfont-family: "Chicago"; font-size: 18pt; }
 	menubar > menuitem:hover, .menubar > menuitem:hover {
 		color: @accent01-contrast;
 		background: @dimgray-575962; }
