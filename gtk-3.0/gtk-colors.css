@@ -13,6 +13,7 @@ useful documentation:
 /* used to identify where and what while working */
 @define-color FINDME #2AC22C;
 @define-color FINDME2 #FFBF00;
+@define-color FINDME3 #A6D1CE;
 
 /* some of the 1px outlines inside windows*/
 /*
@@ -62,11 +63,13 @@ useful documentation:
 @define-color neutral07 #f0f6f0;			/* background */
 @define-color neutral07-contrast #222323;	/* textcolor */
 
-/* neutral but contrasting */
-/*@define-color neutral10 #439eb0;*/			/* background */
-/*@define-color neutral10-contrast #dfdfe0;*/	/* textcolor */
-@define-color neutral10 #439eb0;			/* background - used to indicate a selection */
-@define-color neutral10-contrast #dfdfe0;	/* textcolor */
+/* ------ neutral but contrasting ------ */
+/* used to indicate a selection or maybe highlight */
+@define-color neutral10					#439eb0;	/* background */
+@define-color neutral10-contrast		#dfdfe0;	/* textcolor */
+/* selection or highlight in background window */
+@define-color neutral10-dimmed			#757C7E;	/* background */
+@define-color neutral10-dimmed-contrast	#dfdfe0;	/* textcolor */
 @define-color neutral11 #f0f6f0;			/* background */
 @define-color neutral11-contrast #222323;	/* textcolor */
 @define-color neutral12 #f0f6f0;			/* background */
@@ -85,7 +88,9 @@ useful documentation:
 @define-color neutral18-contrast #222323;	/* textcolor */
 @define-color neutral19 #f0f6f0;			/* background */
 @define-color neutral19-contrast #222323;	/* textcolor */
-
+/* unwanted...*/
+/*@define-color neutral10 #439eb0;*/			/* background */
+/*@define-color neutral10-contrast #dfdfe0;*/	/* textcolor */
 
 /* use for borders */
 @define-color border01-light		rgba(223, 223, 224, 0.66);	/* top */

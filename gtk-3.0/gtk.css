@@ -824,18 +824,24 @@ notebook {
 				padding-bottom: 0; }
 	.nautilus-window notebook, .nautilus-window notebook > stack:not(:only-child) searchbar {
 		background-color: @neutral04; }
-	/* CBT: contents of current tab */
+	/* CBT: contents of current tab (and highlight the border?) */
 	notebook > stack {
 		padding: 0px;
+		margin: 0px
 		border: 1px solid @neutral02;
 		border-top-color: @border01-light;
-		border-left-color: @border01-lightless; }
+		border-left-color: @border01-lightless;
+		border: 8px solid @neutral10; background-color: @FINDME2; }
 		/* CBT: BackG: Behind elements if not otherwise defined */
+		notebook > stack:backdrop {
+			border: 8px solid @neutral10-dimmed; 
+		}
 		notebook > stack:not(:only-child) {
 			/* CBT: MOVED to top of document to create consistency */
 		}
 
-	/* CBT: Tab bar BG */
+/* CBT: individual inactive tabs
+ * also: message window in Geany */
 	notebook tab {
 		padding: 0.1em 0.5em 0.1em 0.5em;
 		margin: 0.2em;		/*space between tabs */
@@ -857,6 +863,10 @@ notebook {
 			border-color: #fff;
 			background-color: @neutral10;
 			color: @neutral10-contrast;}
+			notebook tab:checked:backdrop {
+				border-color: @neutral10-dimmed-contrast;
+				background-color: @neutral10-dimmed;
+				color: @neutral10-dimmed-contrast;}
 	notebook > header {
 		zpadding-top: 2px;
 		/* CBT: BackG: Behind tabs */
