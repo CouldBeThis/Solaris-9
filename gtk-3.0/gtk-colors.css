@@ -50,9 +50,10 @@ useful documentation:
 @define-color neutral02-contrast @neutral01-contrast;	/* text */
 @define-color neutral03 #e6e4d3;						/* bg   */
 @define-color neutral03-contrast @neutral01-contrast;	/* text */
-@define-color neutral04 #fff;							/* bg   */
+/* light beige */
+@define-color neutral04 #E2DAB9;							/* bg   */
 @define-color neutral04-contrast @neutral01-contrast;	/* text */
-@define-color neutral05 #8b8e9c;						/* bg   */
+@define-color neutral05 #E2EDEE;						/* bg   */
 @define-color neutral05-contrast @neutral01-contrast;	/* text */
 
 @define-color neutral06 #ebe6dd;						/* bg   */

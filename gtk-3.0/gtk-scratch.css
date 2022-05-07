@@ -55,9 +55,24 @@ border-width: 8px 22px 8px 22px;
 	zfont-family: "ProFont";}
 	}
 
-/* a random gradient */
- background: rgb(131,58,180);
-background: linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
+.background image {
+    background-image: url("assets/title-large.png");
+	background-repeat: repeat-x;	
+	background-color: @neutral01;
+    background-origin: border-box; /* padding-box content-box */
+    background-attachment: scroll; /* fixed local */
+    background-position: top;
+    background-repeat: repeat-x;
+    background-size: cover; /* contain auto */
+
+
+}
+
+.background gradient {
+	/* a random gradient */
+	background: rgb(131,58,180);
+	background: linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
+}
 
 
 

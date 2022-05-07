@@ -2078,14 +2078,20 @@ treeview {
 		col:first-child {background: #FF0}
 	*/
 
-/* CBT: nautilus sidebar */
+/* CBT: nautilus sidebar
+ * >> NOTE see below placessidebar which also manages file open
+ * dialogue in adition to nautilus
+ * TODO: merge the filechooser + placessidebar */
+/* CBT: entire sidebar background */
 filechooser.csd.background, 
 filechooser placessidebar list, 
 .nautilus-window.csd.background, 
 .nautilus-window placessidebar list, 
 .nemo-window.csd.background, 
 .nemo-window placessidebar list {
-	background-color: @neutral01;}
+	background-color: @neutral04;
+	color: @neutral01-contrast;
+	zborder: 8px solid @FINDME; zbackground: @FINDME2;}
 filechooser .sidebar, 
 .nautilus-window .sidebar, 
 .nemo-window .sidebar {
@@ -2106,8 +2112,9 @@ filechooser .sidebar,
 	.nemo-window .sidebar frame > border, 
 	.nemo-window .sidebar .frame {
 		border: none; }
+	/* CBT: Individual items */
 	filechooser .sidebar row:not(:selected), 
-		filechooser .sidebar view row:not(:selected), 
+	filechooser .sidebar view row:not(:selected), 
 	filechooser .sidebar row.sidebar-row:not(:selected), 
 	.nautilus-window .sidebar row:not(:selected), 
 	.nautilus-window .sidebar view row:not(:selected), 
@@ -2115,8 +2122,15 @@ filechooser .sidebar,
 	.nemo-window .sidebar row:not(:selected), 
 	.nemo-window .sidebar view row:not(:selected), 
 	.nemo-window .sidebar row.sidebar-row:not(:selected) {
-		color: @black; }
-		filechooser .sidebar .expander, 
+/*
+		zcolor: @black;
+		zborder: 4px solid @FINDME; 
+		zbackground: @FINDME3; 
+		padding: 0px; 
+		margin: 0px; font-size: small;
+*/
+		}
+	filechooser .sidebar .expander, 
 	.nautilus-window .sidebar .expander, 
 	.nemo-window .sidebar .expander {
 		color: @black; }
@@ -2125,7 +2139,10 @@ filechooser .sidebar,
 	.nemo-window .sidebar .expander:hover {
 		color: @black; }
 
-stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar.sidebar.left:dir(rtl) list {
+/* CBT: ? function unknown */
+stacksidebar.sidebar:dir(ltr) list, 
+stacksidebar.sidebar.left list, 
+stacksidebar.sidebar.left:dir(rtl) list {
 	border-right: 1px solid @neutral02;
 	border-left-style: none; }
 stacksidebar.sidebar:dir(rtl) list, stacksidebar.sidebar.right list {
@@ -2139,24 +2156,27 @@ stacksidebar row {
 	stacksidebar row.needs-attention > label {
 		background-size: 6px 6px, 0 0; }
 
+/* CBT: sidebar in ?thunar, file dialogue AND nautilus */
+/* CBT: the entire sidebar (nautilus and dialogue) */
 placessidebar > viewport.frame {
 	border-style: none; }
-/* CBT: sidebar in thunar */
+/* CBT: each individual sidebar item */
 placessidebar row {
 	min-height: 36px;
-	padding: 0px; }
+	padding: 0px; 
+	zborder: 4px solid @FINDME; }
 	placessidebar row > revealer {
 		padding: 0 14px; }
 	placessidebar row image.sidebar-icon {
 		opacity: 1; }
 		placessidebar row image.sidebar-icon:dir(ltr) {
-			padding-right: 8px; }
+			padding-right: 0.5em; }
 		placessidebar row image.sidebar-icon:dir(rtl) {
-			padding-left: 8px; }
+			padding-left: 0.5em; }
 	placessidebar row label.sidebar-label:dir(ltr) {
-		padding-right: 2px; }
+		padding: 0px; }
 	placessidebar row label.sidebar-label:dir(rtl) {
-		padding-left: 2px; }
+		padding: 0px; }
 	placessidebar row.sidebar-new-bookmark-row {
 		color: @black; }
 	placessidebar row:drop(active):not(:disabled) {
