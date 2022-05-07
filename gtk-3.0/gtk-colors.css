@@ -118,6 +118,7 @@ useful documentation:
 
 @define-color accent02 @theme04; /* backg */
 @define-color accent02-contrast #22423B; /* text */
+@define-color accent02-dim #22423B; /* text */
 
 
 
