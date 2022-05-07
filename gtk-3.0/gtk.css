@@ -208,22 +208,34 @@ button {
 	padding: 0.1em;
 	zmargin: 0em;
 	border-style: solid;
-	border-width: 3px;
+	border-width: 6px;
+	border-radius: 4px;
+	background-color: @neutral01;
 	color: @neutral01-contrast;
 	border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
-	background-color: @neutral01;
 	-gtk-outline-radius: 0px;
 	zoutline-color: @accent01;
 	zoutline-offset: 2px;
-	zoutline-style: solid; }
-	button:active, button:checked {
+	zoutline-style: solid; 	
+	/* TODO: Make appropriate button border in PNG 
+	border-style: solid;
+	border-width: 8px;
+	border-image: url("assets/window-border-equal.png") 5 10 6 9 stretch;*/
+	}
+	button:hover {
+		background: @accent01;
+		color: @accent01-contrast;
+	}
+	button:active, 
+	button:checked {
 		color: @neutral01-contrast;
 		background-image: none;
 		border-color: @border01-lightless @border01-light @border01-darkless @border01-dark;
 		border-color: @border01-dark @border01-lightless @border01-light @border01-darkless;
 		border-style: solid;
 		}
-		button:active:disabled, button:checked:disabled {
+		button:active:disabled, 
+		button:checked:disabled {
 			color: @black-off;
 			text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
 			background-color: @lightslategray-9397a8; }
