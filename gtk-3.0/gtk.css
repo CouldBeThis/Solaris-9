@@ -60,7 +60,8 @@ notebook > stack:not(:only-child) {
 	zbackground-color: @theme18; 
 	background-image: url("assets/thatch29b.png");
 	background-size: 20%;
-	zbackground-size: auto;}
+	zbackground-size: auto;
+		color: @FINDME2;}
 
 
 *:disabled {
@@ -870,7 +871,10 @@ notebook {
 		zborder-image: url("assets/window-border-equal.png") 5 10 6 9 stretch;
 		zborder-image: url("assets/thatch27.png") 5 10 15 20 repeat;
 		border-top: 8px solid @accent02;
-		zborder: 10px solid green; /*FINDME*/}
+		zborder: 10px solid green; /*FINDME*/
+		zfont-weight: bold;
+		zcolor: yellow; /* CBT: geany status pane and nowhere else? */
+}
 		
 		/* CBT: BackG: Behind elements if not otherwise defined */
 		notebook > stack:backdrop {
@@ -881,6 +885,8 @@ notebook {
 		border-style: solid;
 		border-width: 8px 0px 0px 0px;
 		border-image: url("assets/thatch29c.png") 5 9 repeat;
+		color: @FINDME2;
+
 		}
 		notebook > stack:not(:only-child) {
 		/* CBT: MOVED to top of document to create consistency */ }
@@ -909,16 +915,18 @@ notebook {
 		notebook tab:checked {
 			zborder-color: @FINDME;
 			background-color: @neutral10;
-			color: @neutral10-contrast;
+			zcolor: @neutral10-contrast;
 			border-width: 8px 18px 0px 18px;
-			zborder: 10px solid purple; /*FINDME*/}
+			zborder: 10px solid purple; /*FINDME*/
+		zfont-weight: bold;
+		color: @FINDME2;}
 			notebook tab:checked:backdrop {
 				zborder-color: @neutral10-dimmed-contrast;
 				zbackground-color: @neutral10-dimmed;
 				zbackground-color: @FINDME;
 				background-image: url("assets/thatch35.png");
 				/* TODO: Make the line that goes under the tab bar match the current tab color in background windows */
-				zborder: 10px solid magenta; /*FINDME*/
+			zborder: 10px solid magenta; /*FINDME*/
 				}
 	notebook > header {
 		zpadding-top: 2px;
@@ -950,8 +958,13 @@ notebook {
 				notebook > header.top > tabs > tab:checked {
 					margin-top: 0;
 					margin-bottom: -1px;
+					zpadding: -10px;
 					background-color: @accent02;
-					color: @accent02-contrast;}
+					font-weight: bold;
+					zfont-size: medium;}
+					/* CBT: Current tab in the background */
+					notebook > header.top > tabs > tab:checked:backdrop {
+						color: @accent02-dim-contrast;}
 		notebook > header.bottom {
 			padding-top: 0;
 			box-shadow: 0 -1px @neutral02; }
