@@ -864,9 +864,11 @@ notebook {
 			background-color: @neutral10;
 			color: @neutral10-contrast;}
 			notebook tab:checked:backdrop {
-				border-color: @neutral10-dimmed-contrast;
-				background-color: @neutral10-dimmed;
-				color: @neutral10-dimmed-contrast;}
+				zborder-color: @neutral10-dimmed-contrast;
+				zbackground-color: @neutral10-dimmed;
+				color: @neutral10-dimmed-contrast;
+				background-image: url("assets/thatch35.png");
+				}
 	notebook > header {
 		zpadding-top: 2px;
 		/* CBT: BackG: Behind tabs */
