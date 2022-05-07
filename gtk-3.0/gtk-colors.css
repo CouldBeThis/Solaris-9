@@ -116,6 +116,8 @@ useful documentation:
 @define-color accent01-dim-contrast rgba(83, 96, 110,1); /* inactive title text */
 /* BackG:	inactive tabs, scrollbar */
 
+@define-color accent02 @theme04; /* backg */
+@define-color accent02-contrast #22423B; /* text */
 
 
 
