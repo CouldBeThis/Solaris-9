@@ -1558,6 +1558,7 @@ switch {
 	switch:disabled slider {
 		background-color: @darkgray-a5a9b9; }
 
+/* CBT: ?? wasn't able to find changes to any color swatch I could find */
 colorswatch.top {
 	border-top-left-radius: 2.5px;
 	border-top-right-radius: 2.5px; }
@@ -1618,15 +1619,21 @@ colorchooser #add-color-button {
 		background-color: @neutral04;
 		color: @black; }
 
-.path-bar button.text-button, .path-bar button.image-button, .path-bar button button {
+/* CBT: ? don't know what this is for. not in thunar or nautilus */
+.path-bar button.text-button, 
+.path-bar button.image-button, 
+.path-bar button button {
 	padding-left: 4px;
-	padding-right: 4px; }
-.path-bar button.text-button.image-button label, .path-bar button label {
+	padding-right: 4px;}
+.path-bar button.text-button.image-button label, 
+.path-bar button label {
 	padding-left: 0;
 	padding-right: 0; }
-	.path-bar button.text-button.image-button label:last-child, .path-bar button label:last-child {
+	.path-bar button.text-button.image-button label:last-child, 
+	.path-bar button label:last-child {
 		padding-right: 8px; }
-	.path-bar button.text-button.image-button label:first-child, .path-bar button label:first-child {
+	.path-bar button.text-button.image-button label:first-child, 
+	.path-bar button label:first-child {
 		padding-left: 8px; }
 .path-bar button image {
 	padding-left: 4px;
@@ -1913,16 +1920,22 @@ toolbar {
 			color: @black;
 			text-shadow: 1px 1px rgba(255, 255, 255, 0.85); }
 
+/* CBT: Tooltips */
+/* TODO: Integrate tooltips with rest of theme; looks off */
 tooltip {
 	border-radius: 0px;
 	box-shadow: none; }
 	tooltip.background {
-		border-width: 1px;
+		border-width: 3px;
 		border-style: solid;
-		border-color: @neutral02;
-		background-color: @lemonchiffon; }
+		border-color: @neutral07;
+		border-color: @accent02;
+		zbackground-color: @lemonchiffon;
+		background-color: @neutral01;
+		zborder: 8px solid @FINDME; zbackground: @FINDME2;  }
 		tooltip.background label {
-			padding: 1px; }
+			padding: 0.1em 2em; 
+			color: @neutral07-contrast;}
 	tooltip * {
 		background-color: transparent;
 		color: @black; }
