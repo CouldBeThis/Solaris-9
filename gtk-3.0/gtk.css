@@ -44,7 +44,7 @@ zzzexample {
 /* CBT: used in some places as background */
 .background {
 	color: @black;
-	background-color: @theme06; 
+	background-color: @neutral02; 
 	zbackground-color: @theme18; 
 	zbackground-image: url("assets/thatch06.png"), 
 		linear-gradient(180deg, rgba(131,58,180,0.5) 0%, rgba(253,29,29,0.5) 50%, rgba(252,176,69,0.5) 100%);
@@ -54,9 +54,10 @@ zzzexample {
 	.background:backdrop {
 		color: @black;
 		background-color: @neutral01; 
-	background-color: @theme14; 
+	zbackground-color: @neutral03; 
 	zbackground-color: @theme18; 
-	background-image: url("assets/thatch18.png");
+	background-image: url("assets/thatch29b.png");
+	background-size: 20%;
 
 
 	zbackground-size: auto;}
