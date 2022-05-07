@@ -873,7 +873,9 @@ notebook {
 				border-color: none;
 				border-style: solid;
 				border-width: 8px 18px 0px 18px;
-				border-image: url("assets/thatch29.png") 4 9  repeat;}
+				zborder-image: url("assets/thatch28.png") 4 9  repeat;
+				zborder-image: url("assets/thatch29.png") 5 9  repeat;
+				border-image: url("assets/thatch29c.png") 5 9  repeat;}
 				notebook > header.top > tabs > tab:checked {
 					margin-top: 0;
 					margin-bottom: -1px;
