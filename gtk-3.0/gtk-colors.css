@@ -67,7 +67,7 @@ useful documentation:
 /*@define-color neutral10-contrast #dfdfe0;*/	/* textcolor */
 @define-color neutral10 #439eb0;			/* background - used to indicate a selection */
 @define-color neutral10-contrast #dfdfe0;	/* textcolor */
-@define-color neutral11 #f0f6f0;			/* background - keep whiteish */
+@define-color neutral11 #f0f6f0;			/* background */
 @define-color neutral11-contrast #222323;	/* textcolor */
 @define-color neutral12 #f0f6f0;			/* background */
 @define-color neutral12-contrast #222323;	/* textcolor */

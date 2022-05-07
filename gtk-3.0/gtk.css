@@ -1241,7 +1241,7 @@ scrollbar {
 	scrollbar.horizontal slider,
 	scrollbar.vertical slider {
 		border: 5px double @accent01;
-		background-color: @neutral11; /* main color */
+		background-color: @neutral02; /* main color */
 		background-clip: padding-box;
 		background-image: url("assets/thatch13.png");
 	}
