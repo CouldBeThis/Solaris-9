@@ -42,55 +42,58 @@ useful documentation:
 @define-color theme20 #b975e6; /* mediumturquoise rgb(108, 190, 181) */
 
 /* main window */
-@define-color neutral01 #a3b1bf;			/* background */
-@define-color neutral01 #f3f3f5;			/* background */
-@define-color neutral01 #ececec;			/* background */
-@define-color neutral01 #e3e6c6;			/* background */
-@define-color neutral01 #e6e1cb;			/* background */
-@define-color neutral01-contrast #09090a;	/* textcolor */
-@define-color neutral02	#fffff2;			/* background */
-@define-color neutral02-contrast #000;	/* textcolor */
-@define-color neutral03 #e6e4d3;			/* background */
-@define-color neutral03-contrast #000;	/* textcolor */
-@define-color neutral04 #fff;			/* background */
-@define-color neutral04-contrast #000;	/* textcolor */
-@define-color neutral05 #8b8e9c;			/* background */
-@define-color neutral05-contrast #000000;	/* textcolor */
 
-@define-color neutral06 #ebe6dd;			/* background */
-@define-color neutral06-contrast #000;	/* textcolor */
+@define-color neutral01 #e6e1cb;						/* bg   */
+@define-color neutral01-contrast #09090a;				/* text */
+/* Bright white for emphasis and current activity */
+@define-color neutral02	#fffff2;						/* bg   */
+@define-color neutral02-contrast @neutral01-contrast;	/* text */
+@define-color neutral03 #e6e4d3;						/* bg   */
+@define-color neutral03-contrast @neutral01-contrast;	/* text */
+@define-color neutral04 #fff;							/* bg   */
+@define-color neutral04-contrast @neutral01-contrast;	/* text */
+@define-color neutral05 #8b8e9c;						/* bg   */
+@define-color neutral05-contrast @neutral01-contrast;	/* text */
+
+@define-color neutral06 #ebe6dd;						/* bg   */
+@define-color neutral06-contrast @neutral01-contrast	/* text */
+
 /* borrowed from https://lospec.com/palette-list/1bit-monitor-glow */
-@define-color neutral07 #f0f6f0;			/* background */
-@define-color neutral07-contrast #222323;	/* textcolor */
+@define-color neutral07 #f0f6f0;			/* bg   */
+@define-color neutral07-contrast #222323;	/* text */
 
 /* ------ neutral but contrasting ------ */
 /* used to indicate a selection or maybe highlight */
-@define-color neutral10					#439eb0;	/* background */
-@define-color neutral10-contrast		#dfdfe0;	/* textcolor */
+@define-color neutral10					#439eb0;	/* bg   */
+@define-color neutral10-contrast		#dfdfe0;	/* text */
 /* selection or highlight in background window */
-@define-color neutral10-dimmed			#757C7E;	/* background */
-@define-color neutral10-dimmed-contrast	#dfdfe0;	/* textcolor */
-@define-color neutral11 #f0f6f0;			/* background */
-@define-color neutral11-contrast #222323;	/* textcolor */
-@define-color neutral12 #f0f6f0;			/* background */
-@define-color neutral12-contrast #222323;	/* textcolor */
-@define-color neutral13 #f0f6f0;			/* background */
-@define-color neutral13-contrast #222323;	/* textcolor */
-@define-color neutral14 #f0f6f0;			/* background */
-@define-color neutral14-contrast #222323;	/* textcolor */
-@define-color neutral15 #f0f6f0;			/* background */
-@define-color neutral15-contrast #222323;	/* textcolor */
-@define-color neutral16 #f0f6f0;			/* background */
-@define-color neutral16-contrast #222323;	/* textcolor */
-@define-color neutral17 #f0f6f0;			/* background */
-@define-color neutral17-contrast #222323;	/* textcolor */
-@define-color neutral18 #f0f6f0;			/* background */
-@define-color neutral18-contrast #222323;	/* textcolor */
-@define-color neutral19 #f0f6f0;			/* background */
-@define-color neutral19-contrast #222323;	/* textcolor */
-/* unwanted...*/
-/*@define-color neutral10 #439eb0;*/			/* background */
-/*@define-color neutral10-contrast #dfdfe0;*/	/* textcolor */
+@define-color neutral10-dimmed			#757C7E;	/* bg   */
+@define-color neutral10-dimmed-contrast	#dfdfe0;	/* text */
+@define-color neutral11 #f0f6f0;					/* bg   */
+@define-color neutral11-contrast #222323;			/* text */
+@define-color neutral12 #fff;			/* bg   */
+@define-color neutral12-contrast #222;	/* text */
+@define-color neutral13 #fff;			/* bg   */
+@define-color neutral13-contrast #222;	/* text */
+@define-color neutral14 #fff;			/* bg   */
+@define-color neutral14-contrast #222;	/* text */
+@define-color neutral15 #fff;			/* bg   */
+@define-color neutral15-contrast #222;	/* text */
+@define-color neutral16 #fff;			/* bg   */
+@define-color neutral16-contrast #222;	/* text */
+@define-color neutral17 #fff;			/* bg   */
+@define-color neutral17-contrast #222;	/* text */
+@define-color neutral18 #fff;			/* bg   */
+@define-color neutral18-contrast #222;	/* text */
+@define-color neutral19 #fff;			/* bg   */
+@define-color neutral19-contrast #222;	/* text */
+/* .......unwanted.......*/
+/*@define-color neutral01 #a3b1bf;*/			/* bg   */
+/*@define-color neutral01 #f3f3f5;*/			/* bg   */
+/*@define-color neutral01 #ececec;*/			/* bg   */
+/*@define-color neutral01 #e3e6c6;*/			/* bg   */
+/*@define-color neutral10 #439eb0;*/			/* bg   */
+/*@define-color neutral10-contrast #dfdfe0;*/	/* text */
 
 /* use for borders */
 @define-color border01-light		rgba(223, 223, 224, 0.66);	/* top */
@@ -119,6 +122,7 @@ useful documentation:
 @define-color accent02 @theme04; /* backg */
 @define-color accent02-contrast #22423B; /* text */
 @define-color accent02-dim #22423B; /* text */
+@define-color accent02-dim-contrast #DCF4F1; /* text */
 
 
 

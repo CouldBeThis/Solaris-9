@@ -61,7 +61,7 @@ notebook > stack:not(:only-child) {
 	background-image: url("assets/thatch29b.png");
 	background-size: 20%;
 	zbackground-size: auto;
-		color: @FINDME2;}
+		zcolor: @FINDME2;}
 
 
 *:disabled {
@@ -876,7 +876,8 @@ notebook {
 		zcolor: yellow; /* CBT: geany status pane and nowhere else? */
 }
 		
-		/* CBT: BackG: Behind elements if not otherwise defined */
+		/* CBT: BackG: Behind elements if not otherwise defined
+		 * And some random window text */
 		notebook > stack:backdrop {
 ]			zborder-image: url("assets/window-border-equal.png") 5 10 6 9 stretch;
 		zborder-image: url("assets/thatch35.png");
@@ -885,7 +886,7 @@ notebook {
 		border-style: solid;
 		border-width: 8px 0px 0px 0px;
 		border-image: url("assets/thatch29c.png") 5 9 repeat;
-		color: @FINDME2;
+		zcolor: @FINDME2; 
 
 		}
 		notebook > stack:not(:only-child) {
@@ -1996,26 +1997,69 @@ treeview {
 		treeview entry:focus, treeview entry.flat:focus {
 			border-color: @black; }
 
+/* CBT: List items such as in file managers, preferences, others */
+/* TODO: It seems impossible to specify a color for selected item in active window. It must be somewhere else in the file.  */
 .view {
-	color: @black;
-	background-color: @accent01-contrast-off; }
+	/* TODO: Alternating row colors ? gradients ? */
+	color: @accent02-contrast;
+	zcolor: white;
+	background-color: @neutral03;
+	border: 0.5px solid @neutral10-dimmed; 
+	zbackground: @neutral02; }
 	.view:backdrop {
-		color: @black;
-		background-color: @accent01-contrast-off; }
+		zcolor: @neutral03-contrast;
+		zbackground-color:yellow;
+		zcolor: white; }
 	.view:disabled {
-		color: @dimgray-575962;
-		background-color: @darkgray-a5a9b9; }
-	.view:selected, .view:selected:focus, .view text:selected, .view text:selected:focus, .view text selection, .view text selection:focus {
-		color: @accent01-contrast;
-		background-color: @black;
-		border-radius: 0px;
-		-gtk-outline-radius: 0px; }
-		.view:selected:disabled, .view:selected:focus:disabled, .view text:selected:disabled, .view text:selected:focus:disabled, .view text selection:disabled, .view text selection:focus:disabled {
-			color: @darkgray-abacb1;
-			background-color: @black; }
-		.view:selected:backdrop, .view:selected:focus:backdrop, .view text:selected:backdrop, .view text:selected:focus:backdrop, .view text selection:backdrop, .view text selection:focus:backdrop {
-			color: @accent01-contrast;
-			background-color: @black; }
+		acolor: @dimgray-575962;
+		background-color: @accent01;
+		zcolor: white; }
+	/* CBT: Selected item */
+	.view:selected, 
+	.view:selected:focus, 
+	.view text:selected, 
+	.view text:selected:focus, 
+	.view text selection, 
+	.view text selection:focus {
+		zcolor: @accent01-contrast;
+		zbackground-color: @accent02;
+		zborder-radius: 0px;
+		-gtk-outline-radius: 0px; 
+		zborder: 8px solid @FINDME; 
+		background-color: cyan
+		zcolor: white;}
+		.view:selected:disabled, 
+		.view:selected:focus:disabled, 
+		.view text:selected:disabled, 
+		.view text:selected:focus:disabled, 
+		.view text selection:disabled, 
+		.view text selection:focus:disabled {
+			zcolor: @accent01-contrast;
+			zcolor: white;
+			background-color: orange; }
+		/* CBT: Selected item in the background */
+		.view:selected:backdrop, 
+		.view:selected:focus:backdrop, 
+		.view text:selected:backdrop, 
+		.view text:selected:focus:backdrop, 
+		.view text selection:backdrop, 
+		.view text selection:focus:backdrop {
+			color: @accent02-dim-contrast;
+			zcolor: white;
+			zbackground-color: @neutral03;
+			background-color: @accent02-dim; }
+	/* trying to figure out alternating row colors*/
+	/*
+		.view:nth-child(5n+3) {background-color: @FINDME;}
+		.view:first-child {background-color: @FINDME2;}
+		.view text selection:nth-child(even) {background-color: #4F79D0;} /* blue */
+	/*	.view text selection:nth-child(odd) {background-color: #FA680E;} /* orange */
+	/*
+		tr:nth-child(even) {background: #CCC}
+		tr:nth-child(odd) {background: #FFF}
+		li:nth-child(5n+3) {font-weight: bold}
+		col:first-child {background: #FF0}
+	*/
 
 /* CBT: nautilus sidebar */
 filechooser.csd.background, 
