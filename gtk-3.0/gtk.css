@@ -274,6 +274,7 @@ button {
 			text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
 			background-color: transparent; }
 
+/* CBT: Checkboxes and radio buttons */
 /* CBT: The whole selection --- including textual descsription --- for 
  * multiple selections */
 checkbutton.text-button, radiobutton.text-button {
@@ -286,30 +287,30 @@ checkbutton.text-button, radiobutton.text-button {
 
 /* TODO: Dim the accent colors for background windows */
 /* TODO: Make new checkbox + radio icons */
-check, radio {
-	margin: 0px;
-	min-height: 24px;
-	min-width: 24px;
-	border-style: none;
-	background-color: transparent;
-	background: @accent01; }
-
-check, .check {
-	-gtk-icon-source: url("assets/checkbox-unchecked.png"); }
-	check:disabled, .check:disabled {
-		-gtk-icon-source: url("assets/checkbox-unchecked-disabled.png"); }
-	check:checked, .check:checked {
-		-gtk-icon-source: url("assets/checkbox-checked.png"); }
-		check:checked:disabled, .check:checked:disabled {
-			-gtk-icon-source: url("assets/checkbox-checked-disabled.png"); }
-
-radio, .radio {
-	-gtk-icon-source: url("assets/radio-unchecked.png"); }
-	radio:disabled, .radio:disabled {
-		-gtk-icon-source: url("assets/radio-unchecked-disabled.png"); }
-	radio:checked, .radio:checked {
-		-gtk-icon-source: url("assets/radio-checked.png"); }
-		radio:checked:disabled, .radio:checked:disabled {
+	check, radio {
+		margin: 0px;
+		min-height: 24px;
+		min-width: 24px;
+		border-style: none;
+		background-color: transparent;
+		background: @accent01; }
+	
+	check, .check {
+		-gtk-icon-source: url("assets/checkbox-unchecked.png"); }
+		check:disabled, .check:disabled {
+			-gtk-icon-source: url("assets/checkbox-unchecked-disabled.png"); }
+		check:checked, .check:checked {
+			-gtk-icon-source: url("assets/checkbox-checked.png"); }
+			check:checked:disabled, .check:checked:disabled {
+				-gtk-icon-source: url("assets/checkbox-checked-disabled.png"); }
+	
+	radio, .radio {
+		-gtk-icon-source: url("assets/radio-unchecked.png"); }
+		radio:disabled, .radio:disabled {
+			-gtk-icon-source: url("assets/radio-unchecked-disabled.png"); }
+		radio:checked, .radio:checked {
+			-gtk-icon-source: url("assets/radio-checked.png"); }
+			radio:checked:disabled, .radio:checked:disabled {
 			-gtk-icon-source: url("assets/radio-checked-disabled.png"); }
 
 .content-view.view {
@@ -667,6 +668,9 @@ filechooserbutton:drop(active) {
 	box-shadow: inset 0 0 0 1px @black;
 	caret-color: @black; }
 
+/* CBT: Top menu bar */
+/* TODO: Menubar: a little easier to read and use */
+/* TODO: Menubar: Expander arrows more obvious */
 menu, .menu {
 	margin: 0px;
 	padding: 0;
@@ -1007,16 +1011,23 @@ notebook {
 		notebook > header > tabs > arrow:disabled {
 			color: @dimgray-656979; }
 
-paned > separator {
+/* CBT: Lines that seperate paned windows */
+paned > separator,
+paned > separator:backdrop {
 	border: none;
 	color: transparent;
-	background-color: @neutral02; }
+	zpadding: 20px;
+	background-color: @neutral02;
+	border-style: solid;
+	border-width: 8px 8px 0px 0px;
+	border-image: url("assets/window-border-equal.png") 10 stretch;
+	zborder: 8px solid @FINDME; zbackground: @FINDME2; }
 	paned > separator:backdrop {
-		background-color: @neutral02; }
+		zbackground-color: @neutral02; }
 	paned > separator:selected {
 		background-color: @neutral02; }
-paned .sidebar.left, paned .sidebar.right, paned .sidebar.left:dir(rtl), paned .sidebar:dir(rtl), paned .sidebar:dir(ltr), paned .sidebar {
-	border-style: none; }
+	paned .sidebar.left, paned .sidebar.right, paned .sidebar.left:dir(rtl), paned .sidebar:dir(rtl), paned .sidebar:dir(ltr), paned .sidebar {
+		border-style: none; }
 
 overshoot.top {
 	background-image: -gtk-gradient(radial, center top, 0.55, center top, 0.6, from(rgba(0, 0, 0, 0.2)), to(transparent));
