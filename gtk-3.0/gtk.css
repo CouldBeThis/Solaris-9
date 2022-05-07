@@ -827,14 +827,26 @@ notebook {
 	/* CBT: contents of current tab (and highlight the border?) */
 	notebook > stack {
 		padding: 0px;
-		margin: 0px
-		border: 1px solid @neutral02;
-		border-top-color: @border01-light;
-		border-left-color: @border01-lightless;
-		border: 8px solid @neutral10; background-color: @FINDME2; }
+		margin: 0px;
+		zborder: 1px solid @neutral02;
+		background-color: magenta;
+		zborder-top-color: @border01-light;
+		zborder-left-color: @border01-lightless;
+		background-color: magenta;
+		border-top-color: magenta;
+		border-left-color: magenta;
+		background-clip: border-box;
+	border-style: solid;
+	border-width: 8px;
+	zborder-image: url("assets/window-border-equal.png") 5 10 6 9 stretch;
+	border-image: url("assets/thatch27.png") 5 10 15 20 repeat;
+	border-top: 10px solid pink;}
 		/* CBT: BackG: Behind elements if not otherwise defined */
 		notebook > stack:backdrop {
-			border: 8px solid @neutral10-dimmed; 
+			zborder: 8px solid @neutral10-dimmed;
+			zborder-image: url("assets/window-border-equal.png") 5 10 6 9 stretch;
+			zborder-image: url("assets/thatch35.png");
+
 		}
 		notebook > stack:not(:only-child) {
 			/* CBT: MOVED to top of document to create consistency */
@@ -857,17 +869,20 @@ notebook {
 		font-size: small;
 		zfont-family: "Fira Sans Compressed";
 		font-family: "Roboto Condensed";
-		zfont-family: "ProFont";}
+		zfont-family: "ProFont";
+		border: 10px solid blue; /*FINDME*/}
 		/* CBT: Current tab (in/active windows) */
 		notebook tab:checked {
-			border-color: #fff;
+			zborder-color: @FINDME;
 			background-color: @neutral10;
-			color: @neutral10-contrast;}
+			color: @neutral10-contrast;
+		border: 10px solid purple; /*FINDME*/}
 			notebook tab:checked:backdrop {
 				zborder-color: @neutral10-dimmed-contrast;
 				zbackground-color: @neutral10-dimmed;
 				color: @neutral10-dimmed-contrast;
 				background-image: url("assets/thatch35.png");
+		border: 10px solid magenta; /*FINDME*/
 				}
 	notebook > header {
 		zpadding-top: 2px;
@@ -892,12 +907,15 @@ notebook {
 				border-width: 8px 18px 0px 18px;
 				zborder-image: url("assets/thatch28.png") 4 9  repeat;
 				zborder-image: url("assets/thatch29.png") 5 9  repeat;
-				border-image: url("assets/thatch29c.png") 5 9  repeat;}
+				zborder-image: url("assets/thatch29c.png") 5 9  repeat;
+				border: 10px solid orange; /*FINDME*/}
+				/* CBT: Current tab */
 				notebook > header.top > tabs > tab:checked {
 					margin-top: 0;
 					margin-bottom: -1px;
 					border-image: none;
-					border-color: @black; }
+					border-color: @black;
+					border: 10px solid gold; /*FINDME*/ }
 		notebook > header.bottom {
 			padding-top: 0;
 			box-shadow: 0 -1px @neutral02; }
