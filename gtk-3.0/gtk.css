@@ -1022,11 +1022,24 @@ paned > separator:backdrop {
 	border-width: 8px 8px 0px 0px;
 	border-image: url("assets/window-border-equal.png") 10 stretch;
 	zborder: 8px solid @FINDME; zbackground: @FINDME2; }
+	paned > separator:hover {
+		zborder: 8px solid @FINDME; 
+		border-style: solid;
+		border-width: 8px 8px 0px 0px;
+		border-image: none;
+
+		border-color: @accent02;
+	}
 	paned > separator:backdrop {
 		zbackground-color: @neutral02; }
 	paned > separator:selected {
-		background-color: @neutral02; }
-	paned .sidebar.left, paned .sidebar.right, paned .sidebar.left:dir(rtl), paned .sidebar:dir(rtl), paned .sidebar:dir(ltr), paned .sidebar {
+		zbackground-color: @neutral02;}
+	paned .sidebar.left, 
+	paned .sidebar.right, 
+	paned .sidebar.left:dir(rtl), 
+	paned .sidebar:dir(rtl), 
+	paned .sidebar:dir(ltr), 
+	paned .sidebar {
 		border-style: none; }
 
 overshoot.top {
