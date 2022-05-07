@@ -823,6 +823,8 @@ modelbutton.flat, menuitem.button.flat, .menuitem.button.flat {
 		-gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
 
 /* CBT: Tabbed windows */
+/* TODO: Consider: Remove the @accent02 border at top of window contents 
+ * if 0-1 tabs only. Looks weird. */
 notebook {
 	padding: 0; }
 	/* CBT: frame around tabs and content */
@@ -1379,11 +1381,6 @@ scrollbar {
 	treeview ~ scrollbar.vertical {
 		border-top: 1px solid @neutral02;
 		margin-top: -1px; }
-
-
-
-
-
 
 separator {
 	-gtk-icon-source: none;
