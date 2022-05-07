@@ -202,7 +202,8 @@ button:link, button:visited {
 	button:link > label, button:visited > label {
 		text-decoration-line: underline; }
 
-/* CBT: buttons */
+/* CBT: buttons
+ * note: there is more of buttons above. Difference? */
 button {
 	border-radius: 0px;
 	padding: 0.1em;
@@ -273,16 +274,25 @@ button {
 			text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
 			background-color: transparent; }
 
+/* CBT: The whole selection --- including textual descsription --- for 
+ * multiple selections */
 checkbutton.text-button, radiobutton.text-button {
-	padding: 4px;
-	outline-offset: 0; }
+	padding: 0px;
+	margin: 0px;
+	outline-offset: 0;
+	zbackground: @neutral03;}
+	checkbutton.text-button:hover, radiobutton.text-button:hover {
+		background: @neutral03;}
 
+/* TODO: Dim the accent colors for background windows */
+/* TODO: Make new checkbox + radio icons */
 check, radio {
-	margin: 4px;
-	min-height: 11px;
-	min-width: 11px;
+	margin: 0px;
+	min-height: 24px;
+	min-width: 24px;
 	border-style: none;
-	background-color: transparent; }
+	background-color: transparent;
+	background: @accent01; }
 
 check, .check {
 	-gtk-icon-source: url("assets/checkbox-unchecked.png"); }
