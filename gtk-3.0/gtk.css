@@ -937,7 +937,7 @@ notebook {
 			border-width: 8px 18px 0px 18px;
 			zborder: 10px solid purple; /*FINDME*/
 		zfont-weight: bold;
-		color: @FINDME2;}
+		zcolor: @FINDME2;}
 			notebook tab:checked:backdrop {
 				zborder-color: @neutral10-dimmed-contrast;
 				zbackground-color: @neutral10-dimmed;
@@ -1877,7 +1877,7 @@ toolbar {
 		zoutline-color: @accent01;
 		outline-offset: 2px;
 		zoutline-style: solid; 
-		background-color: @FINDME2;
+		zbackground-color: @FINDME2;
 		zborder: 16px solid magenta;}
 		.primary-toolbar button:active, 
 		.primary-toolbar button:checked, 
@@ -1890,7 +1890,7 @@ toolbar {
 			zborder-right-color: @border01-darkless;
 			background-color: @neutral04;
 			background-image: none; 
-		background-color: @FINDME2;
+		zbackground-color: @FINDME2;
 		zborder: 6px dashed magenta;}
 			.primary-toolbar button:active:disabled, 
 			.primary-toolbar button:checked:disabled, 
@@ -1899,14 +1899,14 @@ toolbar {
 				color: @black-off;
 				text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
 				background-color: @lightslategray-9397a8; 
-		background-color: @FINDME2;
+		zbackground-color: @FINDME2;
 		zborder: 6px dashed magenta;}
 		.primary-toolbar button:disabled, 
 		.primary-toolbar 
 		.raised button:disabled {
 			color: @black;
 			text-shadow: 1px 1px rgba(255, 255, 255, 0.85);
-		background-color: @FINDME2;
+		zbackground-color: @FINDME2;
 		zborder: 6px dashed magenta; }
 
 .inline-toolbar {
@@ -2608,7 +2608,7 @@ panel-toplevel.background na-tray-applet {
 		color: rgba(0, 0, 0, 0.8);
 		text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
 		background-color: transparent;
-	background-color: @FINDME; }
+	zbackground-color: @FINDME; }
 	/* CBT: Window buttons */
 	.xfce4-panel.panel .tasklist button {
 		padding: 0em;
