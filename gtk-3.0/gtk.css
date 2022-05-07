@@ -78,7 +78,7 @@ zzzexample {
 		background-color: @silver-c2c6d3; }
 	.gtkstyle-fallback:active {
 		color: @black;
-		background-color: @silver-bfbfbf; }
+		background-color: @neutral04; }
 	.gtkstyle-fallback:disabled {
 		color: @dimgray-575962;
 		background-color: @darkgray-a5a9b9; }
@@ -249,7 +249,7 @@ button {
 			border-left-color: @neutral02;
 			border-bottom-color: @border01-dark;
 			border-right-color: @border01-darkless;
-			background-color: @silver-bfbfbf;
+			background-color: @neutral04;
 			background-image: none; }
 			button.flat:active:disabled, button.flat:checked:disabled {
 				color: @black-off;
@@ -670,11 +670,11 @@ menu, .menu {
 		min-height: 16px; }
 		menu > arrow.top, .menu > arrow.top {
 		margin-top: -6px;
-		border-bottom: 1px solid @silver-bfbfbf;
+		border-bottom: 1px solid @neutral04;
 		-gtk-icon-source: -gtk-icontheme("pan-up-symbolic"); }
 		menu > arrow.bottom, .menu > arrow.bottom {
 		margin-bottom: -6px;
-		border-top: 1px solid @silver-bfbfbf;
+		border-top: 1px solid @neutral04;
 		-gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
 
 menubar, .menubar {
@@ -820,7 +820,7 @@ notebook {
 				padding-top: 0;
 				padding-bottom: 0; }
 	.nautilus-window notebook, .nautilus-window notebook > stack:not(:only-child) searchbar {
-		background-color: @lightslategray-878ca0; }
+		background-color: @neutral04; }
 	/* CBT: contents of current tab */
 	notebook > stack {
 		padding: 0px;
@@ -833,7 +833,7 @@ notebook {
 			border: 10px solid @neutral10;}
 		.nautilus-window notebook > stack {
 			box-shadow: inset 0 0 0 6px @neutral01;
-			background-color: @lightslategray-878ca0;}
+			background-color: @neutral04;}
 	/* CBT: Tab bar BG */
 	notebook tab {
 		padding: 0.1em 0.5em 0.1em 0.5em;
@@ -846,7 +846,7 @@ notebook {
 		zborder-color: @neutral02;
 		zborder-color: #ff355b;
 		color: @black;
-	background-color: @silver-bfbfbf;
+	background-color: @neutral04;
 	font-size: small;
 	zfont-family: "Fira Sans Compressed";
 	font-family: "Roboto Condensed";
@@ -1210,7 +1210,7 @@ scrolledwindow {
 scrollbar {
 	zborder-bottom-color: @border01-dark;
 	zborder-right-color: @border01-darkless;
-	background-color: @silver-bfbfbf;
+	background-color: @neutral04;
 	zborder: 2px solid @theme18;
 	zbackground-color: @theme18;}
 	/* CBT: The background of the entire scrollbar */
@@ -1452,7 +1452,7 @@ switch {
 	border-right-color: @border01-darkless;
 	background-color: @neutral01; }
 	switch:checked {
-		background-color: @lightslategray-878ca0; }
+		background-color: @neutral04; }
 	switch:disabled {
 		color: @dimgray-575962;
 		border-color: @darkgray-a5a9b9;
@@ -1525,7 +1525,7 @@ colorchooser #add-color-button {
 	color: @black; }
 	colorchooser #add-color-button:hover {
 		border-color: rgba(0, 0, 0, 0.3);
-		background-color: @silver-bfbfbf;
+		background-color: @neutral04;
 		color: @black; }
 
 .path-bar button.text-button, .path-bar button.image-button, .path-bar button button {
@@ -1621,7 +1621,7 @@ headerbar {
 		headerbar button:checked {
 			color: @black;
 		border-color: @border01-top @border01-right @border01-bottom @border01-left;
-			background-color: @silver-bfbfbf;
+			background-color: @neutral04;
 			background-image: none; }
 			headerbar button:active:disabled, 
 			headerbar button:checked:disabled {
@@ -1700,7 +1700,7 @@ toolbar {
 			border-left-color: @neutral02;
 			border-bottom-color: @border01-dark;
 			border-right-color: @border01-darkless;
-			background-color: @silver-bfbfbf;
+			background-color: @neutral04;
 			background-image: none; }
 			toolbar button.flat:active:disabled, toolbar button.flat:checked:disabled {
 				color: @black-off;
@@ -1748,7 +1748,7 @@ toolbar {
 			border-left-color: @neutral02;
 			border-bottom-color: @border01-dark;
 			border-right-color: @border01-darkless;
-			background-color: @silver-bfbfbf;
+			background-color: @neutral04;
 			background-image: none; }
 			.primary-toolbar button:active:disabled, .primary-toolbar button:checked:disabled, .primary-toolbar .raised button:active:disabled, .primary-toolbar .raised button:checked:disabled {
 				color: @black-off;
@@ -1790,7 +1790,7 @@ toolbar {
 			border-left-color: @neutral02;
 			border-bottom-color: @border01-dark;
 			border-right-color: @border01-darkless;
-			background-color: @silver-bfbfbf;
+			background-color: @neutral04;
 			background-image: none; }
 			.inline-toolbar toolbutton > button:active:disabled, .inline-toolbar toolbutton > button:checked:disabled {
 				color: @black-off;
@@ -2185,8 +2185,8 @@ headerbar.selection-mode, toolbar.selection-mode {
 		color: black;
 		background-color: @darkgray-b3b3b3; }
 		headerbar.selection-mode button:hover, toolbar.selection-mode button:hover {
-			border-color: @silver-bfbfbf;
-			background-color: @silver-bfbfbf; }
+			border-color: @neutral04;
+			background-color: @neutral04; }
 		headerbar.selection-mode button:active, headerbar.selection-mode button:checked, toolbar.selection-mode button:active, toolbar.selection-mode button:checked {
 			border-color: @dimgray-737373;
 			background-color: @dimgray-737373; }
@@ -2194,9 +2194,9 @@ headerbar.selection-mode, toolbar.selection-mode {
 				border-color: @dimgray-737373;
 				background-color: @dimgray-737373; }
 		headerbar.selection-mode button:backdrop, toolbar.selection-mode button:backdrop {
-			border-color: @silver-bfbfbf;
+			border-color: @neutral04;
 			color: black;
-			background-color: @silver-bfbfbf; }
+			background-color: @neutral04; }
 	headerbar.selection-mode .selection-menu button, toolbar.selection-mode .selection-menu button {
 		border-style: none;
 		background-color: transparent;
@@ -2312,7 +2312,7 @@ panel-toplevel.background button {
 		border-left-color: @neutral02;
 		border-bottom-color: @border01-dark;
 		border-right-color: @border01-darkless;
-		background-color: @silver-bfbfbf;
+		background-color: @neutral04;
 		background-image: none; }
 	panel-toplevel.background button:active:disabled, panel-toplevel.background button:checked:disabled {
 		color: @black-off;
@@ -2344,7 +2344,7 @@ panel-toplevel.background button {
 		border-left-color: @neutral02;
 		border-bottom-color: @border01-dark;
 		border-right-color: @border01-darkless;
-		background-color: @silver-bfbfbf;
+		background-color: @neutral04;
 		background-image: none; }
 		#tasklist-button:active:disabled, #tasklist-button:checked:disabled {
 			color: @black-off;
@@ -2396,7 +2396,7 @@ panel-toplevel.background na-tray-applet {
 		border-left-color: @neutral02;
 		border-bottom-color: @border01-dark;
 		border-right-color: @border01-darkless;
-		background-color: @silver-bfbfbf;
+		background-color: @neutral04;
 		background-image: none; }
 		.xfce4-panel.panel button.flat:active:disabled, .xfce4-panel.panel button.flat:checked:disabled, .xfce4-panel.panel button.sidebar-button:active:disabled, .xfce4-panel.panel button.sidebar-button:checked:disabled {
 			color: @black-off;
@@ -2438,7 +2438,7 @@ panel-toplevel.background na-tray-applet {
 		border-left-color: @neutral02;
 		border-bottom-color: @border01-dark;
 		border-right-color: @border01-darkless;
-		background-color: @silver-bfbfbf;
+		background-color: @neutral04;
 		background-image: none; }
 		.xfce4-panel.panel .tasklist button:active:disabled, .xfce4-panel.panel .tasklist button:checked:disabled {
 			color: @black-off;
@@ -2479,7 +2479,7 @@ panel-toplevel.background na-tray-applet {
 			border-left-color: @neutral02;
 			border-bottom-color: @border01-dark;
 			border-right-color: @border01-darkless;
-			background-color: @silver-bfbfbf;
+			background-color: @neutral04;
 			background-image: none; }
 			#XfceNotifyWindow.osd button:active:disabled, #XfceNotifyWindow.osd button:checked:disabled {
 				color: @black-off;
