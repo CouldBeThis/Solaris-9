@@ -838,7 +838,7 @@ notebook {
 	/* CBT: Tab bar BG */
 	notebook tab {
 		padding: 0.1em 0.5em 0.1em 0.5em;
-		margin: 0.1em;		/*space between tabs */
+		margin: 0.2em;		/*space between tabs */
 		border-width: 1px;
 		border-style: solid;
 		border-width: 5px;
@@ -847,11 +847,11 @@ notebook {
 		zborder-color: @neutral02;
 		zborder-color: #ff355b;
 		color: @black;
-	background-color: @neutral04;
-	font-size: small;
-	zfont-family: "Fira Sans Compressed";
-	font-family: "Roboto Condensed";
-	zfont-family: "ProFont";}
+		background-color: @neutral04;
+		font-size: small;
+		zfont-family: "Fira Sans Compressed";
+		font-family: "Roboto Condensed";
+		zfont-family: "ProFont";}
 		/* CBT: Current tab (in/active windows) */
 		notebook tab:checked {
 			border-color: #fff;
