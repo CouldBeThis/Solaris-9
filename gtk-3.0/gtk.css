@@ -43,7 +43,7 @@ zzzexample {
 
 /* CBT: used in some places as background */
 .background {
-	color: @black;
+	color: @neutral01-contrast;
 	background-color: @neutral02; 
 	zbackground-color: @theme18; 
 	zbackground-image: url("assets/thatch06.png"), 

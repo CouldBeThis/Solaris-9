@@ -47,17 +47,17 @@ useful documentation:
 @define-color neutral01 #e3e6c6;			/* background */
 @define-color neutral01 #e6e1cb;			/* background */
 @define-color neutral01-contrast #09090a;	/* textcolor */
-@define-color neutral02 #a39f90;			/* background */
-@define-color neutral02-contrast #000000;	/* textcolor */
+@define-color neutral02	#fffff2;			/* background */
+@define-color neutral02-contrast #000;	/* textcolor */
 @define-color neutral03 #e6e4d3;			/* background */
-@define-color neutral03-contrast #000000;	/* textcolor */
-@define-color neutral04 #e3e6c6;			/* background */
-@define-color neutral04-contrast #000000;	/* textcolor */
+@define-color neutral03-contrast #000;	/* textcolor */
+@define-color neutral04 #fff;			/* background */
+@define-color neutral04-contrast #000;	/* textcolor */
 @define-color neutral05 #8b8e9c;			/* background */
 @define-color neutral05-contrast #000000;	/* textcolor */
 
-@define-color neutral06 #ececec;			/* background */
-@define-color neutral06-contrast #000000;	/* textcolor */
+@define-color neutral06 #ebe6dd;			/* background */
+@define-color neutral06-contrast #000;	/* textcolor */
 /* borrowed from https://lospec.com/palette-list/1bit-monitor-glow */
 @define-color neutral07 #f0f6f0;			/* background */
 @define-color neutral07-contrast #222323;	/* textcolor */
