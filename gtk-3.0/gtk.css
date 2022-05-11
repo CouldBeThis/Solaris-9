@@ -2712,11 +2712,16 @@ panel-toplevel.background na-tray-applet {
 
 /* CBT: desktop switcher in panel */
 wnck-pager {
-	background-color: @theme04; 
+	background-color: @theme04;
 	zborder: 3px solid blue;
 	border-style: solid;
 	border-width: 0px;
 	border-image: url("assets/window-border-equal.png") 5 10 6 9 stretch stretch;
+	}
+	
+	wnck-pager:nth-child(even) {
+		
+		border: 8px solid @FINDME; background: @FINDME2;
 	}
 	wnck-pager:hover {
 	background-color: @theme03;
@@ -2728,15 +2733,20 @@ wnck-pager {
 	wnck-pager:selected {
 		background-color: @accent01; }
 
+#pager-1 button,
+#pager-1 button:checked,
+#pager-1 button:hover, #plugin-4, #miniature-view, #plugin-13 {
+border: 8px solid @FINDME; background-color: @FINDME2;}
+
 /* CBT: Move all the base theme's application specific to a different 
  * file and include it. If Modified from Solaris9, consider bringing 
  * back here, into a new file, or other. ? 
  * EXCLUDES xfce panel, widgets etc*/
 @import url("gtk-specificapplications.css");
 
+
 .xfce4-panel .background, .xfce4-panel .horizontal .background {
 		background-color: @neutral01; }
-
 
 @keyframes playbackmenuitem_spinner {
 	to {
