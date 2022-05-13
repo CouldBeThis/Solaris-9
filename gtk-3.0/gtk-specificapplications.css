@@ -79,7 +79,7 @@
       border-left-color: @neutral02;
       border-bottom-color: @border01-dark;
       border-right-color: @border01-darkless;
-      background-color: @accent03;
+      background-color: @theme03;
       background-image: none; }
       .mate-panel-menu-bar > .button:not(#tasklist-button):active:disabled, .mate-panel-menu-bar > .button:not(#tasklist-button):checked:disabled {
         color: @black-off;
@@ -110,7 +110,7 @@
       border-left-color: @neutral02;
       border-bottom-color: @border01-dark;
       border-right-color: @border01-darkless;
-      background-color: @accent03;
+      background-color: @theme03;
       background-image: none; }
       .mate-panel-menu-bar #tasklist-button:active:disabled, .mate-panel-menu-bar #tasklist-button:checked:disabled {
         color: @black-off;

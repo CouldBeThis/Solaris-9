@@ -1,230 +1,38 @@
 
-/* define theme colors
-useful documentation:
-* https://docs.gtk.org/gtk3/css-overview.html#specifying-colors-in-various-ways
+
+/*
+ * TODO: icon themes with recoloring per palette https://developer-old.gnome.org/gtk4/stable/ch39s03.html
 */
 
-/* ######################### */
-/* ### main theme colors ### */
-/* ######################### */
+/* define theme colors */
+@import url("gtk-colors.css");
 
-/* used to identify where and what while working */
-@define-color FINDME #2AC22C;
-@define-color FINDME2 #FFBF00;
+/* CBT: Remove shadows (unsure if effective?)
+ * https://wiki.archlinux.org/title/GTK
+ * To remove the shadow and gap around windows (for example in combination with a tiling window manager) */
+	.window-frame, .window-frame:backdrop {
+	 box-shadow: 0 0 0 black;
+	 border-style: none;
+	 margin: 0;
+	 border-radius: 0;}
+	.titlebar {
+	 border-radius: 0;}
+	.window-frame.csd.popup {
+	  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.13);}
+	.header-bar {
+	  background-image: none;
+	  background-color: #ededed;
+	  box-shadow: none;}
+	/* You may want to use this if you do not like the double title.
+	GtkLabel.title {
+	    opacity: 0;
+	}*/
 
-/* main window */
-@define-color neutral01 #a3b1bf;			/* background */
-@define-color neutral01-contrast #09090a;	/* textcolor */
-@define-color neutral02 #838795;			/* background */
-@define-color neutral02-contrast #000;	/* textcolor */
-@define-color neutral03 #878ca0;			/* background */
-@define-color neutral03-contrast #000;	/* textcolor */
-@define-color neutral04 #898d9a;			/* background */
-@define-color neutral04-contrast #000;	/* textcolor */
-@define-color neutral05 #8b8e9c;			/* background */
-@define-color neutral05-contrast #000;	/* textcolor */
-@define-color neutral06 #9196a9;			/* background */
-@define-color neutral06-contrast #000;	/* textcolor */
-@define-color neutral07 #9397a8;			/* background */
-@define-color neutral07-contrast #000;	/* textcolor */
 
 
-/* use for borders */
-@define-color border01-light		rgba(223, 223, 224, 0.66);	/* top */
-@define-color border01-lightless	rgba(223, 223, 224, 0.33);	/* left */
-@define-color border01-darkless		rgba(25, 25, 25, 0.33);		/* right */
-@define-color border01-dark			rgba(25, 25, 25, 0.66);		/* bottom */
-/* the above assigned to alternative names */
-@define-color border01-top			@border01-light;			/* top */
-@define-color border01-left			@border01-lightless;		/* left */
-@define-color border01-right		@border01-darkless;			/* right */
-@define-color border01-bottom		@border01-dark;				/* bottom */
-
-zzzexample {
-	border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
-}
-
-/* some of the 1px outlines inside windows*/
-@define-color neutral02 #b2c8d6;
 
 @import url("gtk-colors.css");
 
-
-
-/* CBT:	titlebar */
-@define-color accent01 #e95678; /* backg */
-@define-color accent01-contrast #dfdfe0; /* text */
-	/* note: Below color is created and enforced on inactive titlebars
-	 * of xfwm somewhere that I can't figure out. So I am just going
-	 * with it and using sake color for gtk themes.
-	 * TODO: Find out where the darkening is happening and consider
-	 * another color. Especially for the text. */
-@define-color accent01-dim rgba(171,51,79,1); /* inactive title backg */
-@define-color accent01-dim-contrast rgba(83, 96, 110,1); /* inactive title text */
-/* BackG:	inactive tabs, scrollbar */
-
-/* XCODEDARK color scheme colors (except greys) */
-@define-color accent02 #292a30; /* salmon
-rgb(255, 129, 112) */
-@define-color accent03 #ff8170; /* mediumaquamarine
-rgb(120, 194, 179) */
-@define-color accent04 #78c2b3; /* sandybrown
-rgb(255, 161, 79) */
-@define-color accent05 #ffa14f; /* deepskyblue
-rgb(78, 176, 204) */
-@define-color accent06 #4eb0cc; /* mediumpurple rgb(178, 129, 235) */
-@define-color accent07 #b281eb; /* darkseagreen rgb(132, 179, 96) */
-@define-color accent08 #53606e; /* hotpink rgb(255, 122, 178) */
-@define-color accent09 #ff7ab2; /* paleturquoise rgb(172, 242, 228) */
-@define-color accent10 #acf2e4; /* darkkhaki rgb(217, 201, 124) */
-@define-color accent11 #d9c97c; /* skyblue rgb(107, 223, 255) */
-@define-color accent12 #6bdfff; /* plum rgb(218, 186, 255) */
-@define-color accent13 #dabaff; /* lightgreen rgb(176, 230, 135) */
-@define-color accent14 #b2c8d6; /* orangered rgb(243, 74, 0) */
-@define-color accent15 #191919; /* indianred rgb(255, 53, 91) */
-@define-color accent16 #ff355b; /* lightgreen rgb(182, 232, 117) */
-@define-color accent17 #b6e875; /* orange rgb(255, 193, 80) */ 
-@define-color accent18 #ffc150; /* lightskyblue rgb(117, 211, 255) */
-@define-color accent19 #75d4ff; /* mediumpurple rgb(185, 117, 230) */
-@define-color accent20 #b975e6; /* mediumturquoise rgb(108, 190, 181) */
-
-
-@define-color black #000000;
-@define-color black-off #09090a;
-/* select list, filebrowser &other background */
-@define-color white-off #FFF7E9;
-@define-color workspacebg #6f717d;
-
-
-/* ######################### */
-/* ### other theme colors ### */
-/* ######################### */
-@define-color dimgray-575962 #575962;
-@define-color dimgray-62646d #62646d;
-@define-color dimgray-656979 #656979;
-@define-color dimgray-686a75 #686a75;
-@define-color dimgray-737373 #737373;
-@define-color lightslategray-838795 #838795;
-@define-color lightslategray-878ca0 #878ca0;
-@define-color lightslategray-898d9a #898d9a;
-@define-color lightslategray-8b8e9c #8b8e9c;
-@define-color lightslategray-9196a9 #9196a9;
-@define-color lightslategray-9397a8 #9397a8;
-@define-color darkgray-979aa7 #979aa7;
-@define-color darkgray-999999 #999999;
-@define-color darkgray-9a9daa #9a9daa;
-@define-color darkgray-9da0b0 #9da0b0;
-@define-color darkgray-a4a8bb #a4a8bb;
-@define-color darkgray-a5a9b9 #a5a9b9;
-@define-color darkgray-abacb1 #abacb1;
-@define-color darkgray-b3b3b3 #b3b3b3;
-@define-color silver-bfbfbf #bfbfbf;
-@define-color silver-c2c6d3 #c2c6d3;
-@define-color black #232323;
-/*
-@define-color black #252525;
-@define-color black #2C2C2C;
-@define-color black #2a2a2a;
-@define-color black #2c2d31;
-@define-color black #303030;
-@define-color black #333333;
-*/
-@define-color black01 #1a1a1a;
-@define-color brown #884444;
-/*
-@define-color brown #964242;
-@define-color brown #9c4848;
-@define-color brown #A74949;
-*/
-@define-color cadetblue #468192;
-/*
-@define-color cadetblue #4992A7;
-*/
-@define-color chocolate #b86814;
-/*
-@define-color chocolate #c86f10;
-*/
-@define-color darkorange #FF8300;
-/*
-@define-color darkorange #ec7c06;
-@define-color darkorange #ff8d14;
-@define-color darkorange #ff8f1a;
-*/
-@define-color darkslateblue #334175;
-/*
-@define-color darkslateblue #3a4a86;
-*/
-@define-color darkslateblue-1f3d7a #1f3d7a;
-@define-color gainsboro #d7dae3;
-@define-color indianred #7e4242;
-/*
-@define-color indianred #a9696e;
-@define-color indianred #b96d6d;
-*/
-@define-color indianred02 #b74d4d;
-/*
-@define-color indianred02 #b94f4f;
-*/
-@define-color lavenderblush #f7edf2;
-@define-color lemonchiffon #FFFFBF;
-@define-color maroon #642c2c;
-@define-color maroon02 #593737;
-@define-color palevioletred #dd88ae;
-@define-color peru #7a4e1f;
-/*
-@define-color peru #926a46;
-@define-color peru #A77549;
-*/
-@define-color purple #5f3a4b;
-@define-color purple02 #724157;
-@define-color rosybrown-ca9292 #ca9292;
-@define-color royalblue #495DA7;
-/*
-@define-color royalblue #4f66b9;
-*/
-@define-color royalblue02 #1463ff;
-/*
-@define-color royalblue02 #1a66ff;
-*/
-@define-color slategray #757886;
-/*
-@define-color slategray #767985;
-@define-color slategray #787b87;
-@define-color slategray #7c7f8d;
-*/
-@define-color snow #f6eded;
-@define-color thistle-e0b8ca #e0b8ca;
-@define-color wheat #fbe4bc;
-@define-color blue-bright01 #0055FF;
-@define-color blue-bright02 #0653ec;
-@define-color blue-bright03 #104ec8;
-@define-color blue-bright04 #144bb8;
-
-/* doesn't seem to do anything. delete later. '*/
-
-/*
-@define-color accent02 #a3b1bf;
-*/
-
-/* here are the RGBa values from the document (not replaced with variables):
-rgba(0, 0, 0, 0.04)
-rgba(0, 0, 0, 0.1)
-rgba(0, 0, 0, 0.15)
-rgba(0, 0, 0, 0.2)
-rgba(0, 0, 0, 0.3)
-rgba(0, 0, 0, 0.5)
-rgba(0, 0, 0, 0.6)
-rgba(0, 0, 0, 0.7)
-rgba(0, 0, 0, 0.8)
-rgba(0, 0, 0, 0.9)
-rgba(174, 178, 195, 0.999)
-rgba(255, 255, 255, 0.2)
-rgba(255, 255, 255, 0.4)
-rgba(255, 255, 255, 0.7)
-rgba(255, 255, 255, 0.8)
-rgba(255, 255, 255, 0.85)
-rgba(255, 255, 255, 0.95)
-*/
 
 
 
@@ -234,8 +42,8 @@ rgba(255, 255, 255, 0.95)
 	-GtkScrollbar-has-secondary-backward-stepper: false;
 	-GtkScrollbar-has-secondary-forward-stepper: false;
 	-GtkScrolledwindow-scrollbar-spacing: 0;
-	-GtkScrolledwindow-scrollbars-within-bevel: 1;
-	-GtkTextView-error-underline-color: @brown;
+	-GtkScrolledwindow-scrollbars-within-bevel: 0;
+	-GtkTextView-error-underline-color: @accent01;
 	-GtkToolbutton-icon-spacing: 6;
 	-GtkToolItemGroup-expander-size: 11;
 	-GtkWidget-text-handle-width: 20;
@@ -251,24 +59,26 @@ rgba(255, 255, 255, 0.95)
 	-gtk-outline-radius: 0; }
 
 /* CBT: used in some places as background */
-.background {
-	color: @black;
-	background-color: @accent06; 
-	zbackground-color: @accent18; 
+.background, 
+.nautilus-window notebook > stack,
+notebook > stack:not(:only-child) {
+	color: @neutral01-contrast;
+	background-color: @neutral02; 
+	zbackground-color: @theme18; 
 	zbackground-image: url("assets/thatch06.png"), 
 		linear-gradient(180deg, rgba(131,58,180,0.5) 0%, rgba(253,29,29,0.5) 50%, rgba(252,176,69,0.5) 100%);
-		background-image: url("assets/thatch22.png");
-
+		zbackground-image: url("assets/thatch.png");
 	}
-	.background:backdrop {
+	.background:backdrop, 
+	.nautilus-window notebook > stack:backdrop {
 		color: @black;
 		background-color: @neutral01; 
-	background-color: @accent14; 
-	zbackground-color: @accent18; 
-	background-image: url("assets/thatch24.png");
-
-
-	zbackground-size: auto;}
+	zbackground-color: @neutral03; 
+	zbackground-color: @theme18; 
+	background-image: url("assets/thatch29b.png");
+	background-size: 20%;
+	zbackground-size: auto;
+		zcolor: @FINDME2;}
 
 
 *:disabled {
@@ -286,7 +96,7 @@ rgba(255, 255, 255, 0.95)
 		background-color: @silver-c2c6d3; }
 	.gtkstyle-fallback:active {
 		color: @black;
-		background-color: @silver-bfbfbf; }
+		background-color: @neutral04; }
 	.gtkstyle-fallback:disabled {
 		color: @dimgray-575962;
 		background-color: @darkgray-a5a9b9; }
@@ -313,8 +123,8 @@ entry {
 	entry:focus {
 		transition: border 100ms ease-in; }
 
-notebook tab label, notebook .prelight-page, notebook .prelight-page label, notebook .active-page, notebook .active-page label {
-	transition: all 200ms ease-in; }
+notebook tab label, notebook .prelight-page, notebook .prelight-page label, notebook .active-page, notebook .active-page label { /* CBT: remove animations whenswitching tabs (uncomment to re-enable)
+	transition: all 200ms ease-in;*/ }
 
 scale, progressbar {
 	transition: 200ms ease-out; }
@@ -329,10 +139,13 @@ scale slider, switch slider {
 scale:backdrop slider, switch:backdrop slider {
 	transition: 200ms ease-out; }
 
+/* CBT: This is NOT what controls whether the scrollbar goes away 
+ * when focus is lost */
 scrollbar {
 	transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 	scrollbar:backdrop {
-		transition: 200ms ease-out; }
+		transition: none;
+		zborder: 13px solid green; }
 	scrollbar slider {
 		transition: 200ms ease-out; }
 
@@ -407,28 +220,41 @@ button:link, button:visited {
 	button:link > label, button:visited > label {
 		text-decoration-line: underline; }
 
-/* CBT: buttons */
+/* CBT: buttons
+ * note: there is more of buttons above. Difference? */
 button {
 	border-radius: 0px;
 	padding: 0.1em;
 	zmargin: 0em;
 	border-style: solid;
-	border-width: 3px;
+	border-width: 6px;
+	border-radius: 4px;
+	background-color: @neutral01;
 	color: @neutral01-contrast;
 	border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
-	background-color: @neutral01;
 	-gtk-outline-radius: 0px;
 	zoutline-color: @accent01;
 	zoutline-offset: 2px;
-	zoutline-style: solid; }
-	button:active, button:checked {
+	zoutline-style: solid; 	
+	/* TODO: Make appropriate button border in PNG 
+	border-style: solid;
+	border-width: 8px;
+	border-image: url("assets/window-border-equal.png") 5 10 6 9 stretch;*/
+	}
+	button:hover {
+		background: @accent01;
+		color: @accent01-contrast;
+	}
+	button:active, 
+	button:checked {
 		color: @neutral01-contrast;
 		background-image: none;
 		border-color: @border01-lightless @border01-light @border01-darkless @border01-dark;
 		border-color: @border01-dark @border01-lightless @border01-light @border01-darkless;
 		border-style: solid;
 		}
-		button:active:disabled, button:checked:disabled {
+		button:active:disabled, 
+		button:checked:disabled {
 			color: @black-off;
 			text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
 			background-color: @lightslategray-9397a8; }
@@ -454,7 +280,7 @@ button {
 			border-left-color: @neutral02;
 			border-bottom-color: @border01-dark;
 			border-right-color: @border01-darkless;
-			background-color: @silver-bfbfbf;
+			background-color: @neutral04;
 			background-image: none; }
 			button.flat:active:disabled, button.flat:checked:disabled {
 				color: @black-off;
@@ -466,33 +292,43 @@ button {
 			text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
 			background-color: transparent; }
 
+/* CBT: Checkboxes and radio buttons */
+/* CBT: The whole selection --- including textual descsription --- for 
+ * multiple selections */
 checkbutton.text-button, radiobutton.text-button {
-	padding: 4px;
-	outline-offset: 0; }
+	padding: 0px;
+	margin: 0px;
+	outline-offset: 0;
+	zbackground: @neutral03;}
+	checkbutton.text-button:hover, radiobutton.text-button:hover {
+		background: @neutral03;}
 
-check, radio {
-	margin: 4px;
-	min-height: 11px;
-	min-width: 11px;
-	border-style: none;
-	background-color: transparent; }
-
-check, .check {
-	-gtk-icon-source: url("assets/checkbox-unchecked.png"); }
-	check:disabled, .check:disabled {
-		-gtk-icon-source: url("assets/checkbox-unchecked-disabled.png"); }
-	check:checked, .check:checked {
-		-gtk-icon-source: url("assets/checkbox-checked.png"); }
-		check:checked:disabled, .check:checked:disabled {
-			-gtk-icon-source: url("assets/checkbox-checked-disabled.png"); }
-
-radio, .radio {
-	-gtk-icon-source: url("assets/radio-unchecked.png"); }
-	radio:disabled, .radio:disabled {
-		-gtk-icon-source: url("assets/radio-unchecked-disabled.png"); }
-	radio:checked, .radio:checked {
-		-gtk-icon-source: url("assets/radio-checked.png"); }
-		radio:checked:disabled, .radio:checked:disabled {
+/* TODO: Dim the accent colors for background windows */
+/* TODO: Make new checkbox + radio icons */
+	check, radio {
+		margin: 0px;
+		min-height: 24px;
+		min-width: 24px;
+		border-style: none;
+		background-color: transparent;
+		background: @accent01; }
+	
+	check, .check {
+		-gtk-icon-source: url("assets/checkbox-unchecked.png"); }
+		check:disabled, .check:disabled {
+			-gtk-icon-source: url("assets/checkbox-unchecked-disabled.png"); }
+		check:checked, .check:checked {
+			-gtk-icon-source: url("assets/checkbox-checked.png"); }
+			check:checked:disabled, .check:checked:disabled {
+				-gtk-icon-source: url("assets/checkbox-checked-disabled.png"); }
+	
+	radio, .radio {
+		-gtk-icon-source: url("assets/radio-unchecked.png"); }
+		radio:disabled, .radio:disabled {
+			-gtk-icon-source: url("assets/radio-unchecked-disabled.png"); }
+		radio:checked, .radio:checked {
+			-gtk-icon-source: url("assets/radio-checked.png"); }
+			radio:checked:disabled, .radio:checked:disabled {
 			-gtk-icon-source: url("assets/radio-checked-disabled.png"); }
 
 .content-view.view {
@@ -850,6 +686,9 @@ filechooserbutton:drop(active) {
 	box-shadow: inset 0 0 0 1px @black;
 	caret-color: @black; }
 
+/* CBT: Top menu bar */
+/* TODO: Menubar: a little easier to read and use */
+/* TODO: Menubar: Expander arrows more obvious */
 menu, .menu {
 	margin: 0px;
 	padding: 0;
@@ -875,11 +714,11 @@ menu, .menu {
 		min-height: 16px; }
 		menu > arrow.top, .menu > arrow.top {
 		margin-top: -6px;
-		border-bottom: 1px solid @silver-bfbfbf;
+		border-bottom: 1px solid @neutral04;
 		-gtk-icon-source: -gtk-icontheme("pan-up-symbolic"); }
 		menu > arrow.bottom, .menu > arrow.bottom {
 		margin-bottom: -6px;
-		border-top: 1px solid @silver-bfbfbf;
+		border-top: 1px solid @neutral04;
 		-gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
 
 menubar, .menubar {
@@ -910,7 +749,9 @@ menubar > menuitem, .menubar > menuitem {
 	background-color: transparent;
 	border-width: 0px 1px 0px 0px;
 	border-style: double;
-	border-color: @border01-light @border01-darkless @border01-dark @border01-lightless; }
+	border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
+	zborder: 8px solid @FINDME; zbackground: @FINDME2;
+	zfont-family: "Chicago"; font-size: 18pt; }
 	menubar > menuitem:hover, .menubar > menuitem:hover {
 		color: @accent01-contrast;
 		background: @dimgray-575962; }
@@ -1002,6 +843,8 @@ modelbutton.flat, menuitem.button.flat, .menuitem.button.flat {
 		-gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
 
 /* CBT: Tabbed windows */
+/* TODO: Consider: Remove the @accent02 border at top of window contents 
+ * if 0-1 tabs only. Looks weird. */
 notebook {
 	padding: 0; }
 	/* CBT: frame around tabs and content */
@@ -1024,60 +867,122 @@ notebook {
 			notebook.frame > header.left, notebook.frame > header.right {
 				padding-top: 0;
 				padding-bottom: 0; }
-	.nautilus-window notebook, .nautilus-window notebook > stack:not(:only-child) searchbar {
-		background-color: @lightslategray-878ca0; }
-	/* CBT: contents of current tab */
-	notebook > stack {
-		padding: 0px;
-		border: 1px solid @neutral02;
-		border-top-color: @border01-light;
-		border-left-color: @border01-lightless; }
-		/* CBT: BackG: Behind elements if not otherwise defined */
+	.nautilus-window notebook, 
+	.nautilus-window notebook > stack:not(:only-child) searchbar {
+		background-color: @neutral04; }
+	/* CBT: contents of current tab (and highlight the border?) */
+	notebook > stack,
+	notebook > header.top > tabs > tab:checked {
+		zpadding: 0px;
+		zmargin: 0px;
+		zborder: 1px solid @neutral02;
+		zbackground-color: magenta;
+		zborder-top-color: @border01-light;
+		zborder-left-color: @border01-lightless;
+		zbackground-color: magenta;
+		zborder-top-color: magenta;
+		zborder-left-color: magenta;
+		border-style: double;
+		zborder-width: 8px;
+		zborder-color: @accent02;
+		zborder-image: url("assets/window-border-equal.png") 5 10 6 9 stretch;
+		zborder-image: url("assets/thatch27.png") 5 10 15 20 repeat;
+		border-top: 8px solid @accent02;
+		zborder: 10px solid green; /*FINDME*/
+		zfont-weight: bold;
+		zcolor: yellow; /* CBT: geany status pane and nowhere else? */
+}
+		
+		/* CBT: BackG: Behind elements if not otherwise defined
+		 * And some random window text */
+		notebook > stack:backdrop {
+]			zborder-image: url("assets/window-border-equal.png") 5 10 6 9 stretch;
+		zborder-image: url("assets/thatch35.png");
+		zborder: 8px solid @FINDME; zbackground: @FINDME2;
+		border-top: 8px solid @accent02-dim;
+		border-style: solid;
+		border-width: 8px 0px 0px 0px;
+		border-image: url("assets/thatch29c.png") 5 9 repeat;
+		zcolor: @FINDME2; 
+
+		}
 		notebook > stack:not(:only-child) {
-			background-color: @neutral01;
-			border: 10px solid #53606e;}
-		.nautilus-window notebook > stack {
-			box-shadow: inset 0 0 0 6px @neutral01;
-			background-color: @lightslategray-878ca0;}
-	/* CBT: Tab bar BG */
+		/* CBT: MOVED to top of document to create consistency */ }
+
+/* CBT: individual inactive tabs
+ * also: message window in Geany */
 	notebook tab {
 		padding: 0.1em 0.5em 0.1em 0.5em;
-		margin: 0.1em;		/*space between tabs */
+		margin: 0.2em;		/*space between tabs */
 		border-width: 1px;
 		border-style: solid;
-		border-width: 5px;
+		zborder-width: 5px;
 		border-style: double;
-		border-radius: 5px;
+		zborder-radius: 5px;
+		border-width: 8px 18px 0px 18px;
 		zborder-color: @neutral02;
 		zborder-color: #ff355b;
 		color: @black;
-	background-color: @silver-bfbfbf;
-	font-size: small;
-	zfont-family: "Fira Sans Compressed";
-	font-family: "Roboto Condensed";
-	zfont-family: "ProFont";}
+		background-color: @neutral04;
+		font-size: small;
+		zfont-family: "Fira Sans Compressed";
+		font-family: "Roboto Condensed";
+		zfont-family: "ProFont";
+		zborder: 10px solid blue; /*FINDME*/}
 		/* CBT: Current tab (in/active windows) */
 		notebook tab:checked {
-			border-color: #fff;
-			background-color: #53606e;
-			color: #dfdfe0;}
+			zborder-color: @FINDME;
+			background-color: @neutral10;
+			zcolor: @neutral10-contrast;
+			border-width: 8px 18px 0px 18px;
+			zborder: 10px solid purple; /*FINDME*/
+		zfont-weight: bold;
+		zcolor: @FINDME2;}
+			notebook tab:checked:backdrop {
+				zborder-color: @neutral10-dimmed-contrast;
+				zbackground-color: @neutral10-dimmed;
+				zbackground-color: @FINDME;
+				background-image: url("assets/thatch35.png");
+				/* TODO: Make the line that goes under the tab bar match the current tab color in background windows */
+			zborder: 10px solid magenta; /*FINDME*/
+				}
 	notebook > header {
 		zpadding-top: 2px;
 		/* CBT: BackG: Behind tabs */
 		background-color: @neutral01; }
+		/* CBT: this will show behind transparency of individual tab border image */
 		notebook > header.top {
-			box-shadow: 0 1px @border01; }
+			box-shadow: 0 1px @border01; 
+			 zbackground: rgb(131,58,180);
+			zbackground: linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); ;}
+			/* CBT: individual tabs */
 			notebook > header.top > tabs > tab {
 				border-bottom: none;
 				margin-top: 2px;
 				margin-bottom: 1px;
-				border-bottom-left-radius: 0;
-				border-bottom-right-radius: 0;
-				border-top-color: @border01-light;
-				border-left-color: @border01-lightless; }
+				zborder-bottom-left-radius: 0;
+				zborder-bottom-right-radius: 0;
+				zborder-top-color: @border01-light;
+				zborder-left-color: @border01-lightless; 
+				background-color: @neutral01;
+				color: @neutral01-contrast;
+				border-style: solid;
+				border-width: 8px 18px 0px 18px;
+				zborder-image: url("assets/thatch28.png") 4 9  repeat;
+				zborder-image: url("assets/thatch29.png") 5 9  repeat;
+				border-image: url("assets/thatch29c.png") 5 9  repeat;
+				zborder: 10px solid orange; /*FINDME*/}
+				/* CBT: Current tab */
 				notebook > header.top > tabs > tab:checked {
 					margin-top: 0;
-					margin-bottom: -1px; }
+					margin-bottom: -1px;
+					zpadding: -10px;
+					background-color: @accent02;
+					font-weight: bold;
+					zfont-size: medium;}
+					/* CBT: Current tab in the background */
+					notebook > header.top > tabs > tab:checked:backdrop {
+						color: @accent02-dim-contrast;}
 		notebook > header.bottom {
 			padding-top: 0;
 			box-shadow: 0 -1px @neutral02; }
@@ -1141,16 +1046,36 @@ notebook {
 		notebook > header > tabs > arrow:disabled {
 			color: @dimgray-656979; }
 
-paned > separator {
+/* CBT: Lines that seperate paned windows */
+paned > separator,
+paned > separator:backdrop {
 	border: none;
 	color: transparent;
-	background-color: @neutral02; }
+	zpadding: 20px;
+	background-color: @neutral02;
+	border-style: solid;
+	border-width: 8px 8px 0px 0px;
+	border-image: url("assets/window-border-equal.png") 10 stretch;
+	zborder: 8px solid @FINDME; zbackground: @FINDME2; }
+	paned > separator:hover {
+		zborder: 8px solid @FINDME; 
+		border-style: solid;
+		border-width: 8px 8px 0px 0px;
+		border-image: none;
+
+		border-color: @accent02;
+	}
 	paned > separator:backdrop {
-		background-color: @neutral02; }
+		zbackground-color: @neutral02; }
 	paned > separator:selected {
-		background-color: @neutral02; }
-paned .sidebar.left, paned .sidebar.right, paned .sidebar.left:dir(rtl), paned .sidebar:dir(rtl), paned .sidebar:dir(ltr), paned .sidebar {
-	border-style: none; }
+		zbackground-color: @neutral02;}
+	paned .sidebar.left, 
+	paned .sidebar.right, 
+	paned .sidebar.left:dir(rtl), 
+	paned .sidebar:dir(rtl), 
+	paned .sidebar:dir(ltr), 
+	paned .sidebar {
+		border-style: none; }
 
 overshoot.top {
 	background-image: -gtk-gradient(radial, center top, 0.55, center top, 0.6, from(rgba(0, 0, 0, 0.2)), to(transparent));
@@ -1403,9 +1328,9 @@ scrolledwindow {
 scrollbar {
 	zborder-bottom-color: @border01-dark;
 	zborder-right-color: @border01-darkless;
-	background-color: @silver-bfbfbf;
-	zborder: 2px solid @accent18;
-	zbackground-color: @accent18;}
+	background-color: @neutral04;
+	zborder: 2px solid @theme18;
+	zbackground-color: @theme18;}
 	/* CBT: The background of the entire scrollbar */
 	scrollbar trough {
 		zborder: 3px solid @FINDME;
@@ -1437,7 +1362,7 @@ scrollbar {
 	scrollbar.horizontal slider,
 	scrollbar.vertical slider {
 		border: 5px double @accent01;
-		background-color: #53606e; /* main color */
+		background-color: @neutral02; /* main color */
 		background-clip: padding-box;
 		background-image: url("assets/thatch13.png");
 	}
@@ -1453,14 +1378,21 @@ scrollbar {
 		min-height: 11px;
 		min-width: 45px;
 		}
-
+		scrollbar.horizontal slider,
+		scrollbar.vertical slider {
+		zborder: 8px solid @FINDME; zbackground: @FINDME2;
+		}
 	scrollbar.horizontal button,
 	scrollbar.vertical button {
-			border-width: 4px;
-			border-color: white black black white;
-			border-style: solid;
-			background-color: @accent01;
-	}
+		border-width: 4px;
+		border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
+		border-style: solid;
+		background-color: @accent01;}
+		
+		scrollbar button:backdrop,
+		scrollbar slider:backdrop {
+			background-color: @neutral03;
+		}
 
 	scrollbar.horizontal button {
 		min-height: 11px;
@@ -1483,11 +1415,6 @@ scrollbar {
 		border-top: 1px solid @neutral02;
 		margin-top: -1px; }
 
-
-
-
-
-
 separator {
 	-gtk-icon-source: none;
 	min-width: 1px;
@@ -1503,9 +1430,10 @@ separator {
 	separator .separator, separator {
 		border: none;
 		background-color: @neutral02; }
+		/* CBT: Pane seperators within windows */
 		.sidebar view separator:backdrop, view separator:backdrop, separator .separator:backdrop, separator:backdrop {
 			border: none;
-			background-color: @neutral02; }
+			zborder: 4px solid orange; }
 	.primary-toolbar separator, 
 	toolbar separator {
 		background-color: @lightslategray-9196a9; }
@@ -1645,7 +1573,7 @@ switch {
 	border-right-color: @border01-darkless;
 	background-color: @neutral01; }
 	switch:checked {
-		background-color: @lightslategray-878ca0; }
+		background-color: @neutral04; }
 	switch:disabled {
 		color: @dimgray-575962;
 		border-color: @darkgray-a5a9b9;
@@ -1661,6 +1589,7 @@ switch {
 	switch:disabled slider {
 		background-color: @darkgray-a5a9b9; }
 
+/* CBT: ?? wasn't able to find changes to any color swatch I could find */
 colorswatch.top {
 	border-top-left-radius: 2.5px;
 	border-top-right-radius: 2.5px; }
@@ -1718,18 +1647,24 @@ colorchooser #add-color-button {
 	color: @black; }
 	colorchooser #add-color-button:hover {
 		border-color: rgba(0, 0, 0, 0.3);
-		background-color: @silver-bfbfbf;
+		background-color: @neutral04;
 		color: @black; }
 
-.path-bar button.text-button, .path-bar button.image-button, .path-bar button button {
+/* CBT: ? don't know what this is for. not in thunar or nautilus */
+.path-bar button.text-button, 
+.path-bar button.image-button, 
+.path-bar button button {
 	padding-left: 4px;
-	padding-right: 4px; }
-.path-bar button.text-button.image-button label, .path-bar button label {
+	padding-right: 4px;}
+.path-bar button.text-button.image-button label, 
+.path-bar button label {
 	padding-left: 0;
 	padding-right: 0; }
-	.path-bar button.text-button.image-button label:last-child, .path-bar button label:last-child {
+	.path-bar button.text-button.image-button label:last-child, 
+	.path-bar button label:last-child {
 		padding-right: 8px; }
-	.path-bar button.text-button.image-button label:first-child, .path-bar button label:first-child {
+	.path-bar button.text-button.image-button label:first-child, 
+	.path-bar button label:first-child {
 		padding-left: 8px; }
 .path-bar button image {
 	padding-left: 4px;
@@ -1814,7 +1749,7 @@ headerbar {
 		headerbar button:checked {
 			color: @black;
 		border-color: @border01-top @border01-right @border01-bottom @border01-left;
-			background-color: @silver-bfbfbf;
+			background-color: @neutral04;
 			background-image: none; }
 			headerbar button:active:disabled, 
 			headerbar button:checked:disabled {
@@ -1893,7 +1828,7 @@ toolbar {
 			border-left-color: @neutral02;
 			border-bottom-color: @border01-dark;
 			border-right-color: @border01-darkless;
-			background-color: @silver-bfbfbf;
+			background-color: @neutral04;
 			background-image: none; }
 			toolbar button.flat:active:disabled, toolbar button.flat:checked:disabled {
 				color: @black-off;
@@ -1907,49 +1842,72 @@ toolbar {
 	toolbar menubar {
 		-GtkToolbar-button-relief: normal; }
 
+/* CBT: buttons, for example in Geany */
 .primary-toolbar {
 	-GtkWidget-window-dragging: true;
 	padding: 0px;
-	border-width: 1px;
-	border-style: solid;
-	border-color: @neutral02;
-	border-top-color: @border01-light;
-	border-left-color: @border01-lightless;
+	zborder-width: 1px;
+	zborder-style: solid;
+	zborder-color: @neutral02;
+	zborder-top-color: @border01-light;
+	zborder-left-color: @border01-lightless;
 	color: @black;
-	background-color: @neutral01; }
+	background-color: @neutral01; 
+	zbackground-color: @FINDME2;
+	zborder: 6px double magenta;}
 	.primary-toolbar:backdrop {
-		border-color: @neutral01;
+		zborder-color: @neutral01;
 		color: @black;
-		background-color: @neutral01; }
-	.primary-toolbar button, .primary-toolbar .raised button {
-		padding: 0px 4px;
+		background-color: @neutral01;
+		zbackground-color: @FINDME2;
+		zborder: 6px dashed magenta; }
+	/* CBT: hover state */
+	.primary-toolbar button, 
+	.primary-toolbar .raised button {
+		padding: 0px;
 		border-style: solid;
 		border-width: 10px;
-		border-radius: 0px;
-		color: @black;
-		border-color: @neutral02;
-		border-top-color: @border01-light;
-		border-left-color: @border01-lightless;
+		zborder-radius: 0px;
+		color: inherit;
+		zborder-color: @neutral02;
+		zborder-top-color: @border01-light;
+		zborder-left-color: @border01-lightless;
 		background-color: @neutral01;
 		-gtk-outline-radius: 0px;
 		zoutline-color: @accent01;
 		outline-offset: 2px;
-		outline-style: solid; }
-		.primary-toolbar button:active, .primary-toolbar button:checked, .primary-toolbar .raised button:active, .primary-toolbar .raised button:checked {
+		zoutline-style: solid; 
+		zbackground-color: @FINDME2;
+		zborder: 16px solid magenta;}
+		.primary-toolbar button:active, 
+		.primary-toolbar button:checked, 
+		.primary-toolbar .raised button:active, 
+		.primary-toolbar .raised button:checked {
 			color: @black;
-			border-top-color: @neutral02;
-			border-left-color: @neutral02;
-			border-bottom-color: @border01-dark;
-			border-right-color: @border01-darkless;
-			background-color: @silver-bfbfbf;
-			background-image: none; }
-			.primary-toolbar button:active:disabled, .primary-toolbar button:checked:disabled, .primary-toolbar .raised button:active:disabled, .primary-toolbar .raised button:checked:disabled {
+			zborder-top-color: @neutral02;
+			zborder-left-color: @neutral02;
+			zborder-bottom-color: @border01-dark;
+			zborder-right-color: @border01-darkless;
+			background-color: @neutral04;
+			background-image: none; 
+		zbackground-color: @FINDME2;
+		zborder: 6px dashed magenta;}
+			.primary-toolbar button:active:disabled, 
+			.primary-toolbar button:checked:disabled, 
+			.primary-toolbar .raised button:active:disabled, 
+			.primary-toolbar .raised button:checked:disabled {
 				color: @black-off;
 				text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
-				background-color: @lightslategray-9397a8; }
-		.primary-toolbar button:disabled, .primary-toolbar .raised button:disabled {
+				background-color: @lightslategray-9397a8; 
+		zbackground-color: @FINDME2;
+		zborder: 6px dashed magenta;}
+		.primary-toolbar button:disabled, 
+		.primary-toolbar 
+		.raised button:disabled {
 			color: @black;
-			text-shadow: 1px 1px rgba(255, 255, 255, 0.85); }
+			text-shadow: 1px 1px rgba(255, 255, 255, 0.85);
+		zbackground-color: @FINDME2;
+		zborder: 6px dashed magenta; }
 
 .inline-toolbar {
 	padding: 1px;
@@ -1983,7 +1941,7 @@ toolbar {
 			border-left-color: @neutral02;
 			border-bottom-color: @border01-dark;
 			border-right-color: @border01-darkless;
-			background-color: @silver-bfbfbf;
+			background-color: @neutral04;
 			background-image: none; }
 			.inline-toolbar toolbutton > button:active:disabled, .inline-toolbar toolbutton > button:checked:disabled {
 				color: @black-off;
@@ -1993,16 +1951,22 @@ toolbar {
 			color: @black;
 			text-shadow: 1px 1px rgba(255, 255, 255, 0.85); }
 
+/* CBT: Tooltips */
+/* TODO: Integrate tooltips with rest of theme; looks off */
 tooltip {
 	border-radius: 0px;
 	box-shadow: none; }
 	tooltip.background {
-		border-width: 1px;
+		border-width: 3px;
 		border-style: solid;
-		border-color: @neutral02;
-		background-color: @lemonchiffon; }
+		border-color: @neutral07;
+		border-color: @accent02;
+		zbackground-color: @lemonchiffon;
+		background-color: @neutral01;
+		zborder: 8px solid @FINDME; zbackground: @FINDME2;  }
 		tooltip.background label {
-			padding: 1px; }
+			padding: 0.1em 2em; 
+			color: @neutral07-contrast;}
 	tooltip * {
 		background-color: transparent;
 		color: @black; }
@@ -2050,34 +2014,84 @@ treeview {
 		treeview entry:focus, treeview entry.flat:focus {
 			border-color: @black; }
 
+/* CBT: List items such as in file managers, preferences, others */
+/* TODO: It seems impossible to specify a color for selected item in active window. It must be somewhere else in the file.  */
 .view {
-	color: @black;
-	background-color: @accent01-contrast-off; }
+	/* TODO: Alternating row colors ? gradients ? */
+	color: @accent02-contrast;
+	zcolor: white;
+	background-color: @neutral03;
+	border: 0.5px solid @neutral10-dimmed; 
+	zbackground: @neutral02; }
 	.view:backdrop {
-		color: @black;
-		background-color: @accent01-contrast-off; }
+		zcolor: @neutral03-contrast;
+		zbackground-color:yellow;
+		zcolor: white; }
 	.view:disabled {
-		color: @dimgray-575962;
-		background-color: @darkgray-a5a9b9; }
-	.view:selected, .view:selected:focus, .view text:selected, .view text:selected:focus, .view text selection, .view text selection:focus {
-		color: @accent01-contrast;
-		background-color: @black;
-		border-radius: 0px;
-		-gtk-outline-radius: 0px; }
-		.view:selected:disabled, .view:selected:focus:disabled, .view text:selected:disabled, .view text:selected:focus:disabled, .view text selection:disabled, .view text selection:focus:disabled {
-			color: @darkgray-abacb1;
-			background-color: @black; }
-		.view:selected:backdrop, .view:selected:focus:backdrop, .view text:selected:backdrop, .view text:selected:focus:backdrop, .view text selection:backdrop, .view text selection:focus:backdrop {
-			color: @accent01-contrast;
-			background-color: @black; }
+		acolor: @dimgray-575962;
+		background-color: @accent01;
+		zcolor: white; }
+	/* CBT: Selected item */
+	.view:selected, 
+	.view:selected:focus, 
+	.view text:selected, 
+	.view text:selected:focus, 
+	.view text selection, 
+	.view text selection:focus {
+		zcolor: @accent01-contrast;
+		zbackground-color: @accent02;
+		zborder-radius: 0px;
+		-gtk-outline-radius: 0px; 
+		zborder: 8px solid @FINDME; 
+		background-color: cyan
+		zcolor: white;}
+		.view:selected:disabled, 
+		.view:selected:focus:disabled, 
+		.view text:selected:disabled, 
+		.view text:selected:focus:disabled, 
+		.view text selection:disabled, 
+		.view text selection:focus:disabled {
+			zcolor: @accent01-contrast;
+			zcolor: white;
+			background-color: orange; }
+		/* CBT: Selected item in the background */
+		.view:selected:backdrop, 
+		.view:selected:focus:backdrop, 
+		.view text:selected:backdrop, 
+		.view text:selected:focus:backdrop, 
+		.view text selection:backdrop, 
+		.view text selection:focus:backdrop {
+			color: @accent02-dim-contrast;
+			zcolor: white;
+			zbackground-color: @neutral03;
+			background-color: @accent02-dim; }
+	/* trying to figure out alternating row colors*/
+	/*
+		.view:nth-child(5n+3) {background-color: @FINDME;}
+		.view:first-child {background-color: @FINDME2;}
+		.view text selection:nth-child(even) {background-color: #4F79D0;} /* blue */
+	/*	.view text selection:nth-child(odd) {background-color: #FA680E;} /* orange */
+	/*
+		tr:nth-child(even) {background: #CCC}
+		tr:nth-child(odd) {background: #FFF}
+		li:nth-child(5n+3) {font-weight: bold}
+		col:first-child {background: #FF0}
+	*/
 
+/* CBT: nautilus sidebar
+ * >> NOTE see below placessidebar which also manages file open
+ * dialogue in adition to nautilus
+ * TODO: merge the filechooser + placessidebar */
+/* CBT: entire sidebar background */
 filechooser.csd.background, 
 filechooser placessidebar list, 
 .nautilus-window.csd.background, 
 .nautilus-window placessidebar list, 
 .nemo-window.csd.background, 
 .nemo-window placessidebar list {
-	background-color: @neutral01; }
+	background-color: @neutral04;
+	color: @neutral01-contrast;
+	zborder: 8px solid @FINDME; zbackground: @FINDME2;}
 filechooser .sidebar, 
 .nautilus-window .sidebar, 
 .nemo-window .sidebar {
@@ -2098,8 +2112,9 @@ filechooser .sidebar,
 	.nemo-window .sidebar frame > border, 
 	.nemo-window .sidebar .frame {
 		border: none; }
+	/* CBT: Individual items */
 	filechooser .sidebar row:not(:selected), 
-		filechooser .sidebar view row:not(:selected), 
+	filechooser .sidebar view row:not(:selected), 
 	filechooser .sidebar row.sidebar-row:not(:selected), 
 	.nautilus-window .sidebar row:not(:selected), 
 	.nautilus-window .sidebar view row:not(:selected), 
@@ -2107,8 +2122,15 @@ filechooser .sidebar,
 	.nemo-window .sidebar row:not(:selected), 
 	.nemo-window .sidebar view row:not(:selected), 
 	.nemo-window .sidebar row.sidebar-row:not(:selected) {
-		color: @black; }
-		filechooser .sidebar .expander, 
+/*
+		zcolor: @black;
+		zborder: 4px solid @FINDME; 
+		zbackground: @FINDME3; 
+		padding: 0px; 
+		margin: 0px; font-size: small;
+*/
+		}
+	filechooser .sidebar .expander, 
 	.nautilus-window .sidebar .expander, 
 	.nemo-window .sidebar .expander {
 		color: @black; }
@@ -2117,7 +2139,10 @@ filechooser .sidebar,
 	.nemo-window .sidebar .expander:hover {
 		color: @black; }
 
-stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar.sidebar.left:dir(rtl) list {
+/* CBT: ? function unknown */
+stacksidebar.sidebar:dir(ltr) list, 
+stacksidebar.sidebar.left list, 
+stacksidebar.sidebar.left:dir(rtl) list {
 	border-right: 1px solid @neutral02;
 	border-left-style: none; }
 stacksidebar.sidebar:dir(rtl) list, stacksidebar.sidebar.right list {
@@ -2131,24 +2156,27 @@ stacksidebar row {
 	stacksidebar row.needs-attention > label {
 		background-size: 6px 6px, 0 0; }
 
+/* CBT: sidebar in ?thunar, file dialogue AND nautilus */
+/* CBT: the entire sidebar (nautilus and dialogue) */
 placessidebar > viewport.frame {
 	border-style: none; }
-/* CBT: sidebar in thunar */
+/* CBT: each individual sidebar item */
 placessidebar row {
 	min-height: 36px;
-	padding: 0px; }
+	padding: 0px; 
+	zborder: 4px solid @FINDME; }
 	placessidebar row > revealer {
 		padding: 0 14px; }
 	placessidebar row image.sidebar-icon {
 		opacity: 1; }
 		placessidebar row image.sidebar-icon:dir(ltr) {
-			padding-right: 8px; }
+			padding-right: 0.5em; }
 		placessidebar row image.sidebar-icon:dir(rtl) {
-			padding-left: 8px; }
+			padding-left: 0.5em; }
 	placessidebar row label.sidebar-label:dir(ltr) {
-		padding-right: 2px; }
+		padding: 0px; }
 	placessidebar row label.sidebar-label:dir(rtl) {
-		padding-left: 2px; }
+		padding: 0px; }
 	placessidebar row.sidebar-new-bookmark-row {
 		color: @black; }
 	placessidebar row:drop(active):not(:disabled) {
@@ -2378,8 +2406,8 @@ headerbar.selection-mode, toolbar.selection-mode {
 		color: black;
 		background-color: @darkgray-b3b3b3; }
 		headerbar.selection-mode button:hover, toolbar.selection-mode button:hover {
-			border-color: @silver-bfbfbf;
-			background-color: @silver-bfbfbf; }
+			border-color: @neutral04;
+			background-color: @neutral04; }
 		headerbar.selection-mode button:active, headerbar.selection-mode button:checked, toolbar.selection-mode button:active, toolbar.selection-mode button:checked {
 			border-color: @dimgray-737373;
 			background-color: @dimgray-737373; }
@@ -2387,9 +2415,9 @@ headerbar.selection-mode, toolbar.selection-mode {
 				border-color: @dimgray-737373;
 				background-color: @dimgray-737373; }
 		headerbar.selection-mode button:backdrop, toolbar.selection-mode button:backdrop {
-			border-color: @silver-bfbfbf;
+			border-color: @neutral04;
 			color: black;
-			background-color: @silver-bfbfbf; }
+			background-color: @neutral04; }
 	headerbar.selection-mode .selection-menu button, toolbar.selection-mode .selection-menu button {
 		border-style: none;
 		background-color: transparent;
@@ -2478,6 +2506,7 @@ XfdesktopIconView:active {
 
 panel-toplevel.background, panel-toplevel.background menubar {
 	background-color: @neutral01;
+	background-color: @F;
 	color: @black; }
 panel-toplevel.background menubar, panel-toplevel.background #PanelApplet label, panel-toplevel.background #PanelApplet image {
 	color: @black; }
@@ -2504,7 +2533,7 @@ panel-toplevel.background button {
 		border-left-color: @neutral02;
 		border-bottom-color: @border01-dark;
 		border-right-color: @border01-darkless;
-		background-color: @silver-bfbfbf;
+		background-color: @neutral04;
 		background-image: none; }
 	panel-toplevel.background button:active:disabled, panel-toplevel.background button:checked:disabled {
 		color: @black-off;
@@ -2536,7 +2565,7 @@ panel-toplevel.background button {
 		border-left-color: @neutral02;
 		border-bottom-color: @border01-dark;
 		border-right-color: @border01-darkless;
-		background-color: @silver-bfbfbf;
+		background-color: @neutral04;
 		background-image: none; }
 		#tasklist-button:active:disabled, #tasklist-button:checked:disabled {
 			color: @black-off;
@@ -2564,6 +2593,8 @@ panel-toplevel.background na-tray-applet {
 		background-color: @accent01; }
 
 
+/* CBT https://docs.xfce.org/xfce/xfce4-panel/theming */
+/* CBT: background of items only in panel */
 .xfce4-panel.panel {
 	background-color: @neutral01;}
 	/* CBT: button in panel, for example window list popup */
@@ -2586,7 +2617,7 @@ panel-toplevel.background na-tray-applet {
 		border-left-color: @neutral02;
 		border-bottom-color: @border01-dark;
 		border-right-color: @border01-darkless;
-		background-color: @silver-bfbfbf;
+		background-color: @neutral04;
 		background-image: none; }
 		.xfce4-panel.panel button.flat:active:disabled, .xfce4-panel.panel button.flat:checked:disabled, .xfce4-panel.panel button.sidebar-button:active:disabled, .xfce4-panel.panel button.sidebar-button:checked:disabled {
 			color: @black-off;
@@ -2596,12 +2627,14 @@ panel-toplevel.background na-tray-applet {
 		border-color: transparent;
 		color: rgba(0, 0, 0, 0.8);
 		text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
-		background-color: transparent; }
+		background-color: transparent;
+	zbackground-color: @FINDME; }
+	/* CBT: Window buttons */
 	.xfce4-panel.panel .tasklist button {
-		padding: 0.5em;
-		margin: 0.15em;
+		padding: 0em;
+		margin: 0em;
 		border-style: solid;
-		border-width: 1px;
+		border-width: 0px;
 		border-radius: 0px;
 		color: @black;
 		border-color: @neutral02;
@@ -2609,18 +2642,24 @@ panel-toplevel.background na-tray-applet {
 		border-left-color: @border01-lightless;
 		background-color: @neutral01;
 		-gtk-outline-radius: 0px;
-		outline-color: @accent01;
-		outline-offset: 2px;
-		outline-style: solid; 
-	zborder: 4px solid @FINDME; zbackground-color: pink;
-	min-height: 2em;}
+		zoutline-color: @accent01;
+		zoutline-offset: 2px;
+		zoutline-style: solid; 
+		zborder: 4px solid @FINDME; zbackground-color: pink;
+		zmin-height: 4em;
+		text-overflow: ellipsis;
+		zbackground-color: @FINDME;
+		  overflow: visible;}
+		
+			.xfce4-panel.panel .tasklist button:hover {
+			background-color: @accent01;}
 	.xfce4-panel.panel .tasklist button:active, .xfce4-panel.panel .tasklist button:checked {
 		color: @black;
 		border-top-color: @neutral02;
 		border-left-color: @neutral02;
 		border-bottom-color: @border01-dark;
 		border-right-color: @border01-darkless;
-		background-color: @silver-bfbfbf;
+		background-color: @neutral04;
 		background-image: none; }
 		.xfce4-panel.panel .tasklist button:active:disabled, .xfce4-panel.panel .tasklist button:checked:disabled {
 			color: @black-off;
@@ -2661,7 +2700,7 @@ panel-toplevel.background na-tray-applet {
 			border-left-color: @neutral02;
 			border-bottom-color: @border01-dark;
 			border-right-color: @border01-darkless;
-			background-color: @silver-bfbfbf;
+			background-color: @neutral04;
 			background-image: none; }
 			#XfceNotifyWindow.osd button:active:disabled, #XfceNotifyWindow.osd button:checked:disabled {
 				color: @black-off;
@@ -2671,12 +2710,33 @@ panel-toplevel.background na-tray-applet {
 			color: @black;
 			text-shadow: 1px 1px rgba(255, 255, 255, 0.85); }
 
+/* CBT: desktop switcher in panel */
 wnck-pager {
-	background-color: @neutral01; }
+	background-color: @theme04;
+	zborder: 3px solid blue;
+	border-style: solid;
+	border-width: 0px;
+	border-image: url("assets/window-border-equal.png") 5 10 6 9 stretch stretch;
+	}
+	
+	wnck-pager:nth-child(even) {
+		
+		border: 8px solid @FINDME; background: @FINDME2;
+	}
 	wnck-pager:hover {
-		background-color: @black; }
+	background-color: @theme03;
+	background-image: url("assets/thatch27.png"); 
+	background-size: 100%;
+	border-style: solid;
+	border-width: 1px;
+	border-image: url("assets/window-border-equal.png") 5 10 6 9 stretch stretch;}
 	wnck-pager:selected {
-		background-color: black; }
+		background-color: @accent01; }
+
+#pager-1 button,
+#pager-1 button:checked,
+#pager-1 button:hover, #plugin-4, #miniature-view, #plugin-13 {
+border: 8px solid @FINDME; background-color: @FINDME2;}
 
 /* CBT: Move all the base theme's application specific to a different 
  * file and include it. If Modified from Solaris9, consider bringing 
@@ -2684,10 +2744,9 @@ wnck-pager {
  * EXCLUDES xfce panel, widgets etc*/
 @import url("gtk-specificapplications.css");
 
+
 .xfce4-panel .background, .xfce4-panel .horizontal .background {
 		background-color: @neutral01; }
-
-
 
 @keyframes playbackmenuitem_spinner {
 	to {

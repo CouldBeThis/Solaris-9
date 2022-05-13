@@ -34,6 +34,7 @@ headerbar {
 	background-color: @accent01;
 	border-style: solid;
 	border-width: 8px;
+	border-image: url("assets/window-border-equal.png") 5 10 6 9 stretch;
 		zborder-image: url("assets/window-border-equal.png") 5 9;
 	zbackground-image: url("assets/title-large.png");
 	zbackground-repeat: repeat-x;
@@ -45,7 +46,6 @@ headerbar {
 	zborder-image-repeat: spaces;
 	zborder-image: url("assets-working/bg.png");
 	zborder-image-slice: 30 fill;
-	border-image: url("assets/window-border-equal.png") 5 10 6 9 stretch stretch;
 border-width: 8px 22px 8px 22px;
 	font-size: smaller;
 	font-family: "Roboto Condensed";
@@ -55,7 +55,24 @@ border-width: 8px 22px 8px 22px;
 	zfont-family: "ProFont";}
 	}
 
+.background image {
+    background-image: url("assets/title-large.png");
+	background-repeat: repeat-x;	
+	background-color: @neutral01;
+    background-origin: border-box; /* padding-box content-box */
+    background-attachment: scroll; /* fixed local */
+    background-position: top;
+    background-repeat: repeat-x;
+    background-size: cover; /* contain auto */
 
+
+}
+
+.background gradient {
+	/* a random gradient */
+	background: rgb(131,58,180);
+	background: linear-gradient(180deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); 
+}
 
 
 

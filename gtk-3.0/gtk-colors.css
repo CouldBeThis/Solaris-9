@@ -1,2 +1,274 @@
+/* color scheme */
+
+
+/* define theme colors
+useful documentation:
+* https://docs.gtk.org/gtk3/css-overview.html#specifying-colors-in-various-ways
+*/
+
+/* ######################### */
+/* ### main theme colors ### */
+/* ######################### */
+
+/* used to identify where and what while working */
+@define-color FINDME rgba(103,193,42,50);
+@define-color FINDME2 rgba(255,215,15,50);
+@define-color FINDME3 rgba(120,208,255,50);
+
+/* some of the 1px outlines inside windows*/
+/*
+@define-color neutral02 #b2c8d6;
+*/
+
+/* XCODEDARK color scheme colors (except greys) */
+@define-color theme02 #292a30; /* salmon rgb(255, 129, 112) */
+@define-color theme03 #ff8170; /* mediumaquamarine rgb(120, 194, 179) */
+@define-color theme04 #78c2b3; /* sandybrown rgb(255, 161, 79) */
+@define-color theme05 #ffa14f; /* deepskyblue rgb(78, 176, 204) */
+@define-color theme06 #4eb0cc; /* mediumpurple rgb(178, 129, 235) */
+@define-color theme07 #b281eb; /* darkseagreen rgb(132, 179, 96) */
+@define-color theme08 #53606e; /* hotpink rgb(255, 122, 178) */
+@define-color theme09 #ff7ab2; /* paleturquoise rgb(172, 242, 228) */
+@define-color theme10 #acf2e4; /* darkkhaki rgb(217, 201, 124) */
+@define-color theme11 #d9c97c; /* skyblue rgb(107, 223, 255) */
+@define-color theme12 #6bdfff; /* plum rgb(218, 186, 255) */
+@define-color theme13 #dabaff; /* lightgreen rgb(176, 230, 135) */
+@define-color theme14 #b2c8d6; /* orangered rgb(243, 74, 0) */
+@define-color theme15 #191919; /* indianred rgb(255, 53, 91) */
+@define-color theme16 #ff355b; /* lightgreen rgb(182, 232, 117) */
+@define-color theme17 #b6e875; /* orange rgb(255, 193, 80) */ 
+@define-color theme18 #ffc150; /* lightskyblue rgb(117, 211, 255) */
+@define-color theme19 #75d4ff; /* mediumpurple rgb(185, 117, 230) */
+@define-color theme20 #b975e6; /* mediumturquoise rgb(108, 190, 181) */
+
+/* main window */
+
+@define-color neutral01 #e6e1cb;						/* bg   */
+@define-color neutral01-contrast #09090a;				/* text */
+/* Bright white for emphasis and current activity */
+@define-color neutral02	#fffff2;						/* bg   */
+@define-color neutral02-contrast @neutral01-contrast;	/* text */
+@define-color neutral03 #e6e4d3;						/* bg   */
+@define-color neutral03-contrast @neutral01-contrast;	/* text */
+/* light beige */
+@define-color neutral04 #E2DAB9;							/* bg   */
+@define-color neutral04-contrast @neutral01-contrast;	/* text */
+@define-color neutral05 #E2EDEE;						/* bg   */
+@define-color neutral05-contrast @neutral01-contrast;	/* text */
+
+@define-color neutral06 #ebe6dd;						/* bg   */
+@define-color neutral06-contrast @neutral01-contrast	/* text */
+
+/* borrowed from https://lospec.com/palette-list/1bit-monitor-glow */
+@define-color neutral07 #f0f6f0;			/* bg   */
+@define-color neutral07-contrast #222323;	/* text */
+
+/* ------ neutral but contrasting ------ */
+/* used to indicate a selection or maybe highlight */
+@define-color neutral10					#439eb0;	/* bg   */
+@define-color neutral10-contrast		#dfdfe0;	/* text */
+/* selection or highlight in background window */
+@define-color neutral10-dimmed			#757C7E;	/* bg   */
+@define-color neutral10-dimmed-contrast	#dfdfe0;	/* text */
+@define-color neutral11 #f0f6f0;					/* bg   */
+@define-color neutral11-contrast #222323;			/* text */
+@define-color neutral12 #fff;			/* bg   */
+@define-color neutral12-contrast #222;	/* text */
+@define-color neutral13 #fff;			/* bg   */
+@define-color neutral13-contrast #222;	/* text */
+@define-color neutral14 #fff;			/* bg   */
+@define-color neutral14-contrast #222;	/* text */
+@define-color neutral15 #fff;			/* bg   */
+@define-color neutral15-contrast #222;	/* text */
+@define-color neutral16 #fff;			/* bg   */
+@define-color neutral16-contrast #222;	/* text */
+@define-color neutral17 #fff;			/* bg   */
+@define-color neutral17-contrast #222;	/* text */
+@define-color neutral18 #fff;			/* bg   */
+@define-color neutral18-contrast #222;	/* text */
+@define-color neutral19 #fff;			/* bg   */
+@define-color neutral19-contrast #222;	/* text */
+/* .......unwanted.......*/
+/*@define-color neutral01 #a3b1bf;*/			/* bg   */
+/*@define-color neutral01 #f3f3f5;*/			/* bg   */
+/*@define-color neutral01 #ececec;*/			/* bg   */
+/*@define-color neutral01 #e3e6c6;*/			/* bg   */
+/*@define-color neutral10 #439eb0;*/			/* bg   */
+/*@define-color neutral10-contrast #dfdfe0;*/	/* text */
+
+/* use for borders */
+@define-color border01-light		rgba(223, 223, 224, 0.66);	/* top */
+@define-color border01-lightless	rgba(223, 223, 224, 0.33);	/* left */
+@define-color border01-darkless		rgba(25, 25, 25, 0.33);		/* right */
+@define-color border01-dark			rgba(25, 25, 25, 0.66);		/* bottom */
+/* the above assigned to alternative names */
+@define-color border01-top			@border01-light;			/* top */
+@define-color border01-left			@border01-lightless;		/* left */
+@define-color border01-right		@border01-darkless;			/* right */
+@define-color border01-bottom		@border01-dark;				/* bottom */
+
+
+/* CBT:	titlebar */
+@define-color accent01 #e95678; /* backg */
+@define-color accent01-contrast #dfdfe0; /* text */
+	/* note: Below color is created and enforced on inactive titlebars
+	 * of xfwm somewhere that I can't figure out. So I am just going
+	 * with it and using sake color for gtk themes.
+	 * TODO: Find out where the darkening is happening and consider
+	 * another color. Especially for the text. */
+@define-color accent01-dim rgba(171,51,79,1); /* inactive title backg */
+@define-color accent01-dim-contrast rgba(83, 96, 110,1); /* inactive title text */
+/* BackG:	inactive tabs, scrollbar */
+
+@define-color accent02 @theme04; /* backg */
+@define-color accent02-contrast #22423B; /* text */
+@define-color accent02-dim #22423B; /* text */
+@define-color accent02-dim-contrast #DCF4F1; /* text */
+
+
+
+
+
+@define-color black #000000;
+@define-color black-off #09090a;
+/* select list, filebrowser &other background */
+@define-color white-off #FFF7E9;
+@define-color workspacebg #6f717d;
+
+
+/* ######################### */
+/* ### other theme colors ### */
+/* ######################### */
+@define-color dimgray-575962 #575962;
+@define-color dimgray-62646d #62646d;
+@define-color dimgray-656979 #656979;
+@define-color dimgray-686a75 #686a75;
+@define-color dimgray-737373 #737373;
+@define-color lightslategray-838795 #838795;
+@define-color lightslategray-878ca0 #878ca0;
+@define-color lightslategray-898d9a #898d9a;
+@define-color lightslategray-8b8e9c #8b8e9c;
+@define-color lightslategray-9196a9 #9196a9;
+@define-color lightslategray-9397a8 #9397a8;
+@define-color darkgray-979aa7 #979aa7;
+@define-color darkgray-999999 #999999;
+@define-color darkgray-9a9daa #9a9daa;
+@define-color darkgray-9da0b0 #9da0b0;
+@define-color darkgray-a4a8bb #a4a8bb;
+@define-color darkgray-a5a9b9 #a5a9b9;
+@define-color darkgray-abacb1 #abacb1;
+@define-color darkgray-b3b3b3 #b3b3b3;
+@define-color silver-bfbfbf #bfbfbf;
+@define-color silver-c2c6d3 #c2c6d3;
+@define-color black #232323;
+/*
+@define-color black #252525;
+@define-color black #2C2C2C;
+@define-color black #2a2a2a;
+@define-color black #2c2d31;
+@define-color black #303030;
+@define-color black #333333;
+*/
+@define-color black01 #1a1a1a;
+@define-color brown #884444;
+/*
+@define-color brown #964242;
+@define-color brown #9c4848;
+@define-color brown #A74949;
+*/
+@define-color cadetblue #468192;
+/*
+@define-color cadetblue #4992A7;
+*/
+@define-color chocolate #b86814;
+/*
+@define-color chocolate #c86f10;
+*/
+@define-color darkorange #FF8300;
+/*
+@define-color darkorange #ec7c06;
+@define-color darkorange #ff8d14;
+@define-color darkorange #ff8f1a;
+*/
+@define-color darkslateblue #334175;
+/*
+@define-color darkslateblue #3a4a86;
+*/
+@define-color darkslateblue-1f3d7a #1f3d7a;
+@define-color gainsboro #d7dae3;
+@define-color indianred #7e4242;
+/*
+@define-color indianred #a9696e;
+@define-color indianred #b96d6d;
+*/
+@define-color indianred02 #b74d4d;
+/*
+@define-color indianred02 #b94f4f;
+*/
+@define-color lavenderblush #f7edf2;
+@define-color lemonchiffon #FFFFBF;
+@define-color maroon #642c2c;
+@define-color maroon02 #593737;
+@define-color palevioletred #dd88ae;
+@define-color peru #7a4e1f;
+/*
+@define-color peru #926a46;
+@define-color peru #A77549;
+*/
+@define-color purple #5f3a4b;
+@define-color purple02 #724157;
+@define-color rosybrown-ca9292 #ca9292;
+@define-color royalblue #495DA7;
+/*
+@define-color royalblue #4f66b9;
+*/
+@define-color royalblue02 #1463ff;
+/*
+@define-color royalblue02 #1a66ff;
+*/
+@define-color slategray #757886;
+/*
+@define-color slategray #767985;
+@define-color slategray #787b87;
+@define-color slategray #7c7f8d;
+*/
+@define-color snow #f6eded;
+@define-color thistle-e0b8ca #e0b8ca;
+@define-color wheat #fbe4bc;
+@define-color blue-bright01 #0055FF;
+@define-color blue-bright02 #0653ec;
+@define-color blue-bright03 #104ec8;
+@define-color blue-bright04 #144bb8;
+
+/* doesn't seem to do anything. delete later. '*/
+
+/*
+@define-color accent02 #a3b1bf;
+*/
+
+/* here are the RGBa values from the document (not replaced with variables):
+rgba(0, 0, 0, 0.04)
+rgba(0, 0, 0, 0.1)
+rgba(0, 0, 0, 0.15)
+rgba(0, 0, 0, 0.2)
+rgba(0, 0, 0, 0.3)
+rgba(0, 0, 0, 0.5)
+rgba(0, 0, 0, 0.6)
+rgba(0, 0, 0, 0.7)
+rgba(0, 0, 0, 0.8)
+rgba(0, 0, 0, 0.9)
+rgba(174, 178, 195, 0.999)
+rgba(255, 255, 255, 0.2)
+rgba(255, 255, 255, 0.4)
+rgba(255, 255, 255, 0.7)
+rgba(255, 255, 255, 0.8)
+rgba(255, 255, 255, 0.85)
+rgba(255, 255, 255, 0.95)
+*/
+
+
+
+
+
 
 
