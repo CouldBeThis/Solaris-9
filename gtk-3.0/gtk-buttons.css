@@ -1,0 +1,169 @@
+/* CBT: buttons */
+/* gtk-buttons.css */
+
+
+
+button:link > label, button:visited > label, *:link, button:link, button:visited {
+	color: @royalblue; }
+	button:link > label:visited, button:visited > label:visited, *:link:visited, button:visited {
+		color: @darkslateblue; }
+		*:selected button:link > label:visited, *:selected button:visited > label:visited,
+		*:selected *:link:visited,
+		*:selected button:visited:link,
+		*:selected button:visited {
+			color: @darkgray-999999; }
+	button:link > label:hover, button:visited > label:hover, *:link:hover, button:hover:link, button:hover:visited {
+		color: @royalblue; }
+		*:selected button:link > label:hover, *:selected button:visited > label:hover,
+		*:selected *:link:hover,
+		*:selected button:hover:link,
+		*:selected button:hover:visited {
+			color: @black01; }
+	button:link > label:active, button:visited > label:active, *:link:active, button:active:link, button:active:visited {
+		color: @royalblue; }
+		*:selected button:link > label:active, *:selected button:visited > label:active,
+		*:selected *:link:active,
+		*:selected button:active:link,
+		*:selected button:active:visited {
+			color: @black; }
+	button:link > label:backdrop:backdrop:hover, button:visited > label:backdrop:backdrop:hover, button:link > label:backdrop:backdrop:hover:selected, button:visited > label:backdrop:backdrop:hover:selected, button:link > label:backdrop, button:visited > label:backdrop,
+	*:link:backdrop:backdrop:hover,
+	button:backdrop:backdrop:hover:link,
+	button:backdrop:backdrop:hover:visited,
+	*:link:backdrop:backdrop:hover:selected,
+	button:backdrop:backdrop:hover:selected:link,
+	button:backdrop:backdrop:hover:selected:visited,
+	*:link:backdrop,
+	button:backdrop:link,
+	button:backdrop:visited {
+		color: @darkslateblue; }
+	button:link > label:selected, button:visited > label:selected, *:selected button:link > label, *:selected button:visited > label,
+	*:link:selected,
+	button:selected:link,
+	button:selected:visited,
+	*:selected *:link,
+	*:selected button:link,
+	*:selected button:visited {
+		color: @black; }
+
+button:link, button:visited {
+	border-color: transparent;
+	background-color: transparent;
+	text-shadow: none; }
+	button:link:hover, button:link:active, button:link:checked, button:link:focus:active, button:visited:hover, button:visited:active, button:visited:checked, button:visited:focus:active {
+		border-color: transparent;
+		background-color: transparent;
+		text-shadow: none; }
+	button:link > label, button:visited > label {
+		text-decoration-line: underline; }
+
+/* CBT: buttons
+ * note: there is more of buttons above. Difference? */
+button {
+	border-radius: 0px;
+	padding: 0.1em;
+	zmargin: 0em;
+	border-style: solid;
+	border-width: 6px;
+	border-radius: 4px;
+	background-color: @neutral01;
+	color: @neutral01-contrast;
+	border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
+	-gtk-outline-radius: 0px;
+	zoutline-color: @accent01;
+	zoutline-offset: 2px;
+	zoutline-style: solid;
+	/* TODO: Make appropriate button border in PNG
+	border-style: solid;
+	border-width: 8px;
+	border-image: url("assets/window-border-equal.png") 5 10 6 9 stretch;*/
+	}
+	button:hover {
+		background: @accent01;
+		color: @accent01-contrast;
+	}
+	button:active,
+	button:checked {
+		color: @neutral01-contrast;
+		background-image: none;
+		border-color: @border01-lightless @border01-light @border01-darkless @border01-dark;
+		border-color: @border01-dark @border01-lightless @border01-light @border01-darkless;
+		border-style: solid;
+		}
+		button:active:disabled,
+		button:checked:disabled {
+			color: @black-off;
+			text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
+			background-color: @lightslategray-9397a8; }
+	button:disabled {
+		color: @black;
+		text-shadow: 1px 1px rgba(255, 255, 255, 0.85); }
+	button.flat {
+		border-color: transparent;
+		border-radius: 0px;
+		color: @black;
+		box-shadow: none;
+		background-color: transparent; }
+		button.flat:hover {
+			color: @black;
+			background-color: @neutral01;
+			border-color: @neutral02;
+			border-top-color: @border01-light;
+			border-left-color: @border01-lightless;
+			background-color: @neutral01; }
+		button.flat:active, button.flat:checked {
+			color: @black;
+			border-top-color: @neutral02;
+			border-left-color: @neutral02;
+			border-bottom-color: @border01-dark;
+			border-right-color: @border01-darkless;
+			background-color: @neutral04;
+			background-image: none; }
+			button.flat:active:disabled, button.flat:checked:disabled {
+				color: @black-off;
+				text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
+				background-color: @lightslategray-9397a8; }
+		button.flat:disabled {
+			border-color: transparent;
+			color: rgba(0, 0, 0, 0.8);
+			text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
+			background-color: transparent; }
+
+/* CBT: Checkboxes and radio buttons */
+/* CBT: The whole selection --- including textual descsription --- for
+ * multiple selections */
+checkbutton.text-button, radiobutton.text-button {
+	padding: 0px;
+	margin: 0px;
+	outline-offset: 0;
+	zbackground: @neutral03;}
+	checkbutton.text-button:hover, radiobutton.text-button:hover {
+		background: @neutral03;}
+
+/* TODO: Dim the accent colors for background windows */
+/* TODO: Make new checkbox + radio icons */
+	check, radio {
+		margin: 0px;
+		min-height: 24px;
+		min-width: 24px;
+		border-style: none;
+		background-color: transparent;
+		background: @accent01; }
+
+	check, .check {
+		-gtk-icon-source: url("assets/checkbox-unchecked.png"); }
+		check:disabled, .check:disabled {
+			-gtk-icon-source: url("assets/checkbox-unchecked-disabled.png"); }
+		check:checked, .check:checked {
+			-gtk-icon-source: url("assets/checkbox-checked.png"); }
+			check:checked:disabled, .check:checked:disabled {
+				-gtk-icon-source: url("assets/checkbox-checked-disabled.png"); }
+
+	radio, .radio {
+		-gtk-icon-source: url("assets/radio-unchecked.png"); }
+		radio:disabled, .radio:disabled {
+			-gtk-icon-source: url("assets/radio-unchecked-disabled.png"); }
+		radio:checked, .radio:checked {
+			-gtk-icon-source: url("assets/radio-checked.png"); }
+			radio:checked:disabled, .radio:checked:disabled {
+			-gtk-icon-source: url("assets/radio-checked-disabled.png"); }
