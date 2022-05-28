@@ -577,7 +577,6 @@ modelbutton.flat, menuitem.button.flat, .menuitem.button.flat {
 @import url("gtk-windows.css");
 
 
-
 overshoot.top {
 	background-image: -gtk-gradient(radial, center top, 0.55, center top, 0.6, from(rgba(0, 0, 0, 0.2)), to(transparent));
 	background-size: 100% 60%;
