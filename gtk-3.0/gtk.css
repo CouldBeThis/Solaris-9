@@ -1063,6 +1063,7 @@ statusbar {
 	statusbar frame > border {
 		border: none; }
 
+/* 	CBT: Toggle switch accent color when ON	 */
 switch {
 	outline-offset: -4px;
 	margin: 4px;
@@ -1073,11 +1074,13 @@ switch {
 	border-right-color: @border01-darkless;
 	background-color: @neutral01; }
 	switch:checked {
-		background-color: @neutral04; }
+		background-color: @neutral04;
+		background-color: @accent01; !important;
+	}
 	switch:disabled {
 		color: @dimgray-575962;
 		border-color: @darkgray-a5a9b9;
-		background-color: @darkgray-a5a9b9; }
+		background-color: @darkgray-a5a9b9;}
 	switch slider {
 		margin: 0;
 		border-radius: 0px;
