@@ -1,0 +1,55 @@
+/* CBT: message dialogue box */
+/* gtk-message.css */
+/*@import url("gtk-message.css");*/
+
+messagedialog {
+	border-bottom-radius: 0px;
+		border: 4px solid orange; background-color: pink;
+	}
+	messagedialog .background.csd {
+		border-radius: 0px;
+		color: @black;
+		background-color: @neutral01; }
+	/* CBT - main border for dialogue box */
+	messagedialog decoration {
+		border-radius: 0px;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); 
+		zborder: 14px solid blue; zbackground-color: pink;
+		border: 28px solid @accent02-dim;
+		zborder-style: solid;
+		zborder-width: 8px 0px 0px 0px;
+		border-image: url("assets/thatch29c.png") 5 9  repeat;}
+	/* CBT - titlebar */
+	messagedialog .titlebar.horizontal {
+		border: none;
+		background-image: none;
+		background-color: @neutral01;
+		zborder: 4px solid purple; background-color: @accent01;
+		border: 8px solid @accent02-dim;
+		border-style: solid;
+		border-width: 8px 0px 0px 0px;
+		border-image: url("assets/thatch29c.png") 5 9 repeat; }
+	messagedialog.csd .dialog-action-area button {
+		padding: 10px;
+		border-radius: 0;
+		border-bottom-style: none;
+		background-image: none;
+		-gtk-outline-radius: 0; }
+		messagedialog.csd .dialog-action-area button:last-child {
+			border-right-width: 0;
+			border-radius: 0px;
+			border-bottom-right-radius: 0px;
+			-gtk-outline-radius: 0 0 0px 0; }
+		messagedialog.csd .dialog-action-area button:first-child {
+			border-left-width: 0;
+			border-radius: 0px;
+			border-bottom-left-radius: 0px;
+			-gtk-outline-radius: 0 0 0 0px; }
+		messagedialog.csd .dialog-action-area button:only-child {
+			border-radius: 0px;
+			border-bottom-left-radius: 0px;
+			border-bottom-right-radius: 0px;
+			-gtk-outline-radius: 0 0 0px 0px;
+		zborder: 4px solid cyan; zbackground-color: cyan; }

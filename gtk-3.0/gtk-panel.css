@@ -1,0 +1,200 @@
+/* CBT: XFCE panel */
+/* gtk-panel.css */
+
+
+panel-toplevel.background, panel-toplevel.background menubar {
+	background-color: @neutral01;
+	background-color: @F;
+	color: @black; }
+panel-toplevel.background menubar, panel-toplevel.background #PanelApplet label, panel-toplevel.background #PanelApplet image {
+	color: @black; }
+panel-toplevel.background menubar > menuitem, panel-toplevel.background menubar > menuitem label:backdrop {
+	color: @black; }
+panel-toplevel.background menubar > menuitem:hover, panel-toplevel.background menubar > menuitem:hover label:backdrop {
+	color: @accent01-contrast; }
+panel-toplevel.background button {
+	border-color: transparent;
+	border-radius: 0px;
+	color: @black;
+	box-shadow: none;
+	background-color: transparent; }
+	panel-toplevel.background button:hover {
+		color: @black;
+		background-color: @neutral01;
+		border-color: @neutral02;
+		border-top-color: @border01-light;
+		border-left-color: @border01-lightless;
+		background-color: @neutral01; }
+	panel-toplevel.background button:active, panel-toplevel.background button:checked {
+		color: @black;
+		border-top-color: @neutral02;
+		border-left-color: @neutral02;
+		border-bottom-color: @border01-dark;
+		border-right-color: @border01-darkless;
+		background-color: @neutral04;
+		background-image: none; }
+	panel-toplevel.background button:active:disabled, panel-toplevel.background button:checked:disabled {
+		color: @black-off;
+		text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
+		background-color: @lightslategray-9397a8; }
+	panel-toplevel.background button:disabled {
+		border-color: transparent;
+		color: rgba(0, 0, 0, 0.8);
+		text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
+		background-color: transparent; }
+
+#tasklist-button {
+	padding: 4px 8px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 0px;
+	color: @black;
+	border-color: @neutral02;
+	border-top-color: @border01-light;
+	border-left-color: @border01-lightless;
+	background-color: @neutral01;
+	-gtk-outline-radius: 0px;
+	outline-color: @accent01;
+	outline-offset: 2px;
+	outline-style: solid; }
+	#tasklist-button:active, #tasklist-button:checked {
+		color: @black;
+		border-top-color: @neutral02;
+		border-left-color: @neutral02;
+		border-bottom-color: @border01-dark;
+		border-right-color: @border01-darkless;
+		background-color: @neutral04;
+		background-image: none; }
+		#tasklist-button:active:disabled, #tasklist-button:checked:disabled {
+			color: @black-off;
+			text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
+			background-color: @lightslategray-9397a8; }
+	#tasklist-button:disabled {
+		color: @black;
+		text-shadow: 1px 1px rgba(255, 255, 255, 0.85); }
+	#tasklist-button label {
+		color: rgba(0, 0, 0, 0.7); }
+		#tasklist-button label:hover {
+			color: rgba(0, 0, 0, 0.7); }
+		#tasklist-button label:checked {
+			color: @black; }
+
+panel-toplevel.background na-tray-applet {
+	-NaTrayApplet-icon-padding: 0;
+	-NaTrayApplet-icon-size: 16px; }
+
+.wnck-pager {
+	background-color: rgba(0, 0, 0, 0.04); }
+	.wnck-pager:selected {
+		background-color: @accent01; }
+	.wnck-pager:hover {
+		background-color: @accent01; }
+
+
+
+
+
+/* CBT https://docs.xfce.org/xfce/xfce4-panel/theming */
+/* CBT: background of items only in panel */
+.xfce4-panel.panel {
+	background-color: @neutral01;}
+	/* CBT: button in panel, for example window list popup */
+	.xfce4-panel.panel button.flat, .xfce4-panel.panel button.sidebar-button {
+		border-color: transparent;
+		border-radius: 0px;
+		color: @black;
+		box-shadow: none;
+		background-color: transparent; }
+	 .xfce4-panel.panel button.flat:hover, .xfce4-panel.panel button.sidebar-button:hover {
+		color: @black;
+		background-color: @neutral01;
+		border-color: @neutral02;
+		border-top-color: @border01-light;
+		border-left-color: @border01-lightless;
+		background-color: @neutral01; }
+	.xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.flat:checked, .xfce4-panel.panel button.sidebar-button:active, .xfce4-panel.panel button.sidebar-button:checked {
+		color: @black;
+		border-top-color: @neutral02;
+		border-left-color: @neutral02;
+		border-bottom-color: @border01-dark;
+		border-right-color: @border01-darkless;
+		background-color: @neutral04;
+		background-image: none; }
+		.xfce4-panel.panel button.flat:active:disabled, .xfce4-panel.panel button.flat:checked:disabled, .xfce4-panel.panel button.sidebar-button:active:disabled, .xfce4-panel.panel button.sidebar-button:checked:disabled {
+			color: @black-off;
+			text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
+			background-color: @lightslategray-9397a8; }
+	 .xfce4-panel.panel button.flat:disabled, .xfce4-panel.panel button.sidebar-button:disabled {
+		border-color: transparent;
+		color: rgba(0, 0, 0, 0.8);
+		text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
+		background-color: transparent;
+	zbackground-color: @FINDME; }
+	/* CBT: Window buttons */
+	.xfce4-panel.panel .tasklist button {
+		padding: 0em;
+		margin: 0em;
+		border-style: solid;
+		border-width: 0px;
+		border-radius: 0px;
+		color: @black;
+		border-color: @neutral02;
+		border-top-color: @border01-light;
+		border-left-color: @border01-lightless;
+		background-color: @neutral01;
+		-gtk-outline-radius: 0px;
+		zoutline-color: @accent01;
+		zoutline-offset: 2px;
+		zoutline-style: solid;
+		zborder: 4px solid @FINDME; zbackground-color: pink;
+		zmin-height: 4em;
+		text-overflow: ellipsis;
+		zbackground-color: @FINDME;
+		  overflow: visible;}
+
+			.xfce4-panel.panel .tasklist button:hover {
+			background-color: @accent01;}
+	.xfce4-panel.panel .tasklist button:active, .xfce4-panel.panel .tasklist button:checked {
+		color: @black;
+		border-top-color: @neutral02;
+		border-left-color: @neutral02;
+		border-bottom-color: @border01-dark;
+		border-right-color: @border01-darkless;
+		background-color: @neutral04;
+		background-image: none; }
+		.xfce4-panel.panel .tasklist button:active:disabled, .xfce4-panel.panel .tasklist button:checked:disabled {
+			color: @black-off;
+			text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
+			background-color: @lightslategray-9397a8; }
+	 .xfce4-panel.panel .tasklist button:disabled {
+			color: @black;
+			text-shadow: 1px 1px rgba(255, 255, 255, 0.85); }
+
+
+			/* CBT: desktop switcher in panel */
+			wnck-pager {
+				background-color: @theme04;
+				zborder: 3px solid blue;
+				border-style: solid;
+				border-width: 0px;
+				border-image: url("assets/window-border-equal.png") 5 10 6 9 stretch stretch;
+			}
+
+					wnck-pager:nth-child(even) {
+
+						border: 8px solid @FINDME; background: @FINDME2;
+					}
+						wnck-pager:hover {
+							background-color: @theme03;
+							background-image: url("assets/thatch27.png");
+							background-size: 100%;
+							border-style: solid;
+							border-width: 1px;
+							border-image: url("assets/window-border-equal.png") 5 10 6 9 stretch stretch;}
+								wnck-pager:selected {
+									background-color: @accent01; }
+
+									#pager-1 button,
+									#pager-1 button:checked,
+									#pager-1 button:hover, #plugin-4, #miniature-view, #plugin-13 {
+									border: 8px solid @FINDME; background-color: @FINDME2;}

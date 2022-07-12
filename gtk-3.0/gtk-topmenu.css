@@ -1,0 +1,111 @@
+/* CBT: Top menu bar */
+/* gtk-topmenu.css */
+/* TODO: Menubar: a little easier to read and use */
+/* TODO: Menubar: Expander arrows more obvious */
+menu, .menu {
+	margin: 0px;
+	padding: 0;
+	border-radius: 0px;
+	border-style: solid;
+	border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
+	font-size: small;
+	font-family: "Roboto Condensed";}
+
+	.csd menu, .csd .menu {
+	font-size: small;
+	font-family: "Roboto Condensed";
+	padding: 0px;
+	margin: 0px;
+	border-radius: 0px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;}
+	menu > arrow, .menu > arrow {
+		padding: 4px;
+		background-color: @neutral01;
+		min-width: 16px;
+		min-height: 16px; }
+		menu > arrow.top, .menu > arrow.top {
+		margin-top: -6px;
+		border-bottom: 1px solid @neutral04;
+		-gtk-icon-source: -gtk-icontheme("pan-up-symbolic"); }
+		menu > arrow.bottom, .menu > arrow.bottom {
+		margin-bottom: -6px;
+		border-top: 1px solid @neutral04;
+		-gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
+
+menubar, .menubar {
+	-GtkWidget-window-dragging: true;
+	padding: 0px;
+	margin: 0px
+	border: 1px solid @neutral02;
+	color: @black;
+	background-color: @neutral01;
+	border-top-color: @border01-light;
+	border-left-color: @border01-darkless;
+	font-size: small;
+	font-family: "Roboto Condensed";
+	zfont-family: "ProFont";}
+	menubar:backdrop, .menubar:backdrop {
+		color: @black;
+		background-color: @neutral01; }
+
+menubar > menuitem, .menubar > menuitem {
+	font-size: small;
+	font-family: "Roboto Condensed";
+	zfont-family: "ProFont";
+	zfont-stretch: 50%;
+	padding: 0px 0.2em 0px 0.2em;
+	margin: 0px
+	border: none;
+	color: @black;
+	background-color: transparent;
+	border-width: 0px 1px 0px 0px;
+	border-style: double;
+	border-color: @border01-light @border01-darkless @border01-dark @border01-lightless;
+	zborder: 8px solid @FINDME; zbackground: @FINDME2;
+	zfont-family: "Chicago"; font-size: 18pt; }
+	menubar > menuitem:hover, .menubar > menuitem:hover {
+		color: @accent01-contrast;
+		background: @dimgray-575962; }
+	menubar > menuitem:disabled, .menubar > menuitem:disabled {
+		color: @dimgray-575962;
+		background-color: transparent; }
+	menubar > menuitem:backdrop, .menubar > menuitem:backdrop {
+		color: @black;
+		background-color: transparent; }
+
+menu menuitem, .menu menuitem {
+	font-size: small;
+	font-family: "Roboto Condensed";
+	min-height: 16px;
+	min-width: 40px;
+	padding: 4px;
+	border: 1px solid transparent;
+	border-radius: 0;
+	color: @black;
+	background-color: @neutral01; }
+	menu menuitem:hover, .menu menuitem:hover {
+		background-color: @accent01;
+		border-color: @neutral02;
+		border-right-color: @border01-darkless;
+		border-bottom-color: @border01-dark; }
+
+	menu menuitem:disabled, .menu menuitem:disabled {
+		color: @dimgray-575962; }
+	menu menuitem arrow, .menu menuitem arrow {
+		min-width: 16px;
+		min-height: 16px; }
+		menu menuitem arrow:dir(ltr), .menu menuitem arrow:dir(ltr) {
+		margin-left: 10px;
+		-gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
+		menu menuitem arrow:dir(rtl), .menu menuitem arrow:dir(rtl) {
+		margin-right: 10px;
+		-gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl"); }
+
+menuitem accelerator {
+	color: alpha(currentColor, 0.55);}
+	menuitem accelerator:hover {
+		color: rgba(255, 255, 255, 0.8); }
+	menuitem accelerator:disabled {
+		color: @dimgray-575962; }
