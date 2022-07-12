@@ -484,7 +484,7 @@ terminal-screen-container scrollbar {
 scrolledwindow.frame,
 	scrolledwindow viewport.frame {
 	border: none;
-		border: 1px solid blue; zbackground-color: @FINDME2;
+		zborder: 1px solid blue; zbackground-color: @FINDME2;
 	/* somewhat fixes the scrollbars overlapping (not everywhere) */
 	zpadding: 0px 10px; margin: 0px 40px 0px 0px; }
 
