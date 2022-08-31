@@ -247,8 +247,9 @@ headerbar {
 	color: @accent01-contrast;
 	background-color: @accent01;
 	border-style: solid;
-	border-width: 6px;
-	border-image: url("assets/window-border-equal.png") 6 10 6 9 stretch;
+	border-width: 9px;
+		zborder-color: darkcyan;
+	border-image: url("assets/window-border-equal-hidpi.png") 8 15 8 15 stretch;
 	font-size: smaller;
 	font-family: "Roboto Condensed";
 	}

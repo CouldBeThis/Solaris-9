@@ -1,0 +1,3 @@
+[submodule "lwaxana-assets"]
+	path = gtk-3.0/lwaxana-assets
+	url = https://github.com/CouldBeThis/lwaxana-assets.git
