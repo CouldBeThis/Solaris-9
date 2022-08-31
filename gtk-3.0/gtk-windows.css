@@ -3,10 +3,10 @@
  * if 0-1 tabs only. Looks weird. */
 notebook {
 		zborder: 5px solid magenta; 
-		border-style: solid;
+		/* border-style: solid;
 		border-width: 0px 9px 9px 0px;
 			zborder-color: darkcyan;
-		border-image: url("assets/window-border-equal-hidpi.png") 8 15 8 15 stretch;
+		border-image: url("assets/window-border-equal-hidpi.png") 8 15 8 15 stretch; */
 	
 	padding: 0; }
 	/* CBT: frame around tabs and content */
@@ -208,16 +208,28 @@ notebook {
 		notebook > header > tabs > arrow:disabled {
 			color: @dimgray-656979; }
 
-/* CBT: Lines that seperate paned windows */
+/* CBT: Lines that seperate paned windows (aka sidebars) */
+paned {
+	border-style: solid;
+	border-width: 0px 9px 9px 10px;
+	border-image: url("assets/window-border-equal-hidpi.png") 8 15 8 15 stretch;
+
+		zborder: 15px solid magenta; 
+}
+
+paned * {
+	zborder-image: none;
+	}
+
 paned > separator,
 paned > separator:backdrop {
 	border: none;
 	color: transparent;
 	zpadding: 20px;
 	background-color: @neutral02;
-	border-style: solid;
+	/* border-style: solid;
 	border-width: 8px 8px 0px 0px;
-	border-image: url("assets/window-border-equal.png") 10 stretch;
+	border-image: url("assets/window-border-equal.png") 10 stretch; */
 	zborder: 8px solid @FINDME; zbackground: @FINDME2; }
 	paned > separator:hover {
 		zborder: 8px solid @FINDME;
@@ -253,7 +265,7 @@ headerbar {
 	color: @accent01-contrast;
 	background-color: @accent01;
 	border-style: solid;
-	border-width: 9px;
+	border-width: 9px 9px 0px 10px;
 		zborder-color: darkcyan;
 	border-image: url("assets/window-border-equal-hidpi.png") 8 15 8 15 stretch;
 	font-size: smaller;
