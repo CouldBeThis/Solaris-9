@@ -2,6 +2,12 @@
 /* TODO: Consider: Remove the @accent02 border at top of window contents
  * if 0-1 tabs only. Looks weird. */
 notebook {
+		zborder: 5px solid magenta; 
+		border-style: solid;
+		border-width: 0px 9px 9px 0px;
+			zborder-color: darkcyan;
+		border-image: url("assets/window-border-equal-hidpi.png") 8 15 8 15 stretch;
+	
 	padding: 0; }
 	/* CBT: frame around tabs and content */
 	notebook.frame {
