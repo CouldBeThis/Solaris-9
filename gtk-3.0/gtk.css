@@ -830,10 +830,12 @@ scale {
 scrolledwindow {
 	border: 1px solid @neutral02;
 	border-bottom-color: @border01-dark;
-	border-right-color: @border01-darkless; }
+	border-right-color: @border01-darkless;}
 
 /* CBT: scrolling */
 scrollbar {
+		zborder: 6px solid maroon;
+	float: right;
 	zborder-bottom-color: @border01-dark;
 	zborder-right-color: @border01-darkless;
 	background-color: @neutral04;
