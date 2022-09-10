@@ -1,39 +1,65 @@
 /* CBT: XFCE panel */
 /* gtk-panel.css */
 
+/* When editing panel settings, this is the style that highlights the selected panel.  */
+/* Found at https://github.com/xfce-mirror/xfce4-panel/blob/ff06ad8e691603368e74feb11669a259550ec8bb/panel/panel-base-window.c */
+It will alternate between the following 2 styles to create an animate (if the styles are different from each other)
+.xfce4-panel.background.marching-ants-dashed {
+	border: 10px double royalblue;
+}
+.xfce4-panel.background.marching-ants-dotted {
+	border: 11px double navy;
 
-panel-toplevel.background, panel-toplevel.background menubar {
+}
+
+
+/* ====== general use panel ====/= */
+
+panel-toplevel.background,
+panel-toplevel.background menubar {
 	background-color: @neutral01;
-	background-color: @F;
-	color: @black; }
-panel-toplevel.background menubar, panel-toplevel.background #PanelApplet label, panel-toplevel.background #PanelApplet image {
-	color: @black; }
-panel-toplevel.background menubar > menuitem, panel-toplevel.background menubar > menuitem label:backdrop {
-	color: @black; }
-panel-toplevel.background menubar > menuitem:hover, panel-toplevel.background menubar > menuitem:hover label:backdrop {
-	color: @accent01-contrast; }
+	color: @black;
+	zbackground-color: @FINDME;}
+panel-toplevel.background menubar,
+panel-toplevel.background #PanelApplet label,
+panel-toplevel.background #PanelApplet image {
+	color: @black;
+	zbackground-color: @FINDME;}
+panel-toplevel.background menubar > menuitem,
+panel-toplevel.background menubar > menuitem label:backdrop {
+	color: @black;
+	zbackground-color: @FINDME;}
+panel-toplevel.background menubar > menuitem:hover,
+panel-toplevel.background menubar > menuitem:hover label:backdrop {
+	color: @accent01-contrast;
+	zbackground-color: @FINDME;}
 panel-toplevel.background button {
 	border-color: transparent;
 	border-radius: 0px;
 	color: @black;
 	box-shadow: none;
-	background-color: transparent; }
+	background-color: transparent;
+	zbackground-color: @FINDME;}
 	panel-toplevel.background button:hover {
 		color: @black;
 		background-color: @neutral01;
 		border-color: @neutral02;
 		border-top-color: @border01-light;
 		border-left-color: @border01-lightless;
-		background-color: @neutral01; }
-	panel-toplevel.background button:active, panel-toplevel.background button:checked {
+		background-color: @neutral01;
+		zbackground-color: @FINDME;}
+	panel-toplevel.background button:active,
+	panel-toplevel.background button:checked {
 		color: @black;
 		border-top-color: @neutral02;
 		border-left-color: @neutral02;
 		border-bottom-color: @border01-dark;
 		border-right-color: @border01-darkless;
 		background-color: @neutral04;
-		background-image: none; }
-	panel-toplevel.background button:active:disabled, panel-toplevel.background button:checked:disabled {
+		background-image: none;
+		zbackground-color: @FINDME;}
+	panel-toplevel.background button:active:disabled,
+	panel-toplevel.background button:checked:disabled {
 		color: @black-off;
 		text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
 		background-color: @lightslategray-9397a8; }
@@ -41,7 +67,8 @@ panel-toplevel.background button {
 		border-color: transparent;
 		color: rgba(0, 0, 0, 0.8);
 		text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
-		background-color: transparent; }
+		background-color: transparent;
+		zbackground-color: @FINDME; }
 
 #tasklist-button {
 	padding: 4px 8px;
@@ -56,7 +83,8 @@ panel-toplevel.background button {
 	-gtk-outline-radius: 0px;
 	outline-color: @accent01;
 	outline-offset: 2px;
-	outline-style: solid; }
+	outline-style: solid;
+	zbackground-color: @FINDME;}
 	#tasklist-button:active, #tasklist-button:checked {
 		color: @black;
 		border-top-color: @neutral02;
@@ -64,31 +92,39 @@ panel-toplevel.background button {
 		border-bottom-color: @border01-dark;
 		border-right-color: @border01-darkless;
 		background-color: @neutral04;
-		background-image: none; }
+		background-image: none;
+		zbackground-color: @FINDME;}
 		#tasklist-button:active:disabled, #tasklist-button:checked:disabled {
 			color: @black-off;
 			text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
-			background-color: @lightslategray-9397a8; }
+			background-color: @lightslategray-9397a8;
+			zbackground-color: @FINDME;}
 	#tasklist-button:disabled {
 		color: @black;
-		text-shadow: 1px 1px rgba(255, 255, 255, 0.85); }
+		text-shadow: 1px 1px rgba(255, 255, 255, 0.85);
+		zbackground-color: @FINDME;}
 	#tasklist-button label {
-		color: rgba(0, 0, 0, 0.7); }
+			color: rgba(0, 0, 0, 0.7);
+			zbackground-color: @FINDME;}
 		#tasklist-button label:hover {
 			color: rgba(0, 0, 0, 0.7); }
 		#tasklist-button label:checked {
-			color: @black; }
+					color: @black;
+					zbackground-color: @FINDME;}
 
 panel-toplevel.background na-tray-applet {
 	-NaTrayApplet-icon-padding: 0;
-	-NaTrayApplet-icon-size: 16px; }
+	-NaTrayApplet-icon-size: 16px;
+	background-color: @FINDME;}
 
 .wnck-pager {
 	background-color: rgba(0, 0, 0, 0.04); }
 	.wnck-pager:selected {
-		background-color: @accent01; }
+		background-color: @accent01;
+		zbackground-color: @FINDME;}
 	.wnck-pager:hover {
-		background-color: @accent01; }
+		background-color: @accent01;
+		zbackground-color: @FINDME;}
 
 
 
@@ -97,14 +133,19 @@ panel-toplevel.background na-tray-applet {
 /* CBT https://docs.xfce.org/xfce/xfce4-panel/theming */
 /* CBT: background of items only in panel */
 .xfce4-panel.panel {
-	background-color: @neutral01;}
+	zbackground-color: @neutral01; /* prinamy bg color? */
+	zbackground-color: @FINDME;
+	zbackground-color: transparent;
+}
 	/* CBT: button in panel, for example window list popup */
-	.xfce4-panel.panel button.flat, .xfce4-panel.panel button.sidebar-button {
+	.xfce4-panel.panel button.flat,
+	.xfce4-panel.panel button.sidebar-button {
 		border-color: transparent;
 		border-radius: 0px;
 		color: @black;
 		box-shadow: none;
-		background-color: transparent; }
+		zbackground-color: transparent;
+		border: 5px solid @FINDME; }
 	 .xfce4-panel.panel button.flat:hover, .xfce4-panel.panel button.sidebar-button:hover {
 		color: @black;
 		background-color: @neutral01;
@@ -120,11 +161,15 @@ panel-toplevel.background na-tray-applet {
 		border-right-color: @border01-darkless;
 		background-color: @neutral04;
 		background-image: none; }
-		.xfce4-panel.panel button.flat:active:disabled, .xfce4-panel.panel button.flat:checked:disabled, .xfce4-panel.panel button.sidebar-button:active:disabled, .xfce4-panel.panel button.sidebar-button:checked:disabled {
+		.xfce4-panel.panel button.flat:active:disabled,
+		.xfce4-panel.panel button.flat:checked:disabled,
+		.xfce4-panel.panel button.sidebar-button:active:disabled,
+		.xfce4-panel.panel button.sidebar-button:checked:disabled {
 			color: @black-off;
 			text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
 			background-color: @lightslategray-9397a8; }
-	 .xfce4-panel.panel button.flat:disabled, .xfce4-panel.panel button.sidebar-button:disabled {
+	 .xfce4-panel.panel button.flat:disabled,
+	 .xfce4-panel.panel button.sidebar-button:disabled {
 		border-color: transparent;
 		color: rgba(0, 0, 0, 0.8);
 		text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
@@ -154,7 +199,8 @@ panel-toplevel.background na-tray-applet {
 
 			.xfce4-panel.panel .tasklist button:hover {
 			background-color: @accent01;}
-	.xfce4-panel.panel .tasklist button:active, .xfce4-panel.panel .tasklist button:checked {
+	.xfce4-panel.panel .tasklist button:active,
+	.xfce4-panel.panel .tasklist button:checked {
 		color: @black;
 		border-top-color: @neutral02;
 		border-left-color: @neutral02;
@@ -162,7 +208,8 @@ panel-toplevel.background na-tray-applet {
 		border-right-color: @border01-darkless;
 		background-color: @neutral04;
 		background-image: none; }
-		.xfce4-panel.panel .tasklist button:active:disabled, .xfce4-panel.panel .tasklist button:checked:disabled {
+		.xfce4-panel.panel .tasklist button:active:disabled,
+		.xfce4-panel.panel .tasklist button:checked:disabled {
 			color: @black-off;
 			text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
 			background-color: @lightslategray-9397a8; }
@@ -181,8 +228,8 @@ panel-toplevel.background na-tray-applet {
 			}
 
 					wnck-pager:nth-child(even) {
-
-						border: 8px solid @FINDME; background: @FINDME2;
+						zborder: 8px solid @FINDME;
+						zbackground: @FINDME2;
 					}
 						wnck-pager:hover {
 							background-color: @theme03;
@@ -198,3 +245,384 @@ panel-toplevel.background na-tray-applet {
 									#pager-1 button:checked,
 									#pager-1 button:hover, #plugin-4, #miniature-view, #plugin-13 {
 									border: 8px solid @FINDME; background-color: @FINDME2;}
+
+
+/* ==================== TESTING ==================== */
+
+.xfce4-panel.panel {
+	zborder-color: purple;
+	zbackground-color: skyblue;
+}
+
+.xfce4-panel.panel button.flat {
+	border-color: lightslategrey;
+	zbackground-color: transparent;}
+
+.xfce4-panel.panel button.sidebar-button {
+	zborder-color: blue;
+	border-radius: 0px;
+	color: @black;
+	zbackground-color: skyblue; }
+
+
+	/*,
+	 *.tasklist .toggle*/
+
+.xfce4-panel {
+zborder: 16px solid green;
+zbackground-color: purple;
+zcolor: black;
+zborder-radius: 0px; }
+
+wnck-pager > button,
+PanelApplet,
+PanelApplet.wnck-applet {
+	zbackground-color: cyan;
+	zbackground-color: transparent;
+}
+
+PanelApplet.wnck-applet .wnck-pager:selected {
+	zborder: 6px solid magenta;
+}
+
+.xfce4-panel,
+.xfce4-panel:hover {
+	/* 		padding: 0px 5px; */
+	zborder: 5px solid navy;
+}
+
+
+
+/*button {
+	background-color: gold;
+	margin: 10px;
+	padding: 10px;
+	zborder: 2px solid cyan;
+}*/
+
+/*xfce4-panel {
+	background-color: gold;
+	zbackground-color: transparent;
+	margin: 10px;
+	padding: 10px;
+	border: 8px solid cyan;
+}*/
+
+XfcePagerButtons {
+	background-color: transparent;
+	background-color: gold;
+
+}
+
+#XfcePanelWindow {
+
+}
+
+
+/* ----------- */
+
+.xfce4-panel {
+	zborder: 36px solid orangered;
+	zcolor: blue;
+	background-color: darkcyan;
+	background-color: @neutral01; /* primary bg color? */
+	zcolor: transparent;
+	zbackground-color: transparent;
+	margin: 10px;
+	padding: 10px;
+}
+
+/*#xfce-panel-toggle-button {
+	zbackground-color: white;
+	zborder: 16px solid orangered;
+	zborder: 12px double orange;
+	background-color: gold;
+	zbackground-color: transparent;
+	zmargin: 0px;
+	zpadding: 30px;
+}*/
+
+/* CBT: Floating workspace names ??? */
+.xfce4-panel #xfce-panel-toggle-button {
+	zborder: 3px solid yellow;
+	border-radius: 0px;
+	zbackground-color: lightseagreen;
+	zbackground-color: transparent;
+	zmargin: 15px;
+	zmargin: 0px 0px;
+	zpadding: 0px 0px;
+	line-height: 10px;
+	font-weight: bold;
+	vertical-align: left;
+}
+.xfce4-panel #xfce-panel-toggle-button:hover {
+	border: 3px solid white;
+	background-color: darkseagreen;
+}
+.xfce4-panel #xfce-panel-toggle-button > .flat {
+	zborder: 13px solid magenta;
+	zbackground-color: pink;
+	box-shadow: 8px 8px rgba(0, 0, 0, 0.8);
+	margin: 0px 0px;
+	padding: 0px 0px;
+	zpadding-bottom: 20px;
+	line-height: 10px;
+	height: 10px;
+	max-height: 10px;
+	z-index: -500;
+	float: right;
+	pointer-events: none;
+}
+
+.tasklist {
+	/* 	-gtk-icon-transform: scale(0); margin: -10px; */
+	zborder: 13px solid magenta;
+}
+
+style "window-buttons"
+{
+	font_name = "Arial 17"
+	XfceTasklist::max-button-size = 32
+}
+
+#xfce-panel-toggle-button {
+	zborder: 16px dashed orange;
+	background-color: grey;
+	color: white;
+	text-shadow: 1px 1px 2px black;
+	zborder: 9px solid darkblue;
+	background-color: transparent;
+	zbackground-color: seagreen;
+	zz-index: 500;
+}
+
+/* 	CBT: this will make all panels transparent or whatever color is specified */
+/*.xfce4-panel.panel button  {
+	zbackground-color: transparent;
+	zbackground-color: darkmagenta;
+	zborder: 12px solid red;}*/
+/*
+button label {
+	zbackground-color: pink;
+	zbackground-color: transparent;
+	zborder: 6px dashed lightgreen;
+}*/
+
+/* -------- */
+
+
+/*label,
+#xfce-panel-toggle-button {
+zbackground-color: powderblue;
+zbox-shadow: 8px 8px 1px black;
+margin: 0px;
+padding: 0px;
+}*/
+
+
+/*z #xfce-panel-toggle-button:prelight {
+background-color: purple;
+border-radius: 30px 3px;
+}*/
+
+grid > label {
+zbackground-color: violet;
+zborder-radius: 30px 3px;
+margin: 0px;
+padding: 0px;
+color: navy;
+}
+
+grid label {
+zbackground-color: indigo;
+border-radius: 3px 30px;
+margin: 0px;
+padding: 0px;
+color: lightgrey;
+}
+
+focusable {}
+
+label {
+zbackground-color: powderblue;
+min-height: 40px;
+}
+
+#xfce-panel-toggle-button {
+zbackground-color: powderblue;
+box-shadow: 8px 8px black;
+margin: 0px;
+padding: 0px;
+	zcolor: navy;
+	zcontent:'-------';
+	zdisplay: block;
+	position: absolute;
+zbackground: red;
+	zopacity: .5;
+	ztop: 12ex;
+	zright: -12ex;
+	zbottom: -12ex;
+	zleft: 12ex;
+	/*top: 0; right: 0; bottom: 0; left: 0;*/
+	z-index: 991;
+margin: 20px;
+min-height: 40px;
+}
+
+.image-button {
+zbackground-color: purple;
+zborder: 16px solid turquoise;
+}
+
+.text-button {
+background-color: purple;
+zborder: 16px solid turquoise;}
+
+
+#pager-22 > * > * *  {
+zbackground-color: purple;
+zborder: 16px solid turquoise;
+margin: 0px;
+padding: 0px;
+}
+
+#pager-22 label {
+zbackground-color: seagreen;
+zborder: 6px solid turquoise;
+margin: 0px;
+padding: 0px;
+}
+
+workspace-switcher {
+zbackground-color: salmon;
+zborder: 16px solid crimson;
+zmargin: 20px;
+zpadding: 20px;
+}
+
+widget>box>widget>box>label{
+}
+
+
+WnckPager, WnckTasklist {
+background-color: salmon;
+border: 16px solid crimson;
+zmargin: 20px
+zpadding: 20px;
+}
+
+
+
+
+
+
+
+
+z #xfce-panel-toggle-button:prelight {
+	background-color: purple;
+	border-radius: 30px 3px;
+}
+
+/*grid * {
+ zbackground-color: powderblue;
+ zborder: 19px gold ridge;
+ zmin-height: 40px;
+ margin: 0px;
+ padding: 0px;
+ }*/
+
+grid > label {
+	zbackground-color: violet;
+	border-radius: 0px;
+	margin: 0px;
+	padding: 0px;
+	color: navy;
+}
+
+grid label {
+	zbackground-color: indigo;
+	border-radius: 0px;
+	margin: 0px;
+	padding: 0px;
+	color: magenta;
+}
+
+focusable {}
+
+/*label {
+	zbackground-color: powderblue;
+	zmin-height: 40px;
+}*/
+
+#xfce-panel-toggle-button {
+zbackground-color: powderblue;
+box-shadow: 8px 8px black;
+margin: 0px;
+padding: 0px;
+zcolor: navy;
+zcontent:'-------';
+	zdisplay: block;
+	position: absolute;
+	zopacity: .5;
+	zz-index: 991;
+	margin: 33px 0px 0px 0px; /* buttons lined up with visual workspace switcher (pager) here */
+	zmin-height: 40px;
+}
+
+/*.image-button {
+	zbackground-color: purple;
+	zborder: 16px solid turquoise;
+}*/
+
+/*.text-button {
+	zbackground-color: purple;
+	zborder: 16px solid turquoise;}*/
+
+	z#pager-22 > * {
+		background-color: purple;
+		border: 16px solid turquoise;
+	}
+
+/*	z#pager-22 label {
+		background-color: seagreen;
+		border: 6px solid turquoise;
+	}*/
+/*	workspace-switcher {
+		background-color: salmon;
+		border: 16px solid crimson;
+		margin: 20px
+		padding: 20px;
+	}*/
+/*	widget>box>widget>box>label{
+	}*/
+/*	WnckPager, WnckTasklist {
+		background-color: salmon;
+		border: 16px solid crimson;
+		margin: 20px;
+		padding: 20px;
+	}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
