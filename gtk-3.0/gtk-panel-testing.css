@@ -1,0 +1,303 @@
+
+/* ==================== TESTING ==================== */
+
+.xfce4-panel.panel {
+	zborder-color: purple;
+	zbackground-color: skyblue;
+}
+
+.xfce4-panel.panel button.flat {
+	border-color: lightslategrey;
+	zbackground-color: transparent;}
+
+.xfce4-panel.panel button.sidebar-button {
+	zborder-color: blue;
+	border-radius: 0px;
+	color: @black;
+	zbackground-color: skyblue; }
+
+
+	/*,
+	 *.tasklist .toggle*/
+
+.xfce4-panel {
+zborder: 16px solid green;
+zbackground-color: purple;
+zcolor: black;
+zborder-radius: 0px; }
+
+wnck-pager > button,
+PanelApplet,
+PanelApplet.wnck-applet {
+	zbackground-color: cyan;
+	zbackground-color: transparent;
+}
+
+PanelApplet.wnck-applet .wnck-pager:selected {
+	zborder: 6px solid magenta;
+}
+
+.xfce4-panel,
+.xfce4-panel:hover {
+	/* 		padding: 0px 5px; */
+	zborder: 5px solid navy;
+}
+
+
+
+/*button {
+	background-color: gold;
+	margin: 10px;
+	padding: 10px;
+	zborder: 2px solid cyan;
+}*/
+
+/*xfce4-panel {
+	background-color: gold;
+	zbackground-color: transparent;
+	margin: 10px;
+	padding: 10px;
+	border: 8px solid cyan;
+}*/
+
+XfcePagerButtons {
+	background-color: transparent;
+	background-color: gold;
+
+}
+
+#XfcePanelWindow {
+
+}
+
+
+
+
+.tasklist {
+	/* 	-gtk-icon-transform: scale(0); margin: -10px; */
+	zborder: 13px solid magenta;
+}
+
+style "window-buttons"
+{
+	font_name = "Arial 17"
+	XfceTasklist::max-button-size = 32
+}
+
+#xfce-panel-toggle-button {
+	zborder: 16px dashed orange;
+	background-color: grey;
+	color: white;
+	text-shadow: 1px 1px 2px black;
+	zborder: 9px solid darkblue;
+	background-color: transparent;
+	zbackground-color: seagreen;
+	zz-index: 500;
+}
+
+/* 	CBT: this will make all panels transparent or whatever color is specified */
+/*.xfce4-panel.panel button  {
+	zbackground-color: transparent;
+	zbackground-color: darkmagenta;
+	zborder: 12px solid red;}*/
+/*
+button label {
+	zbackground-color: pink;
+	zbackground-color: transparent;
+	zborder: 6px dashed lightgreen;
+}*/
+
+/* -------- */
+
+
+/*label,
+#xfce-panel-toggle-button {
+zbackground-color: powderblue;
+zbox-shadow: 8px 8px 1px black;
+margin: 0px;
+padding: 0px;
+}*/
+
+
+/*z #xfce-panel-toggle-button:prelight {
+background-color: purple;
+border-radius: 30px 3px;
+}*/
+
+grid > label {
+zbackground-color: violet;
+zborder-radius: 30px 3px;
+margin: 0px;
+padding: 0px;
+color: navy;
+}
+
+grid label {
+zbackground-color: indigo;
+border-radius: 3px 30px;
+margin: 0px;
+padding: 0px;
+color: lightgrey;
+}
+
+focusable {}
+
+label {
+zbackground-color: powderblue;
+min-height: 40px;
+}
+
+#xfce-panel-toggle-button {
+zbackground-color: powderblue;
+box-shadow: 8px 8px black;
+margin: 0px;
+padding: 0px;
+	zcolor: navy;
+	zcontent:'-------';
+	zdisplay: block;
+	position: absolute;
+zbackground: red;
+	zopacity: .5;
+	ztop: 12ex;
+	zright: -12ex;
+	zbottom: -12ex;
+	zleft: 12ex;
+	/*top: 0; right: 0; bottom: 0; left: 0;*/
+	z-index: 991;
+margin: 20px;
+min-height: 40px;
+}
+
+.image-button {
+zbackground-color: purple;
+zborder: 16px solid turquoise;
+}
+
+.text-button {
+background-color: purple;
+zborder: 16px solid turquoise;}
+
+
+#pager-22 > * > * *  {
+zbackground-color: purple;
+zborder: 16px solid turquoise;
+margin: 0px;
+padding: 0px;
+}
+
+#pager-22 label {
+zbackground-color: seagreen;
+zborder: 6px solid turquoise;
+margin: 0px;
+padding: 0px;
+}
+
+workspace-switcher {
+zbackground-color: salmon;
+zborder: 16px solid crimson;
+zmargin: 20px;
+zpadding: 20px;
+}
+
+widget>box>widget>box>label{
+}
+
+
+WnckPager, WnckTasklist {
+background-color: salmon;
+border: 16px solid crimson;
+zmargin: 20px
+zpadding: 20px;
+}
+
+
+
+
+
+
+
+
+ #xfce-panel-toggle-button:hover {
+	background-color: purple;
+	border-radius: 30px 3px;
+}
+
+/*grid * {
+ zbackground-color: powderblue;
+ zborder: 19px gold ridge;
+ zmin-height: 40px;
+ margin: 0px;
+ padding: 0px;
+ }*/
+
+grid > label {
+	background-color: violet;
+	border-radius: 0px;
+	margin: 0px;
+	padding: 0px;
+	color: navy;
+}
+
+/*grid label {
+	zbackground-color: indigo;
+	border-radius: 0px;
+	margin: 0px;
+	padding: 0px;
+	zcolor: magenta;
+}*/
+
+focusable {}
+
+/*label {
+	zbackground-color: powderblue;
+	zmin-height: 40px;
+}*/
+
+#xfce-panel-toggle-button {
+background-color: @neutral02;
+box-shadow: 8px 8px black;
+padding: 0px;
+zcolor: navy;
+zcontent:'-------';
+	zdisplay: block;
+	zposition: absolute;
+	zopacity: .5;
+	zz-index: 991;
+	margin: 33px 0px 0px 0px; /* CBT: buttons lined up with visual workspace switcher (pager) here */
+	zmin-height: 40px;
+}
+
+/*.image-button {
+	zbackground-color: purple;
+	zborder: 16px solid turquoise;
+}*/
+
+/*.text-button {
+	zbackground-color: purple;
+	zborder: 16px solid turquoise;}*/
+
+	z#pager-22 > * {
+		background-color: purple;
+		border: 16px solid turquoise;
+	}
+
+/*	z#pager-22 label {
+		background-color: seagreen;
+		border: 6px solid turquoise;
+	}*/
+/*	workspace-switcher {
+		background-color: salmon;
+		border: 16px solid crimson;
+		margin: 20px
+		padding: 20px;
+	}*/
+/*	widget>box>widget>box>label{
+	}*/
+/*	WnckPager, WnckTasklist {
+		background-color: salmon;
+		border: 16px solid crimson;
+		margin: 20px;
+		padding: 20px;
+	}*/
+
+
